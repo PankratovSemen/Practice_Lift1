@@ -1,0 +1,18 @@
+﻿<Window x:Class="Liftais.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Liftais"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="359" Width="317" ResizeMode="CanMinimize">
+    <Grid Background="#FF7279D8">
+        <TextBlock x:Name="Join" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Вход" VerticalAlignment="Top" FontSize="45" FontFamily="Segoe UI Black" Foreground="#FFFFBB00"/>
+        <TextBox x:Name="login" Margin="20,108,25,0" VerticalAlignment="Top" IsEnabled="True" Height="32" Background="#FFDFDCDC" FontFamily="Segoe UI Black" FontSize="20" MaxLength="18"/>
+        <TextBlock x:Name="login1" HorizontalAlignment="Left" Margin="22,76,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#FFFFBB00"/>
+        <TextBlock x:Name="password" HorizontalAlignment="Left" Margin="22,157,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#FFFFBB00"/>
+        <Button x:Name="SingIn" Content="Войти" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" Width="151" Height="38" Background="#FF1924B1" Foreground="#FFFFBB00" FontSize="20" FontFamily="Segoe UI Black" Click="SingIn_Click"/>
+        <PasswordBox x:Name="Password1" HorizontalAlignment="Left" Margin="20,205,0,0" VerticalAlignment="Top" Width="261" Height="34" Background="#FFDFDCDC" FontSize="20" FontFamily="Segoe UI Black" MaxLength="25"/>
+
+    </Grid>
+</Window>
