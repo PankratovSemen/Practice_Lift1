@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liftais"
         mc:Ignorable="d"
+        Window.Background="#01233c"
         Title="Авторизация" Height="359" Width="317" ResizeMode="CanMinimize">
-    <Grid Background="
-          ">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="132*"/>
-            <ColumnDefinition Width="185*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="120*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="Join" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Вход" VerticalAlignment="Top" FontSize="45" FontFamily="Segoe UI Black" Foreground="#3D4242" Grid.ColumnSpan="2" Margin="100,0,0,0"/>
-        <TextBox x:Name="login" Margin="20,108,25,0" VerticalAlignment="Top" IsEnabled="True" Height="32" Background="#FFDFDCDC" FontFamily="Segoe UI Black" FontSize="20" MaxLength="18" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="login1" HorizontalAlignment="Left" Margin="22,76,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#3D4242
+        <TextBlock x:Name="Join" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Вход" VerticalAlignment="Top" FontSize="45" FontFamily="Segoe UI Black" Foreground="#2cb175" Grid.ColumnSpan="3" Margin="100,0,0,0"/>
+        <TextBox x:Name="login" Margin="20,108,25,0" VerticalAlignment="Top" IsEnabled="True" Height="32" Background="#FFDFDCDC" FontFamily="Segoe UI Black" FontSize="20" MaxLength="18" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="login1" HorizontalAlignment="Left" Margin="22,76,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#2cb175
                    
                    "/>
-        <TextBlock x:Name="password" HorizontalAlignment="Left" Margin="22,157,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#7595DE
+        <TextBlock x:Name="password" HorizontalAlignment="Left" Margin="20,172,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Black" Foreground="#2cb175
                    "/>
-        <Button x:Name="SingIn" Content="Войти" HorizontalAlignment="Left" Margin="83,265,0,0" VerticalAlignment="Top" Width="151" Height="38" Background="#6A706A" Foreground="#3D4242" FontSize="20" FontFamily="Segoe UI Black" Click="SingIn_Click" Grid.ColumnSpan="2"/>
-        <PasswordBox x:Name="Password1" HorizontalAlignment="Left" Margin="20,205,0,0" VerticalAlignment="Top" Width="261" Height="34" Background="#FFDFDCDC" FontSize="20" FontFamily="Segoe UI Black" MaxLength="25" Grid.ColumnSpan="2"/>
+        <Button x:Name="SingIn" Content="Войти" HorizontalAlignment="Left" Margin="83,265,0,0" VerticalAlignment="Top" Width="151" Height="38" Background="#373ab2" Foreground="#50b185" FontSize="20" FontFamily="Segoe UI Black" Click="SingIn_Click" Grid.ColumnSpan="3"/>
+        <PasswordBox x:Name="Password1" HorizontalAlignment="Left" Margin="20,205,0,0" VerticalAlignment="Top" Width="261" Height="34" Background="#FFDFDCDC" FontSize="20" FontFamily="Segoe UI Black" MaxLength="25" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Window>
