@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liftais"
         mc:Ignorable="d"
-        Title="Ais" Height="450" Width="800">
+        Title="Ais" SizeToContent="WidthAndHeight" HorizontalAlignment="Center" Height="83" MinWidth="1080" MinHeight="720" MaxWidth="1920" MaxHeight="1080">
     <Grid>
-        
+        <StackPanel x:Name="SP1" Background="Gray" Margin="46,0,0,659" MaxHeight="42.04" UseLayoutRounding="True" Height="47" VerticalAlignment="Top">
+
+            <Image x:Name="ava" Height="35" Width="38" RenderTransformOrigin="0.552,0.507" Source="/ic.png" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <DockPanel x:Name ="left_panel" LastChildFill="False" Width="422" HorizontalAlignment="Left" Background="#6c6c6c" Visibility="Hidden" Margin="0,38,0,0" MouseLeave="left_panel_MouseLeave">
+            <TextBlock Margin="141,18,0,0" TextWrapping="Wrap" Text="Меню" FontSize="50" Width="177" Height="59" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White"/>
+        </DockPanel>
+        <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
+        <StackPanel x:Name="sp2" Background="#FF6D6C6C" Height="44" VerticalAlignment="Top" Margin="1,45,-1,0">
+            <Label x:Name="JP" Content="Журнал посещений" Foreground="White" Width="155" FontSize="16" HorizontalAlignment="Left"/>
+            <Label x:Name="JP_Copy" Content="Регистрация посетителей" Foreground="White" Width="200" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0"/>
+        </StackPanel>
+        <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top">
+            <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="919,6,0,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" MouseMove="Search_MouseMove" MouseLeave="Search_MouseLeave"/>
+        </StackPanel>
+        <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,621,0,0" MaxHeight="85" VerticalAlignment="Bottom">
+            <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1"/>
+        </StackPanel>
+        <DataGrid x:Name="dbj" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,0,85"/>
+
     </Grid>
 </Window>

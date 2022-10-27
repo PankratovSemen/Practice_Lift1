@@ -23,5 +23,39 @@ namespace Liftais
         {
             InitializeComponent();
         }
+
+       
+private void ms1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            left_panel.Visibility = Visibility.Visible;
+            sp2.Visibility = Visibility.Collapsed;
+            sep.Visibility = Visibility.Hidden;
+            ExpP.Visibility = Visibility.Hidden;
+        }
+
+        private void left_panel_MouseLeave(object sender, MouseEventArgs e)
+        {
+            left_panel.Visibility=Visibility.Hidden;
+           
+            sp2.Visibility = Visibility.Visible;
+            sep.Visibility = Visibility.Visible;
+            ExpP.Visibility = Visibility.Visible;
+        }
+
+        private void Search_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Search.Text = " ";
+                
+        }
+
+        private void Search_MouseMove(object sender, MouseEventArgs e)
+        {
+            Search.Text = " ";
+        }
+
+        private void Search_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Search.Text = "Поиск";
+        }
     }
 }

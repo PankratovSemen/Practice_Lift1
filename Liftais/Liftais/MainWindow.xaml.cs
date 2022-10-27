@@ -43,8 +43,9 @@ namespace Liftais
             if (table.Rows.Count > 0)
             {
                 Ais ais1 = new Ais();
-                ais1.Show();
-                this.Close();
+                this.Hide();
+                ais1.ShowDialog();
+                this.Show();
             }
             else
                 MessageBox.Show("Неправильный логин или пароль","Error");
