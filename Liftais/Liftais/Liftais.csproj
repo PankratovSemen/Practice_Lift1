@@ -93,6 +93,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="table_c.cs" />
     <Page Include="Ais.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

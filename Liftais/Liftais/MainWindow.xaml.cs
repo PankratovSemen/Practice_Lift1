@@ -49,8 +49,8 @@ namespace Liftais
             }
             else
                 MessageBox.Show("Неправильный логин или пароль","Error");
-                
 
+            db.closedconn();
 
         }
     }

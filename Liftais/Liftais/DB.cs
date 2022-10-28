@@ -11,7 +11,7 @@ namespace Liftais
 {
     internal class DB
     {
-        MySqlConnection conn = new MySqlConnection("server = 192.168.0.150; port = 3307; username = root; password=root; database = lift");
+        MySqlConnection conn = new MySqlConnection("server = 192.168.0.150; port = 3307; username = root; password = root; database = lift");
 
         public void openconn()
         {
