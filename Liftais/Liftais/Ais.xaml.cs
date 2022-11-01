@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
 
+
 namespace Liftais
 {
     /// <summary>
@@ -203,6 +204,17 @@ namespace Liftais
         private void Search_MouseMove(object sender, MouseEventArgs e)
         {
             Search.Text = "";
+        }
+        
+        private void CheckBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            var w = dbj1.SelectedIndex;
+            int pare = dbj1.SelectedIndex;
+            DataRowView rowView = dbj1.SelectedValue as DataRowView;
+            
+            MessageBox.Show("Hello" + w);
+            
         }
     }
 }
