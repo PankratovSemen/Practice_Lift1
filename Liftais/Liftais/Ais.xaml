@@ -37,17 +37,6 @@
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,621,0,0" MaxHeight="85" VerticalAlignment="Bottom">
             <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1"/>
         </StackPanel>
-        <DataGrid x:Name="dbj" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3035,836,-3035,-630" AutoGenerateColumns="False" ItemsSource="{Binding}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Номер записи" Width="*" Binding="{Binding Path=id_note }" />
-                <DataGridTextColumn Header="Номер посетителя" Width="*" Binding="{Binding Path=id_visiter }" />
-                <DataGridTextColumn Header="Номер события" Width="*" Binding="{Binding Path=id_event }" />
-                <DataGridTextColumn Header="Номер резидента" Width="*" Binding="{Binding Path=id_resident }" />
-                <DataGridTextColumn Header="Дата захода" Width="*" Binding="{Binding Path=date_open }" />
-                <DataGridCheckBoxColumn Header="Выбор записей"/>
-
-            </DataGrid.Columns>
-        </DataGrid>
         <DataGrid x:Name="dbj1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding}"  >
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Header="Выбор записи" IsReadOnly="False"/>
