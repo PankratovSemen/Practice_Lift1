@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
-
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Liftais
 {
@@ -26,7 +26,7 @@ namespace Liftais
         {
             InitializeComponent();
         }
-
+        List<string> selection_ch = new List<string>();
         //При нажатии на иконку отерывается панель меню
         private void ms1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -223,6 +223,14 @@ namespace Liftais
                     selch.IsChecked = true;
                     DataRowView row = (DataRowView)dbj1.SelectedItems[0];
                     MessageBox.Show(row["id_note"].ToString());
+                    if (selection_ch.Contains(row["id_note"].ToString()) == false)
+                    {
+                        selection_ch.Add(row["id_note"].ToString());
+                        MessageBox.Show("Элемент добавлен в список");
+                    }
+                    else
+                        MessageBox.Show("Элемент существует в списке");
+                    
                 }
 
                 
