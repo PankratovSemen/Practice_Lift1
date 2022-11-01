@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
 using Excel = Microsoft.Office.Interop.Excel;
 
+
 namespace Liftais
 {
     /// <summary>
@@ -216,6 +217,7 @@ namespace Liftais
         {
             try
             {
+                //Проверка checkbox и добавление элементов в список для последующего использования
                 CheckBox selch = (CheckBox)sender;
 
                 if (selch.IsChecked == false)
@@ -244,6 +246,52 @@ namespace Liftais
             
             
 
+        }
+
+        private void btnexp_Click(object sender, RoutedEventArgs e)
+        {
+            Excel.Application excel1 = new Excel.Application();
+            excel1.Visible = true; 
+            Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
+            Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
+            
+
+            for (int j = 0; j < dbj1.Columns.Count; j++) 
+            {
+                Excel.Range myRange = (Excel.Range)sheet1.Cells[1, j + 1];
+                sheet1.Cells[1, j + 1].Font.Bold = true; 
+                sheet1.Columns[j + 1].ColumnWidth = 15; 
+                myRange.Value = dbj1.Columns[j].Header;
+            }
+            
+            for (int i = 0; i < dbj1.Columns.Count; i++)
+            {
+                
+                for (int j = 0; j < dbj1.Items.Count; j++)
+                {
+                    int y = 1;
+                    DataRowView row = (DataRowView)dbj1.Items[j];
+                    if (j == 0)
+                    {
+                        excel1.Cells[i + 1] = row[i];
+                    }
+                    else if (j == 1)
+                    {
+                        excel1.Cells[i + 2] = row[i+1];
+                    }
+                    else if (j == 2)
+                    {
+                        excel1.Cells[i + 3] = row[i+2];
+                    }
+                    else if (j == 3)
+                    {
+                        excel1.Cells[i + 4] = row[i+3];
+                    }
+
+                }
+                
+            }
+           
         }
     }
 }
