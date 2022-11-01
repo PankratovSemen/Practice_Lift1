@@ -79,9 +79,13 @@ namespace Liftais
             dbj1.ItemsSource = dt.DefaultView;
 
             db.closedconn();
+
+            
+            
+
         }
 
-        
+
 
         private void Search_PreviewKeyDown(object sender, KeyEventArgs e)
         {
@@ -204,17 +208,34 @@ namespace Liftais
         private void Search_MouseMove(object sender, MouseEventArgs e)
         {
             Search.Text = "";
+            
         }
+        
         
         private void CheckBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            try
+            {
+                CheckBox selch = (CheckBox)sender;
 
-            var w = dbj1.SelectedIndex;
-            int pare = dbj1.SelectedIndex;
-            DataRowView rowView = dbj1.SelectedValue as DataRowView;
+                if (selch.IsChecked == false)
+                {
+                    selch.IsChecked = true;
+                    DataRowView row = (DataRowView)dbj1.SelectedItems[0];
+                    MessageBox.Show(row["id_note"].ToString());
+                }
+
+                
+            }
+            catch
+            {
+                MessageBox.Show("Внимание \n Выделите строку");
+            }
+
+
             
-            MessageBox.Show("Hello" + w);
             
+
         }
     }
 }

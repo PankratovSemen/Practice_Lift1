@@ -100,3 +100,193 @@ admin
 Аккаунт: admin
 2022-11-01 18:15:44.8706 DEBUG Попытка входа
 2022-11-01 18:15:44.8706 INFO Успешный вход
+2022-11-01 18:52:22.8531 DEBUG Инициализация программы
+2022-11-01 18:52:22.9060 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 18:52:23.3101 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 18:52:23.3101 DEBUG Попытка входа
+2022-11-01 18:52:23.3101 INFO Успешный вход
+2022-11-01 18:55:33.2802 DEBUG Инициализация программы
+2022-11-01 18:55:33.3341 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 18:55:33.5999 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 18:55:33.5999 DEBUG Попытка входа
+2022-11-01 18:55:33.5999 INFO Успешный вход
+2022-11-01 18:55:44.0818 ERROR Ошибка System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в System.Collections.ObjectModel.Collection`1.System.Collections.IList.get_Item(Int32 index)
+   в Liftais.Ais.CheckBox_PreviewMouseLeftButtonDown(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 211
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.OnPreviewMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   в MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 56
+2022-11-01 18:57:38.1844 DEBUG Инициализация программы
+2022-11-01 18:57:38.3386 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 18:57:38.5632 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 18:57:38.5632 DEBUG Попытка входа
+2022-11-01 18:57:38.5632 INFO Успешный вход
+2022-11-01 19:05:00.1702 DEBUG Инициализация программы
+2022-11-01 19:05:00.2231 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:05:00.9806 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:05:00.9806 DEBUG Попытка входа
+2022-11-01 19:05:00.9806 INFO Успешный вход
+2022-11-01 19:05:36.4137 DEBUG Инициализация программы
+2022-11-01 19:05:36.4676 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:05:36.7659 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:05:36.7659 DEBUG Попытка входа
+2022-11-01 19:05:36.7659 INFO Успешный вход
+2022-11-01 19:19:36.0100 DEBUG Инициализация программы
+2022-11-01 19:19:36.0718 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:19:36.3675 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:19:36.3675 DEBUG Попытка входа
+2022-11-01 19:19:36.3675 INFO Успешный вход
+2022-11-01 19:20:17.4131 DEBUG Инициализация программы
+2022-11-01 19:20:17.4660 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:20:17.7398 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:20:17.7398 DEBUG Попытка входа
+2022-11-01 19:20:17.7398 INFO Успешный вход
+2022-11-01 19:21:12.3160 DEBUG Инициализация программы
+2022-11-01 19:21:12.3868 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:21:12.9037 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:21:12.9037 DEBUG Попытка входа
+2022-11-01 19:21:12.9037 INFO Успешный вход
+2022-11-01 19:22:00.8261 DEBUG Инициализация программы
+2022-11-01 19:22:00.8905 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:22:01.2310 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:22:01.2310 DEBUG Попытка входа
+2022-11-01 19:22:01.2310 INFO Успешный вход
+2022-11-01 19:22:08.5018 ERROR Ошибка System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в System.Collections.ObjectModel.Collection`1.System.Collections.IList.get_Item(Int32 index)
+   в Liftais.Ais.CheckBox_PreviewMouseLeftButtonDown(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 214
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.OnPreviewMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   в MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 56
+2022-11-01 19:33:26.2619 DEBUG Инициализация программы
+2022-11-01 19:33:26.3248 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:33:28.0383 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:33:28.0383 DEBUG Попытка входа
+2022-11-01 19:33:28.0383 INFO Успешный вход
+2022-11-01 19:35:21.5767 DEBUG Инициализация программы
+2022-11-01 19:35:21.6565 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:35:21.9310 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:35:21.9310 DEBUG Попытка входа
+2022-11-01 19:35:21.9310 INFO Успешный вход
+2022-11-01 19:37:05.4631 DEBUG Инициализация программы
+2022-11-01 19:37:05.5260 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:37:05.8511 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:37:05.8511 DEBUG Попытка входа
+2022-11-01 19:37:05.8511 INFO Успешный вход
+2022-11-01 19:38:43.2714 DEBUG Инициализация программы
+2022-11-01 19:38:43.4596 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:38:43.7596 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:38:43.7596 DEBUG Попытка входа
+2022-11-01 19:38:43.7596 INFO Успешный вход
+2022-11-01 19:39:38.3902 DEBUG Инициализация программы
+2022-11-01 19:39:38.4471 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:39:38.7371 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:39:38.7371 DEBUG Попытка входа
+2022-11-01 19:39:38.7371 INFO Успешный вход
+2022-11-01 19:41:26.7141 DEBUG Инициализация программы
+2022-11-01 19:41:26.7670 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:41:27.0570 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:41:27.0570 DEBUG Попытка входа
+2022-11-01 19:41:27.0570 INFO Успешный вход
+2022-11-01 19:42:23.3583 DEBUG Инициализация программы
+2022-11-01 19:42:23.4121 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:42:23.6992 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:42:23.6992 DEBUG Попытка входа
+2022-11-01 19:42:23.6992 INFO Успешный вход
+2022-11-01 19:43:13.9014 DEBUG Инициализация программы
+2022-11-01 19:43:13.9672 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:43:14.2587 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:43:14.2587 DEBUG Попытка входа
+2022-11-01 19:43:14.2587 INFO Успешный вход
+2022-11-01 19:50:53.2776 DEBUG Инициализация программы
+2022-11-01 19:50:53.3334 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:50:53.6463 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:50:53.6463 DEBUG Попытка входа
+2022-11-01 19:50:53.6463 INFO Успешный вход
+2022-11-01 19:51:50.7373 DEBUG Инициализация программы
+2022-11-01 19:51:50.7914 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-01 19:51:51.1447 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-01 19:51:51.1447 DEBUG Попытка входа
+2022-11-01 19:51:51.1447 INFO Успешный вход
