@@ -13,7 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
+using NLog;
 using Excel = Microsoft.Office.Interop.Excel;
+using NLog;
 
 
 namespace Liftais
@@ -23,11 +25,17 @@ namespace Liftais
     /// </summary>
     public partial class Ais : Window
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public Ais()
         {
             InitializeComponent();
         }
         List<string> selection_ch = new List<string>();
+        List<string> visiter_ch = new List<string>();
+        List<string> resident_ch = new List<string>();
+        List<string> events_ch = new List<string>();
+        List<string> open_ch = new List<string>();
+        List<string> close_ch = new List<string>();
         //При нажатии на иконку отерывается панель меню
         private void ms1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -211,10 +219,11 @@ namespace Liftais
             Search.Text = "";
             
         }
-        
-        
+
+        int a = 0;
         private void CheckBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            
             try
             {
                 //Проверка checkbox и добавление элементов в список для последующего использования
@@ -224,14 +233,34 @@ namespace Liftais
                 {
                     selch.IsChecked = true;
                     DataRowView row = (DataRowView)dbj1.SelectedItems[0];
-                    MessageBox.Show(row["id_note"].ToString());
+
+                   
                     if (selection_ch.Contains(row["id_note"].ToString()) == false)
                     {
+                        
                         selection_ch.Add(row["id_note"].ToString());
-                        MessageBox.Show("Элемент добавлен в список");
+                        visiter_ch.Add(row["id_visiter"].ToString());
+                        resident_ch.Add(row["id_resident"].ToString());
+                        events_ch.Add(row["id_event"].ToString());
+                        open_ch.Add(row["date_open"].ToString());
+                        close_ch.Add(row["date_close"].ToString());
+                        MessageBox.Show("Элемент №: " + row["id_note"].ToString() + " добавлен в список");
+                        a++;
+                        counts.Content = "Элементов" + a;
                     }
                     else
-                        MessageBox.Show("Элемент существует в списке");
+                    {
+                        selection_ch.Remove(row["id_note"].ToString());
+                        visiter_ch.Remove(row["id_visiter"].ToString());
+                        resident_ch.Remove(row["id_resident"].ToString());
+                        events_ch.Remove(row["id_event"].ToString());
+                        open_ch.Remove(row["date_open"].ToString());
+                        close_ch.Remove(row["date_close"].ToString());
+                        MessageBox.Show("Элемент №: " + row["id_note"].ToString() + " удален из списка");
+                        a-=1;
+                        counts.Content = "Элементов: " + a;
+                    }
+                        
                     
                 }
 
@@ -240,6 +269,7 @@ namespace Liftais
             catch
             {
                 MessageBox.Show("Внимание \n Выделите строку");
+
             }
 
 
@@ -250,31 +280,104 @@ namespace Liftais
 
         private void btnexp_Click(object sender, RoutedEventArgs e)
         {
-            Excel.Application excel1 = new Excel.Application();
-            excel1.Visible = true; 
-            Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
-            Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
-            
+            try
+            {
+                Excel.Application excel1 = new Excel.Application();
+                excel1.Visible = true;
+                Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
+                Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
 
-            for (int j = 0; j < dbj1.Columns.Count; j++) 
-            {
-                Excel.Range myRange = (Excel.Range)sheet1.Cells[1, j + 1];
-                sheet1.Cells[1, j + 1].Font.Bold = true; 
-                sheet1.Columns[j + 1].ColumnWidth = 15; 
-                myRange.Value = dbj1.Columns[j].Header;
-            }
-            
-            for (int i = 0; i < dbj1.Columns.Count; i++)
-            {
-                
-                for (int j = 0; j < dbj1.Items.Count; j++)
+
+                for (int j = 0; j < dbj1.Columns.Count; j++)
                 {
-                    int y = 1;
-                    DataRowView row = (DataRowView)dbj1.Items[j];
-                    excel1.Cells[j + 2, i + 2] = row[i];
+                    Excel.Range myRange = (Excel.Range)sheet1.Cells[1, j + 1];
+                    sheet1.Cells[1,j+1].Font.Bold = true;
+                    sheet1.Columns[j + 1].ColumnWidth = 15;
+                    myRange.Value = dbj1.Columns[j].Header;
+                }
+
+                int q = 1;
+                for (int i = 0; i < dbj1.Columns.Count; i++)
+                {
+                   
+
+                    for (int j = 0; j < dbj1.Items.Count; j++)
+                    {
+                       
+                        int w = i + 1;
+                       
+                        
+                        DataRowView row = (DataRowView)dbj1.Items[j];
+                        if (selection_ch.Contains(row[i].ToString()))
+                        {
+
+
+
+
+                            
+                                MessageBox.Show(row[i].ToString());
+                                excel1.Cells[a-j + 2, i+2 ] = row[i];
+
+                            if (visiter_ch.Contains(row[i+1].ToString()))
+                            {
+                                excel1.Cells[a-j + 2, i + 3] = row[i+1];
+                            }
+                           
+                            if (resident_ch.Contains(row[i+3].ToString()))
+                            {
+                                excel1.Cells[a-j+2, i + 5] = row[i+3];
+                            }
+                            
+                            if (events_ch.Contains(row[i+2].ToString()) )
+                            {
+                                if (events_ch.Contains(row[i + 2].ToString()) != selection_ch.Contains(row[i]))
+                                {
+                                    excel1.Cells[a - j + 2, i + 4] = row[i + 2];
+                                }
+
+
+                            }
+                            if (open_ch.Contains(row[i+4].ToString()))
+                            {
+                                excel1.Cells[a-j+2, i +6] = row[i+4];
+                            }
+                            
+                            if (close_ch.Contains(row[i+5].ToString()))
+                            {
+                                excel1.Cells[a-j+2, i + 7] = row[i+5];
+                                q = 0;
+                            }
+                            
+
+                        }
+                        else if (a==0)
+                        {
+                            excel1.Cells[j + 2, i + 2] = row[i];
+                        }
+
+
+
+
+
+
+                       
+
+
+                       
+
+
+
+
+                    }
 
                 }
+
                 
+            }
+
+            catch(Exception ex)
+            {
+                logger.Error("Ошибка:  " + ex);
             }
            
         }
