@@ -271,22 +271,7 @@ namespace Liftais
                 {
                     int y = 1;
                     DataRowView row = (DataRowView)dbj1.Items[j];
-                    if (j == 0)
-                    {
-                        excel1.Cells[i + 1] = row[i];
-                    }
-                    else if (j == 1)
-                    {
-                        excel1.Cells[i + 2] = row[i+1];
-                    }
-                    else if (j == 2)
-                    {
-                        excel1.Cells[i + 3] = row[i+2];
-                    }
-                    else if (j == 3)
-                    {
-                        excel1.Cells[i + 4] = row[i+3];
-                    }
+                    excel1.Cells[j + 2, i + 2] = row[i];
 
                 }
                 
