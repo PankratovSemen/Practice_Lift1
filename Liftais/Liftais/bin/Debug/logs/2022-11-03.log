@@ -362,3 +362,230 @@
    в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
    в System.Data.DataRowView.get_Item(Int32 ndx)
    в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 309
+2022-11-03 22:03:07.2654 DEBUG Инициализация программы
+2022-11-03 22:03:07.9075 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:03:10.2596 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:03:10.2596 DEBUG Попытка входа
+2022-11-03 22:03:10.2596 INFO Успешный вход
+2022-11-03 22:03:28.6584 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 310
+2022-11-03 22:05:08.2380 DEBUG Инициализация программы
+2022-11-03 22:05:08.2899 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:05:08.6260 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:05:08.6260 DEBUG Попытка входа
+2022-11-03 22:05:08.6260 INFO Успешный вход
+2022-11-03 22:05:34.4636 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 310
+2022-11-03 22:09:29.3042 DEBUG Инициализация программы
+2022-11-03 22:09:29.3561 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:09:29.6917 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:09:29.6917 DEBUG Попытка входа
+2022-11-03 22:09:29.6917 INFO Успешный вход
+2022-11-03 22:09:35.0517 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:10:26.3997 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 341
+2022-11-03 22:10:55.8250 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:11:25.0652 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 341
+2022-11-03 22:13:48.6053 DEBUG Инициализация программы
+2022-11-03 22:13:48.6591 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:13:48.9175 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:13:48.9175 DEBUG Попытка входа
+2022-11-03 22:13:48.9175 INFO Успешный вход
+2022-11-03 22:14:13.6684 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 341
+2022-11-03 22:15:11.7136 DEBUG Инициализация программы
+2022-11-03 22:15:11.7655 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:15:11.9982 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:15:11.9982 DEBUG Попытка входа
+2022-11-03 22:15:11.9982 INFO Успешный вход
+2022-11-03 22:15:28.1220 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:16:39.3971 DEBUG Инициализация программы
+2022-11-03 22:16:39.4520 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:16:39.6885 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:16:39.6885 DEBUG Попытка входа
+2022-11-03 22:16:39.6885 INFO Успешный вход
+2022-11-03 22:16:43.9715 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:17:47.1075 DEBUG Инициализация программы
+2022-11-03 22:17:47.1603 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:17:47.4160 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:17:47.4160 DEBUG Попытка входа
+2022-11-03 22:17:47.4160 INFO Успешный вход
+2022-11-03 22:18:09.3543 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:19:18.5140 DEBUG Инициализация программы
+2022-11-03 22:19:18.5678 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:19:18.9367 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:19:18.9367 DEBUG Попытка входа
+2022-11-03 22:19:18.9367 INFO Успешный вход
+2022-11-03 22:19:24.5346 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 312
+2022-11-03 22:21:06.1853 DEBUG Инициализация программы
+2022-11-03 22:21:06.2382 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:21:06.5762 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:21:06.5762 DEBUG Попытка входа
+2022-11-03 22:21:06.5762 INFO Успешный вход
+2022-11-03 22:34:42.7009 DEBUG Инициализация программы
+2022-11-03 22:34:43.1976 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:34:44.7644 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:34:44.7644 DEBUG Попытка входа
+2022-11-03 22:34:44.7644 INFO Успешный вход
+2022-11-03 22:36:29.5062 DEBUG Инициализация программы
+2022-11-03 22:36:29.5690 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:36:29.8888 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:36:29.8888 DEBUG Попытка входа
+2022-11-03 22:36:29.8888 INFO Успешный вход
+2022-11-03 22:37:13.4036 DEBUG Инициализация программы
+2022-11-03 22:37:13.4565 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:37:13.7427 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:37:13.7427 DEBUG Попытка входа
+2022-11-03 22:37:13.7427 INFO Успешный вход
+2022-11-03 22:47:46.1046 DEBUG Инициализация программы
+2022-11-03 22:47:46.1574 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:47:46.4348 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:47:46.4348 DEBUG Попытка входа
+2022-11-03 22:47:46.4348 INFO Успешный вход
+2022-11-03 22:50:36.6792 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 341
+2022-11-03 22:52:05.1599 DEBUG Инициализация программы
+2022-11-03 22:52:05.2117 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 22:52:05.5274 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 22:52:05.5274 DEBUG Попытка входа
+2022-11-03 22:52:05.5274 INFO Успешный вход
+2022-11-03 22:52:24.4385 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 341
+2022-11-03 23:08:56.7586 DEBUG Инициализация программы
+2022-11-03 23:08:56.8102 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:08:57.0778 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:08:57.0778 DEBUG Попытка входа
+2022-11-03 23:08:57.0778 INFO Успешный вход
+2022-11-03 23:09:37.1744 DEBUG Инициализация программы
+2022-11-03 23:09:37.2259 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:09:37.4609 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:09:37.4609 DEBUG Попытка входа
+2022-11-03 23:09:37.4609 INFO Успешный вход
+2022-11-03 23:10:20.1494 DEBUG Инициализация программы
+2022-11-03 23:10:20.2020 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:10:20.4410 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:10:20.4410 DEBUG Попытка входа
+2022-11-03 23:10:20.4410 INFO Успешный вход
+2022-11-03 23:11:45.7405 DEBUG Инициализация программы
+2022-11-03 23:11:45.7934 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:11:46.0569 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:11:46.0569 DEBUG Попытка входа
+2022-11-03 23:11:46.0569 INFO Успешный вход
+2022-11-03 23:12:36.8045 DEBUG Инициализация программы
+2022-11-03 23:12:36.8561 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:12:37.1055 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:12:37.1055 DEBUG Попытка входа
+2022-11-03 23:12:37.1055 INFO Успешный вход
+2022-11-03 23:17:37.8741 DEBUG Инициализация программы
+2022-11-03 23:17:37.9266 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:17:38.1757 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:17:38.1757 DEBUG Попытка входа
+2022-11-03 23:17:38.1757 INFO Успешный вход
+2022-11-03 23:19:19.9532 DEBUG Инициализация программы
+2022-11-03 23:19:20.0089 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:19:20.2561 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:19:20.2561 DEBUG Попытка входа
+2022-11-03 23:19:20.2561 INFO Успешный вход
+2022-11-03 23:25:05.0720 DEBUG Инициализация программы
+2022-11-03 23:25:05.1245 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:25:05.3806 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:25:05.3806 DEBUG Попытка входа
+2022-11-03 23:25:05.3806 INFO Успешный вход
+2022-11-03 23:28:29.4063 DEBUG Инициализация программы
+2022-11-03 23:28:29.4598 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:28:29.7082 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:28:29.7082 DEBUG Попытка входа
+2022-11-03 23:28:29.7082 INFO Успешный вход
+2022-11-03 23:40:29.6272 DEBUG Инициализация программы
+2022-11-03 23:40:29.6816 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:40:29.9292 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:40:29.9292 DEBUG Попытка входа
+2022-11-03 23:40:29.9292 INFO Успешный вход
+2022-11-03 23:45:40.7649 DEBUG Инициализация программы
+2022-11-03 23:45:40.8190 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:45:41.0775 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:45:41.0775 DEBUG Попытка входа
+2022-11-03 23:45:41.0775 INFO Успешный вход
+2022-11-03 23:56:54.6349 DEBUG Инициализация программы
+2022-11-03 23:56:54.6863 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:56:54.9996 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:56:54.9996 DEBUG Попытка входа
+2022-11-03 23:56:54.9996 INFO Успешный вход
+2022-11-03 23:58:14.2979 DEBUG Инициализация программы
+2022-11-03 23:58:14.3494 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 23:58:14.5948 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 23:58:14.5948 DEBUG Попытка входа
+2022-11-03 23:58:14.5948 INFO Успешный вход

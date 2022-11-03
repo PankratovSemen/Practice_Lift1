@@ -292,6 +292,9 @@ namespace Liftais
 
                     
                     sh.Cell(1, j+1).SetValue(dbj1.Columns[j].Header);
+                    sh.Cell(1,j+1).Style.Font.Bold = true;
+                    sh.Columns().AdjustToContents();
+                    sh.Rows().AdjustToContents();
                 }
 
                 int q = 1;
@@ -314,36 +317,37 @@ namespace Liftais
 
                             
                                 MessageBox.Show(row[i].ToString());
-                                sh.Cell(a-j + 2, i+2 ).SetValue(row[i]);
+                                sh.Cell(j + 1, i+2 ).SetValue(row[i]);
 
                             if (visiter_ch.Contains(row[i+1].ToString()))
                             {
-                                sh.Cell(a-j + 2, i + 3).SetValue(row[i + 1]);
+                                sh.Cell(j + 1, i + 3).SetValue(row[i + 1]);
                             }
                            
                             if (resident_ch.Contains(row[i+3].ToString()))
                             {
-                                sh.Cell(a-j+2, i + 5).SetValue(row[i + 3]);
+                                sh.Cell(j+1, i + 5).SetValue(row[i + 3]);
                             }
                             
                             if (events_ch.Contains(row[i+2].ToString()) )
                             {
                                 if (events_ch.Contains(row[i + 2].ToString()) != selection_ch.Contains(row[i]))
                                 {
-                                    sh.Cell(a - j + 2, i + 4).SetValue(row[i + 2]);
+                                    sh.Cell(j + 1, i + 4).SetValue(row[i + 2]);
                                 }
 
 
                             }
                             if (open_ch.Contains(row[i+4].ToString()))
                             {
-                                sh.Cell(a-j+2, i +6).SetValue(row[i + 4]);
+                                sh.Cell(j+1, i +6).SetValue(row[i + 4]);
                             }
                             
                             if (close_ch.Contains(row[i+5].ToString()))
                             {
-                                sh.Cell(a-j+2, i + 7).SetValue(row[i + 5]);
-                                q = 0;
+                                sh.Cell(j+1, i + 7).SetValue(row[i + 5]);
+                               
+                                
                             }
                             
 
@@ -351,17 +355,23 @@ namespace Liftais
                         else if (a==0)
                         {
                             sh.Cell(j + 2, i + 2).SetValue(row[i]);
+                            
+
                         }
-
+                        
                         wb.SaveAs("Export_AIS\\data.xlsx");
+                        if (q == 1)
+                        {
+                            MessageBox.Show("Таблица экспортирована");
+                            q++;
+                        }
+                        
 
 
 
 
-                       
 
 
-                       
 
 
 
@@ -369,8 +379,9 @@ namespace Liftais
                     }
 
                 }
-
                 
+
+
             }
 
             catch(Exception ex)
@@ -378,6 +389,56 @@ namespace Liftais
                 logger.Error("Ошибка:  " + ex);
             }
            
+        }
+
+        private void JP_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            dbj1.Visibility = Visibility.Hidden;
+            sep.Visibility = Visibility.Hidden;
+            ExpP.Visibility = Visibility.Hidden;
+            Reg_vis.Foreground = Brushes.Blue;
+            JP.Foreground = Brushes.White;
+            cr_notes.Visibility = Visibility.Visible;
+        }
+
+        private void JP_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            dbj1.Visibility = Visibility.Visible;
+            sep.Visibility = Visibility.Visible;
+            ExpP.Visibility = Visibility.Visible;
+            Reg_vis.Foreground = Brushes.White;
+            JP.Foreground = Brushes.Blue;
+            cr_notes.Visibility = Visibility.Hidden;
+        }
+
+        private void create_note_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                DB db = new DB();
+                db.openconn();
+                string cmd = "INSERT INTO `magazine` (`id_visiter`, `id_event`, `id_resident`, `date_open`) VALUES (@vis, @eve, @res, @op);";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                command.Parameters.Add("@vis", MySqlDbType.VarChar).Value = id_vis_tb.Text;
+                command.Parameters.Add("@eve", MySqlDbType.VarChar).Value = null;
+                command.Parameters.Add("@res", MySqlDbType.VarChar).Value = null;
+                command.Parameters.Add("@op", MySqlDbType.DateTime).Value = DateTime.Now;
+                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable("magazine");
+                dataAdp.SelectCommand = command;
+                dataAdp.Fill(dt);
+                db.closedconn();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void create_date_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

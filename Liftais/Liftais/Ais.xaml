@@ -16,10 +16,10 @@
         </DockPanel>
         <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
         <StackPanel x:Name="sp2" Background="#FF6D6C6C" Height="44" VerticalAlignment="Top" Margin="1,45,-1,0">
-            <Label x:Name="JP" Content="Журнал посещений" Foreground="White" Width="155" FontSize="16" HorizontalAlignment="Left"/>
-            <Label x:Name="JP_Copy" Content="Регистрация посетителей" Foreground="White" Width="200" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0"/>
+            <Label x:Name="JP" Content="Журнал посещений" Foreground="Blue" Width="155" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="JP_MouseLeftButtonDown"/>
+            <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" />
         </StackPanel>
-        <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top">
+        <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Hidden">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18">
                 <TextBlock x:Name="id_note">Номер записи</TextBlock>
                 <TextBlock x:Name="id_visiter">Номер посетителя</TextBlock>
@@ -36,10 +36,10 @@
             <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16"/>
         </StackPanel>
-        <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,621,0,0" MaxHeight="85" VerticalAlignment="Bottom">
+        <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,621,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Hidden">
             <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1" Click="btnexp_Click"/>
         </StackPanel>
-        <DataGrid x:Name="dbj1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding Test}" SelectionMode="Single" CanUserAddRows="False" >
+        <DataGrid x:Name="dbj1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding Test}" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" >
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
@@ -57,8 +57,32 @@
 
 
             </DataGrid.Columns>
-            
+
 
         </DataGrid>
+        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54">
+            <TextBlock TextWrapping="Wrap" Text="Открытие записи" FontSize="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,0,0" Height="83"/>
+            <StackPanel Height="513" Width="956" HorizontalAlignment="Left" Background="#FFD9D9D9">
+                <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Width="194" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="5,47,0,0"/>
+                <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Номер мероприятия" FontSize="20" FontWeight="Bold" Width="222" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="4,20,1,-4"/>
+                <TextBox x:Name="id_eve_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="222,-18,-2,0"/>
+                <CheckBox x:Name="ne" Content="Пустое значение" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-26,-38,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Номер резидента" FontSize="20" FontWeight="Bold" Width="222" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="0,22,0,0"/>
+                <TextBox x:Name="id_res_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="222,-25,0,0"/>
+                <CheckBox x:Name="nr" Content="Пустое значение" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-24,-35,0"/>
+                <Button x:Name="create_note" Content="Записать" HorizontalAlignment="Center" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" Margin="-326,35,9,0" Click="create_note_Click"/>
+
+            </StackPanel>
+            <StackPanel Height="514" Background="#FFD9D9D9" Width="956" HorizontalAlignment="Right" Margin="-4,-514,-48,0">
+                <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Padding="3,0,5,2" Margin="61,51,0,3" Width="206" HorizontalAlignment="Left"/>
+                <TextBox x:Name="id_vis_tb_close" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" BorderThickness="0,1,1,1" Margin="265,-40,0,0"/>
+                <Button x:Name="create_date" Content="Записать" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-236,42,0,7" Click="create_date_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+
     </Grid>
 </Window>
