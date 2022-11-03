@@ -169,3 +169,12 @@ C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\NL
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\NLog.config
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais_Content.g.cs
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ClosedXML.dll
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ClosedXML.pdb
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ClosedXML.xml
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Newtonsoft.Json.xml

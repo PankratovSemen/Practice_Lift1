@@ -206,3 +206,92 @@
    в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
    в System.Data.DataRowView.get_Item(Int32 ndx)
    в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 340
+2022-11-03 00:33:55.9732 DEBUG Инициализация программы
+2022-11-03 00:33:56.0420 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 00:33:56.3123 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 00:33:56.3123 DEBUG Попытка входа
+2022-11-03 00:33:56.3123 INFO Успешный вход
+2022-11-03 00:34:17.9551 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 340
+2022-11-03 00:34:44.6682 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 311
+2022-11-03 10:33:04.7878 DEBUG Инициализация программы
+2022-11-03 10:33:05.2686 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 10:33:07.0621 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 10:33:07.0621 DEBUG Попытка входа
+2022-11-03 10:33:07.0621 INFO Успешный вход
+2022-11-03 10:33:14.2667 ERROR Ошибка:  System.ArgumentException: Extension 'xls' is not supported. Supported extensions are '.xlsx', '.xlsm', '.xltx' and '.xltm'.
+   в ClosedXML.Excel.XLWorkbook.GetSpreadsheetDocumentType(String filePath) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 468
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 418
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 360
+2022-11-03 10:34:06.2068 ERROR Ошибка:  System.ArgumentException: Extension 'xls' is not supported. Supported extensions are '.xlsx', '.xlsm', '.xltx' and '.xltm'.
+   в ClosedXML.Excel.XLWorkbook.GetSpreadsheetDocumentType(String filePath) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 468
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 418
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 360
+2022-11-03 10:34:07.9672 ERROR Ошибка:  System.ArgumentException: Extension 'xls' is not supported. Supported extensions are '.xlsx', '.xlsm', '.xltx' and '.xltm'.
+   в ClosedXML.Excel.XLWorkbook.GetSpreadsheetDocumentType(String filePath) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 468
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 418
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 360
+2022-11-03 10:34:08.0690 ERROR Ошибка:  System.ArgumentException: Extension 'xls' is not supported. Supported extensions are '.xlsx', '.xlsm', '.xltx' and '.xltm'.
+   в ClosedXML.Excel.XLWorkbook.GetSpreadsheetDocumentType(String filePath) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 468
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 418
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 360
+2022-11-03 10:34:08.2836 ERROR Ошибка:  System.ArgumentException: Extension 'xls' is not supported. Supported extensions are '.xlsx', '.xlsm', '.xltx' and '.xltm'.
+   в ClosedXML.Excel.XLWorkbook.GetSpreadsheetDocumentType(String filePath) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 468
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options) в C:\projects\closedxml\ClosedXML\Excel\XLWorkbook.cs:строка 418
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 360
+2022-11-03 10:35:23.3943 DEBUG Инициализация программы
+2022-11-03 10:35:23.4461 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 10:35:23.7012 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 10:35:23.7012 DEBUG Попытка входа
+2022-11-03 10:35:23.7012 INFO Успешный вход
+2022-11-03 10:35:32.7516 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 313
+2022-11-03 10:36:36.1199 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 313
+2022-11-03 10:37:53.5457 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 342
+2022-11-03 10:40:20.3987 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 342
+2022-11-03 10:47:52.4332 DEBUG Инициализация программы
+2022-11-03 10:47:52.4860 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-03 10:47:52.7251 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-03 10:47:52.7251 DEBUG Попытка входа
+2022-11-03 10:47:52.7251 INFO Успешный вход
+2022-11-03 10:47:59.4281 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 313

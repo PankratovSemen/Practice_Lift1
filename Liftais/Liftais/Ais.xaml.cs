@@ -16,6 +16,8 @@ using MySql.Data.MySqlClient;
 using NLog;
 using Excel = Microsoft.Office.Interop.Excel;
 using NLog;
+using ClosedXML.Excel;
+
 
 
 namespace Liftais
@@ -282,18 +284,18 @@ namespace Liftais
         {
             try
             {
-                Excel.Application excel1 = new Excel.Application();
-                excel1.Visible = true;
-                Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
-                Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
-
-
+                //Excel.Application excel1 = new Excel.Application();
+                //excel1.Visible = true;
+                //Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
+                //Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
+                //var path = Path.Com(Environment.CurrentDirectory, "Export", "data.xls");
+                var wb = new XLWorkbook();
+                var sh = wb.Worksheets.Add("Export");
                 for (int j = 0; j < dbj1.Columns.Count; j++)
                 {
-                    Excel.Range myRange = (Excel.Range)sheet1.Cells[1, j + 1];
-                    sheet1.Cells[1,j+1].Font.Bold = true;
-                    sheet1.Columns[j + 1].ColumnWidth = 15;
-                    myRange.Value = dbj1.Columns[j].Header;
+
+                    
+                    sh.Cell(1, j+1).SetValue(dbj1.Columns[j].Header);
                 }
 
                 int q = 1;
@@ -316,35 +318,35 @@ namespace Liftais
 
                             
                                 MessageBox.Show(row[i].ToString());
-                                excel1.Cells[a-j + 2, i+2 ] = row[i];
+                                sh.Cell(a-j + 2, i+2 ).SetValue(row[i]);
 
                             if (visiter_ch.Contains(row[i+1].ToString()))
                             {
-                                excel1.Cells[a-j + 2, i + 3] = row[i+1];
+                                sh.Cell(a-j + 2, i + 3).SetValue(row[i + 1]);
                             }
                            
                             if (resident_ch.Contains(row[i+3].ToString()))
                             {
-                                excel1.Cells[a-j+2, i + 5] = row[i+3];
+                                sh.Cell(a-j+2, i + 5).SetValue(row[i + 3]);
                             }
                             
                             if (events_ch.Contains(row[i+2].ToString()) )
                             {
                                 if (events_ch.Contains(row[i + 2].ToString()) != selection_ch.Contains(row[i]))
                                 {
-                                    excel1.Cells[a - j + 2, i + 4] = row[i + 2];
+                                    sh.Cell(a - j + 2, i + 4).SetValue(row[i + 2]);
                                 }
 
 
                             }
                             if (open_ch.Contains(row[i+4].ToString()))
                             {
-                                excel1.Cells[a-j+2, i +6] = row[i+4];
+                                sh.Cell(a-j+2, i +6).SetValue(row[i + 4]);
                             }
                             
                             if (close_ch.Contains(row[i+5].ToString()))
                             {
-                                excel1.Cells[a-j+2, i + 7] = row[i+5];
+                                sh.Cell(a-j+2, i + 7).SetValue(row[i + 5]);
                                 q = 0;
                             }
                             
@@ -352,10 +354,10 @@ namespace Liftais
                         }
                         else if (a==0)
                         {
-                            excel1.Cells[j + 2, i + 2] = row[i];
+                            sh.Cell(j + 2, i + 2).SetValue(row[i]);
                         }
 
-
+                        wb.SaveAs("C:\\Users\\Семён\\Documents\\Export_AIS\\data.xlsx");
 
 
 
