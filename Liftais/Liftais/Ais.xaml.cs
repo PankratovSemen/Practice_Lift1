@@ -284,11 +284,7 @@ namespace Liftais
         {
             try
             {
-                //Excel.Application excel1 = new Excel.Application();
-                //excel1.Visible = true;
-                //Excel.Workbook workbook = excel1.Workbooks.Add(System.Reflection.Missing.Value);
-                //Excel.Worksheet sheet1 = (Excel.Worksheet)workbook.Sheets[1];
-                //var path = Path.Com(Environment.CurrentDirectory, "Export", "data.xls");
+                
                 var wb = new XLWorkbook();
                 var sh = wb.Worksheets.Add("Export");
                 for (int j = 0; j < dbj1.Columns.Count; j++)
@@ -357,7 +353,7 @@ namespace Liftais
                             sh.Cell(j + 2, i + 2).SetValue(row[i]);
                         }
 
-                        wb.SaveAs("C:\\Users\\Семён\\Documents\\Export_AIS\\data.xlsx");
+                        wb.SaveAs("Export_AIS\\data.xlsx");
 
 
 
