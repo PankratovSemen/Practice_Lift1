@@ -420,14 +420,18 @@ namespace Liftais
                 string cmd = "INSERT INTO `magazine` (`id_visiter`, `id_event`, `id_resident`, `date_open`) VALUES (@vis, @eve, @res, @op);";
                 MySqlCommand command = new MySqlCommand(cmd, db.getconn());
                 command.Parameters.Add("@vis", MySqlDbType.VarChar).Value = id_vis_tb.Text;
-                command.Parameters.Add("@eve", MySqlDbType.VarChar).Value = null;
-                command.Parameters.Add("@res", MySqlDbType.VarChar).Value = null;
+                command.Parameters.Add("@eve", MySqlDbType.VarChar).Value = id_eve_tb.Text;
+                command.Parameters.Add("@res", MySqlDbType.VarChar).Value = id_res_tb.Text;
                 command.Parameters.Add("@op", MySqlDbType.DateTime).Value = DateTime.Now;
                 MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
                 DataTable dt = new DataTable("magazine");
                 dataAdp.SelectCommand = command;
                 dataAdp.Fill(dt);
                 db.closedconn();
+                MessageBox.Show("Запись создана");
+                id_res_tb.Clear();
+                id_vis_tb.Clear();
+                id_eve_tb.Clear();
             }
 
             catch (Exception ex)
@@ -469,6 +473,8 @@ namespace Liftais
             dataAdp.SelectCommand = comm;
             dataAdp.Fill(dt1);
             db.closedconn();
+            MessageBox.Show("Запись обновлена");
+            id_vis_tb_close.Clear();
         }
     }
 }
