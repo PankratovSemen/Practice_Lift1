@@ -438,7 +438,37 @@ namespace Liftais
 
         private void create_date_Click(object sender, RoutedEventArgs e)
         {
+            DB db = new DB();
+            db.openconn();
+            string cmd = "SELECT id_note FROM `magazine` ORDER BY id_visiter=@vis DESC LIMIT 1";
 
+            MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+            command.Parameters.Add("@vis", MySqlDbType.Int32).Value = id_vis_tb_close.Text;
+            command.ExecuteNonQuery();
+            MySqlDataAdapter dataAd = new MySqlDataAdapter(command);
+            dataAd.SelectCommand = command;
+            
+            DataTable dt = new DataTable("closer");
+            dataAd.Fill(dt);
+            int last_note = 0;
+            foreach (DataRow dataRow in dt.Rows)
+            {
+                foreach (var item in dataRow.ItemArray)
+                {
+                    last_note = Convert.ToInt32(item);
+                   
+                }
+            }
+
+            cmd = "UPDATE `magazine` SET `date_close` = @dc WHERE `magazine`. `id_note` = @id_n";
+            MySqlCommand comm = new MySqlCommand(cmd, db.getconn());
+            comm.Parameters.Add("@dc", MySqlDbType.DateTime).Value = DateTime.Now;
+            comm.Parameters.Add("@id_n", MySqlDbType.Int32).Value = last_note;
+            MySqlDataAdapter dataAdp = new MySqlDataAdapter(comm);
+            DataTable dt1 = new DataTable("up");
+            dataAdp.SelectCommand = comm;
+            dataAdp.Fill(dt1);
+            db.closedconn();
         }
     }
 }
