@@ -178,3 +178,8 @@ C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Cl
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\ExcelNumberFormat.xml
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Liftais.exe.manifest
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Liftais.application
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais.TrustInfo.xml
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais.exe.manifest
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais.application

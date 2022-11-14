@@ -14,11 +14,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
 using NLog;
-using Excel = Microsoft.Office.Interop.Excel;
-using NLog;
+
+
 using ClosedXML.Excel;
-
-
+using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace Liftais
 {
@@ -27,6 +26,8 @@ namespace Liftais
     /// </summary>
     public partial class Ais : Window
     {
+        public string logV;
+        public string roled;
         private static Logger logger = LogManager.GetCurrentClassLogger();
         public Ais()
         {
@@ -73,6 +74,15 @@ namespace Liftais
             dbj1.ItemsSource = dt.DefaultView;
             
             db.closedconn();
+           MainWindow mainWindow = new MainWindow();
+            MessageBox.Show(logV);
+            MessageBox.Show(roled);
+
+            if(roled!= "Администратор")
+            {
+                delbtn.Visibility=Visibility.Hidden;
+            }
+
         }
 
         private void Window_Activated(object sender, EventArgs e)
@@ -415,18 +425,28 @@ namespace Liftais
         {
             try
             {
+            string ev = id_eve_tb.Text;
+            string re = id_res_tb.Text;
+            if (ev == "")
+            {
+                ev = null;
+                MessageBox.Show("ev null");
+            }
+            if (re == "")
+            {
+                re = null;
+                MessageBox.Show("re null");
+            }
                 DB db = new DB();
                 db.openconn();
                 string cmd = "INSERT INTO `magazine` (`id_visiter`, `id_event`, `id_resident`, `date_open`) VALUES (@vis, @eve, @res, @op);";
                 MySqlCommand command = new MySqlCommand(cmd, db.getconn());
                 command.Parameters.Add("@vis", MySqlDbType.VarChar).Value = id_vis_tb.Text;
-                command.Parameters.Add("@eve", MySqlDbType.VarChar).Value = id_eve_tb.Text;
-                command.Parameters.Add("@res", MySqlDbType.VarChar).Value = id_res_tb.Text;
+
+            command.Parameters.Add("@eve", MySqlDbType.VarChar).Value = ev;
+            command.Parameters.Add("@res", MySqlDbType.VarChar).Value = re ;
                 command.Parameters.Add("@op", MySqlDbType.DateTime).Value = DateTime.Now;
-                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
-                DataTable dt = new DataTable("magazine");
-                dataAdp.SelectCommand = command;
-                dataAdp.Fill(dt);
+                 command.ExecuteScalar();
                 db.closedconn();
                 MessageBox.Show("Запись создана");
                 id_res_tb.Clear();
@@ -436,7 +456,8 @@ namespace Liftais
 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
+                logger.Error("Ошибка в окне вахтера: \n " + ex);
             }
         }
 
@@ -475,6 +496,29 @@ namespace Liftais
             db.closedconn();
             MessageBox.Show("Запись обновлена");
             id_vis_tb_close.Clear();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (roled == "Администратор")
+            {
+                DB db = new DB();
+                db.openconn();
+
+                for (int i = 0; i < selection_ch.Count; i++)
+                {
+                    string cmd = "DELETE FROM magazine WHERE id_note = @del";
+                    MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                    command.Parameters.Add("@del", MySqlDbType.Int32).Value = selection_ch[i].ToString();
+                    command.ExecuteNonQuery();
+
+
+                }
+                db.closedconn();
+                MessageBox.Show(selection_ch[0]);
+            }
+            else
+                delbtn.Visibility = Visibility.Hidden;
         }
     }
 }

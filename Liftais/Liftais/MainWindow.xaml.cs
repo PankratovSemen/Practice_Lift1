@@ -24,10 +24,13 @@ namespace Liftais
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
+        
+       
         private void SingIn_Click(object sender, RoutedEventArgs y)
         {
            
@@ -41,7 +44,7 @@ namespace Liftais
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
                 logger.Debug("Выполнение запроса Sql + Подключение к Базе данных");
-                MySqlCommand command = new MySqlCommand("SELECT * FROM usr WHERE login = @lg AND password = @ps", db.getconn());
+                MySqlCommand command = new MySqlCommand("SELECT role FROM usr WHERE login = @lg AND password = @ps", db.getconn());
                 command.Parameters.Add("@lg", MySqlDbType.VarChar).Value = logins;
                 command.Parameters.Add("@ps", MySqlDbType.VarChar).Value = passwords;
                 adapter.SelectCommand = command;
@@ -53,6 +56,9 @@ namespace Liftais
                     logger.Info("Успешный вход");
                     Ais ais1 = new Ais();
                     this.Hide();
+                    ais1.logV = login.Text;
+                    var g = table.Rows[0].ItemArray[0];
+                    ais1.roled = g.ToString();
                     ais1.ShowDialog();
                     this.Show();
                 }
