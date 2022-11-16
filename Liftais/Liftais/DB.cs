@@ -17,7 +17,7 @@ namespace Liftais
         
 
         
-        MySqlConnection conn = new MySqlConnection("server = 127.0.0.1; port = 3307; username = root;database = lift");
+        MySqlConnection conn = new MySqlConnection("server = 192.168.0.150; port = 3307; username = root; password = root;database = lift");
 
         public void openconn()
         {

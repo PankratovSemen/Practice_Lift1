@@ -23,8 +23,8 @@
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18">
                 <TextBlock x:Name="id_note">Номер записи</TextBlock>
                 <TextBlock x:Name="id_visiter">Номер посетителя</TextBlock>
-                <TextBlock x:Name="id_event">Номер события</TextBlock>
-                <TextBlock x:Name="id_resident">Номер резидента</TextBlock>
+                <TextBlock x:Name="id_event">Событие</TextBlock>
+                <TextBlock x:Name="id_resident">Резидент</TextBlock>
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
@@ -63,21 +63,20 @@
 
 
         </DataGrid>
-        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Hidden">
+        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Visible">
             <TextBlock TextWrapping="Wrap" Text="Открытие записи" FontSize="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
             <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,0,0" Height="83"/>
             <StackPanel Height="513" Width="956" HorizontalAlignment="Left" Background="#FFD9D9D9">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Width="194" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="5,47,0,0"/>
+               
                 <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0"/>
-                <TextBlock TextWrapping="Wrap" Text="Номер мероприятия" FontSize="20" FontWeight="Bold" Width="222" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="4,20,1,-4"/>
-                <TextBox x:Name="id_eve_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="222,-18,-2,0"/>
-                <CheckBox x:Name="ne" Content="Пустое значение" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-26,-38,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Название мероприятия" FontSize="20" FontWeight="Bold" Width="153" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="4,20,1,-4"/>
+                <ComboBox x:Name="event_combo" Width="185" HorizontalAlignment="Center" Margin="-331,-51,0,0" Height="29" ItemsSource="{Binding}"/>
                 <TextBlock TextWrapping="Wrap" Text="Номер резидента" FontSize="20" FontWeight="Bold" Width="222" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="0,22,0,0"/>
-                <TextBox x:Name="id_res_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="222,-25,0,0"/>
-                <CheckBox x:Name="nr" Content="Пустое значение" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-24,-35,0"/>
                 <Button x:Name="create_note" Content="Записать" HorizontalAlignment="Center" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" Margin="-326,35,9,0" Click="create_note_Click"/>
                 <StackPanel Height="100"/>
+                <ComboBox x:Name="resident_combo" Width="180" HorizontalAlignment="Center" Margin="-333,-411,0,0" Height="29"/>
 
             </StackPanel>
             <StackPanel Height="514" Background="#FFD9D9D9" Width="956" HorizontalAlignment="Right" Margin="-4,-514,-48,0">

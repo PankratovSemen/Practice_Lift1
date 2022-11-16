@@ -76,14 +76,13 @@ namespace Liftais
                 logger.Error("Ошибка " + e);
                 MessageBox.Show("Ошибка подключения к базе данных" , "Ошибка");
             }
-
-
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-           
+            finally
+            {
+                System.Environment.Exit(0);
+            }
 
         }
+
+        
     }
 }

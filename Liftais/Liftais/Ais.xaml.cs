@@ -64,24 +64,56 @@ namespace Liftais
             //При загрузке формы вывести таблицу журнал посетителей
             DB db = new DB();
             db.openconn();
-            string cmd = "SELECT * FROM magazine";
+            string cmd = "SELECT * FROM magazine"; //Выделение таблицы бд
             MySqlCommand command = new MySqlCommand(cmd,db.getconn());
             command.ExecuteNonQuery();
 
             MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
             DataTable dt = new DataTable("magazine");
             dataAdp.Fill(dt);
-            dbj1.ItemsSource = dt.DefaultView;
+            
+            dbj1.ItemsSource = dt.DefaultView;//Заполнение dataGrid базой данных
             
             db.closedconn();
            MainWindow mainWindow = new MainWindow();
-            MessageBox.Show(logV);
-            MessageBox.Show(roled);
+           
 
-            if(roled!= "Администратор")
+            if(roled!= "Администратор") //Распределение прав доступа к компонентам для роли администратор
             {
                 delbtn.Visibility=Visibility.Hidden;
             }
+
+            //Заполнение значениями из таблицы events базы данных
+            db.openconn();
+            cmd = "SELECT * FROM events";
+            MySqlCommand command1 = new MySqlCommand(cmd, db.getconn());
+            command1.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp1 = new MySqlDataAdapter(command1);
+            DataSet ds = new DataSet();
+            dataAdp1.Fill(ds, "events");
+
+            event_combo.ItemsSource = ds.Tables[0].DefaultView;
+            event_combo.DisplayMemberPath = ds.Tables[0].Columns["Title_event"].ToString();
+            event_combo.SelectedValuePath = ds.Tables[0].Columns["Title_event"].ToString();
+
+
+            //Заполнение значениями из таблицы residents базы данных
+            cmd = "SELECT * FROM residents";
+            MySqlCommand command2 = new MySqlCommand(cmd, db.getconn());
+            command2.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp2 = new MySqlDataAdapter(command2);
+            DataSet ds1 = new DataSet();
+            dataAdp2.Fill(ds1, "residents");
+
+            resident_combo.ItemsSource = ds1.Tables[0].DefaultView;
+            resident_combo.DisplayMemberPath = ds1.Tables[0].Columns["title"].ToString();
+            resident_combo.SelectedValuePath = ds1.Tables[0].Columns["title"].ToString();
+            db.closedconn();
+
+
+
 
         }
 
@@ -101,8 +133,35 @@ namespace Liftais
 
             db.closedconn();
 
-            
-            
+            //Заполнение значениями из таблицы events базы данных
+            db.openconn();
+            cmd = "SELECT * FROM events";
+            MySqlCommand command1 = new MySqlCommand(cmd, db.getconn());
+            command1.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp1 = new MySqlDataAdapter(command1);
+            DataSet ds = new DataSet();
+            dataAdp1.Fill(ds, "events");
+
+            event_combo.ItemsSource = ds.Tables[0].DefaultView;
+            event_combo.DisplayMemberPath = ds.Tables[0].Columns["Title_event"].ToString();
+            event_combo.SelectedValuePath = ds.Tables[0].Columns["Title_event"].ToString();
+
+
+            //Заполнение значениями из таблицы residents базы данных
+            cmd = "SELECT * FROM residents";
+            MySqlCommand command2 = new MySqlCommand(cmd, db.getconn());
+            command2.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp2 = new MySqlDataAdapter(command2);
+            DataSet ds1 = new DataSet();
+            dataAdp2.Fill(ds1, "residents");
+
+            resident_combo.ItemsSource = ds1.Tables[0].DefaultView;
+            resident_combo.DisplayMemberPath = ds1.Tables[0].Columns["title"].ToString();
+            resident_combo.SelectedValuePath = ds1.Tables[0].Columns["title"].ToString();
+            db.closedconn();
+
 
         }
 
@@ -166,7 +225,7 @@ namespace Liftais
 
                         db.closedconn();
                     }
-                    else if(lists.Text=="Номер события")
+                    else if(lists.Text=="Событие")
                     {
                         DB db = new DB();
                         db.openconn();
@@ -181,7 +240,7 @@ namespace Liftais
 
                         db.closedconn();
                     }
-                    else if(lists.Text=="Номер резидента")
+                    else if(lists.Text=="Резидент")
                     {
                         DB db = new DB();
                         db.openconn();
@@ -425,18 +484,19 @@ namespace Liftais
         {
             try
             {
-            string ev = id_eve_tb.Text;
-            string re = id_res_tb.Text;
-            if (ev == "")
-            {
-                ev = null;
-                MessageBox.Show("ev null");
-            }
+                string ev = event_combo.Text;
+            string re = resident_combo.Text;
+            
             if (re == "")
             {
                 re = null;
                 MessageBox.Show("re null");
             }
+                if (ev == "")
+                {
+                    ev = null;
+                    MessageBox.Show("ev null");
+                }
                 DB db = new DB();
                 db.openconn();
                 string cmd = "INSERT INTO `magazine` (`id_visiter`, `id_event`, `id_resident`, `date_open`) VALUES (@vis, @eve, @res, @op);";
@@ -449,9 +509,9 @@ namespace Liftais
                  command.ExecuteScalar();
                 db.closedconn();
                 MessageBox.Show("Запись создана");
-                id_res_tb.Clear();
+                
                 id_vis_tb.Clear();
-                id_eve_tb.Clear();
+                
             }
 
             catch (Exception ex)
