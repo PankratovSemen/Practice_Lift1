@@ -500,45 +500,7 @@ namespace Liftais
                                 sh.Cell(b + j, i + 11).SetValue(row[i + 9]);
                                 sh.Cell(b + j, i + 12).SetValue(row[i + 10]);
                                 MessageBox.Show(row[i].ToString());
-                                //if(visiter_id_ch.Contains(row[i].ToString()))
-                                //{
-                                   
-                                //}
-                                //if (surname_ch.Contains(row[i + 1]))
-                                //{
-                                    
-                                //}
-                                //if (middle_name_ch.Contains(row[i + 2].ToString()))
-                                //{
-                                    
-                                //}
-                                //if (birth_ch.Contains(row[i + 3].ToString()))
-                                //{
-                                    
-                                //}
-                                //if (email_ch.Contains(row[i + 5].ToString()))
-                                //{
-                                    
-                                //}
-                                //if (phone_ch.Contains(row[i + 4].ToString()))
-                                //{
-
-                                  
-                                //}
-
-                                //if (place_ch.Contains(row[i + 6].ToString()))
-                                //{
-                                  
-                                //}
-                                //if (social_net_ch.Contains(row[i+7].ToString()))
-                                //{
-                                    
-                                //}
-                                //if (find_us_ch.Contains(row[i+8].ToString()))
-                                //{
-                                   
-                                //}
-
+                               
                                 
                              
                                 
@@ -703,17 +665,38 @@ namespace Liftais
                 DB db = new DB();
                 db.openconn();
 
-                for (int i = 0; i < selection_ch.Count; i++)
+                if (dbj1.Visibility == Visibility.Visible)
                 {
-                    string cmd = "DELETE FROM magazine WHERE id_note = @del";
-                    MySqlCommand command = new MySqlCommand(cmd, db.getconn());
-                    command.Parameters.Add("@del", MySqlDbType.Int32).Value = selection_ch[i].ToString();
-                    command.ExecuteNonQuery();
-                    selection_ch.RemoveAt(i);
-
+                    for (int i = 0; i < selection_ch.Count; i++)
+                    {
+                        string cmd = "DELETE FROM magazine WHERE id_note = @del";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@del", MySqlDbType.Int32).Value = selection_ch[i].ToString();
+                        command.ExecuteNonQuery();
+                        //selection_ch.RemoveAt(i);
+                       
+                        a--;
+                        
+                    }
+                    counts.Content = "Элементов: " + a;
+                    MessageBox.Show("Удаление завершено");
+                }
+                else if (db_visiters.Visibility == Visibility.Visible)
+                {
+                    for (int i = 0; i < visiter_id_ch.Count; i++)
+                    {
+                        string cmd = "DELETE FROM visiter WHERE id_visiter = @del";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@del", MySqlDbType.Int32).Value = visiter_id_ch[i].ToString();
+                        command.ExecuteNonQuery();
+                        //visiter_id_ch.RemoveAt(i);
+                        b--;
+                        counts.Content = "Элементов: " + b;
+                    }
+                    MessageBox.Show("Удаление завершено");
                 }
                 db.closedconn();
-                MessageBox.Show(selection_ch[0]);
+              
             }
             else
                 delbtn.Visibility = Visibility.Hidden;
@@ -727,6 +710,8 @@ namespace Liftais
             lists.Visibility = Visibility.Hidden;
             JP.Visibility = Visibility.Hidden;
             Reg_vis.Visibility = Visibility.Hidden;
+            Visiter_View.Visibility = Visibility.Visible;
+            Reg_visiters_note.Visibility = Visibility.Visible;
             visits++;
             db_visiters.Visibility = Visibility.Visible;
             DB db = new DB();
@@ -744,12 +729,15 @@ namespace Liftais
 
         private void TextBlock_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
         {
+            lists.Visibility = Visibility.Visible;
             dbj1.Visibility = Visibility.Visible;
             cr_notes.Visibility = Visibility.Hidden;
             JP.Visibility = Visibility.Visible;
             Reg_vis.Visibility = Visibility.Visible;
             db_visiters.Visibility = Visibility.Hidden;
             visits = 0;
+            Visiter_View.Visibility = Visibility.Hidden;
+            Reg_visiters_note.Visibility = Visibility.Hidden;
         }
 
 
@@ -817,6 +805,16 @@ namespace Liftais
 
         }
 
-       
+        private void Visiter_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            db_visiters.Visibility = Visibility.Visible;
+            dbj1.Visibility = Visibility.Hidden;
+            cr_notes.Visibility = Visibility.Hidden;
+        }
+
+        private void Reg_visiters_note_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
