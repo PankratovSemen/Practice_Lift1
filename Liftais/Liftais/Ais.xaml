@@ -97,7 +97,7 @@
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <CheckBox x:Name="selch1" PreviewMouseLeftButtonDown="selch1_PreviewMouseLeftButtonDown_1"></CheckBox>
+                                <CheckBox x:Name="selch1" PreviewMouseLeftButtonDown="selch1_PreviewMouseLeftButtonDown_1" ></CheckBox>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
