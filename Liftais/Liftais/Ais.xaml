@@ -13,14 +13,18 @@
         </StackPanel>
         <DockPanel x:Name ="left_panel" LastChildFill="False" Width="422" HorizontalAlignment="Left" Background="#6c6c6c" Visibility="Hidden" Margin="0,38,0,0"  Panel.ZIndex="1" MouseLeave="left_panel_MouseLeave">
             <TextBlock Margin="141,18,0,0" TextWrapping="Wrap" Text="Меню" FontSize="50" Width="177" Height="59" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White"/>
+            <TextBlock Width="238" Margin="-221,114,0,16" LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Журнал посещений" Height="40" VerticalAlignment="Top" Foreground="White" PreviewMouseDown="TextBlock_PreviewMouseDown_1" />
+            <TextBlock LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Посетители" Foreground="White" Width="140" Margin="-248,190,0,0" Height="34" VerticalAlignment="Top" PreviewMouseDown="TextBlock_PreviewMouseDown" />
         </DockPanel>
         <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
         <StackPanel x:Name="sp2" Background="#FF6D6C6C" Height="44" VerticalAlignment="Top" Margin="1,45,-1,0">
-            <Label x:Name="JP" Content="Журнал посещений" Foreground="Blue" Width="155" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="JP_MouseLeftButtonDown"/>
-            <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" />
+            <Label x:Name="JP" Content="Журнал посещений" Foreground="Blue" Width="155" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="JP_MouseLeftButtonDown" Visibility="Hidden"/>
+            <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Hidden" />
+            <Label x:Name="Visiter_View" Content="Просмотр посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Visible" Margin="0,-21,0,0" />
+            <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Visible" />
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
-            <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18">
+            <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">
                 <TextBlock x:Name="id_note">Номер записи</TextBlock>
                 <TextBlock x:Name="id_visiter">Номер посетителя</TextBlock>
                 <TextBlock x:Name="id_event">Событие</TextBlock>
@@ -42,7 +46,7 @@
 
 
         </StackPanel>
-        <DataGrid x:Name="dbj1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding Test}" SelectionMode="Single" CanUserAddRows="False" Visibility="Visible" >
+        <DataGrid x:Name="dbj1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding Test}" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" >
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
@@ -63,13 +67,14 @@
 
 
         </DataGrid>
-        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Visible">
+
+        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Hidden">
             <TextBlock TextWrapping="Wrap" Text="Открытие записи" FontSize="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
             <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,0,0" Height="83"/>
             <StackPanel Height="513" Width="956" HorizontalAlignment="Left" Background="#FFD9D9D9">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Width="194" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="5,47,0,0"/>
-               
+
                 <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0"/>
                 <TextBlock TextWrapping="Wrap" Text="Название мероприятия" FontSize="20" FontWeight="Bold" Width="153" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="4,20,1,-4"/>
                 <ComboBox x:Name="event_combo" Width="185" HorizontalAlignment="Center" Margin="-331,-51,0,0" Height="29" ItemsSource="{Binding}"/>
@@ -86,6 +91,31 @@
             </StackPanel>
             <StackPanel Height="100"/>
         </StackPanel>
+        <StackPanel>
+            <DataGrid x:Name="db_visiters" Height="493" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test1}" HorizontalContentAlignment="Center" Margin="0,124,0,0" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox x:Name="selch1" PreviewMouseLeftButtonDown="selch1_PreviewMouseLeftButtonDown_1"></CheckBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Номер посетителя" Width="*" Binding="{Binding Path=id_visiter }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Фамилия" Width="*" Binding="{Binding Path=surname }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Имя" Width="*" Binding="{Binding Path=name }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Отчество" Width="*" Binding="{Binding Path=middle_name }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Дата рождения" Width="*" Binding="{Binding Path=birthday }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Номер телефона" Width="*" Binding="{Binding Path=phone }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Email" Width="*" Binding="{Binding Path=email }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Место учебы/Работы" Width="*" Binding="{Binding Path=place }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Социальная сеть" Width="*" Binding="{Binding Path=social_networks }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Откуда узнали о нас" Width="*" Binding="{Binding Path=find_us }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Дата присоединения" Width="*" Binding="{Binding Path=date_join }" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
 
 
     </Grid>

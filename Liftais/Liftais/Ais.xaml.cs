@@ -26,6 +26,7 @@ namespace Liftais
     /// </summary>
     public partial class Ais : Window
     {
+        public int visits = 0;
         public string logV;
         public string roled;
         private static Logger logger = LogManager.GetCurrentClassLogger();
@@ -479,7 +480,7 @@ namespace Liftais
             JP.Foreground = Brushes.Blue;
             cr_notes.Visibility = Visibility.Hidden;
         }
-
+        //Создание записей в таблице magazine
         private void create_note_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -516,13 +517,14 @@ namespace Liftais
 
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.ToString());
+                //Запись ошибки в лог файл
                 logger.Error("Ошибка в окне вахтера: \n " + ex);
             }
         }
 
         private void create_date_Click(object sender, RoutedEventArgs e)
         {
+            //Заполнение даты выхода по номеру посетителя с помощью обновления записи
             DB db = new DB();
             db.openconn();
             string cmd = "SELECT id_note FROM `magazine` ORDER BY id_visiter=@vis DESC LIMIT 1";
@@ -560,6 +562,7 @@ namespace Liftais
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Удаление записей из таблицы 
             if (roled == "Администратор")
             {
                 DB db = new DB();
@@ -571,7 +574,7 @@ namespace Liftais
                     MySqlCommand command = new MySqlCommand(cmd, db.getconn());
                     command.Parameters.Add("@del", MySqlDbType.Int32).Value = selection_ch[i].ToString();
                     command.ExecuteNonQuery();
-
+                    selection_ch.RemoveAt(i);
 
                 }
                 db.closedconn();
@@ -579,6 +582,46 @@ namespace Liftais
             }
             else
                 delbtn.Visibility = Visibility.Hidden;
+        }
+
+        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Переход в меню Посетители
+            dbj1.Visibility = Visibility.Hidden;
+            cr_notes.Visibility = Visibility.Hidden;
+            lists.Visibility = Visibility.Hidden;
+            JP.Visibility = Visibility.Hidden;
+            Reg_vis.Visibility = Visibility.Hidden;
+            visits++;
+            db_visiters.Visibility = Visibility.Visible;
+            DB db = new DB();
+            db.openconn();
+            string cmd = "SELECT * FROM visiter";
+            MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+            command.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+            DataTable dt = new DataTable("resident");
+            dataAdp.Fill(dt);
+            db_visiters.ItemsSource = dt.DefaultView;
+
+        }
+
+        private void TextBlock_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            dbj1.Visibility = Visibility.Visible;
+            cr_notes.Visibility = Visibility.Hidden;
+            JP.Visibility = Visibility.Visible;
+            Reg_vis.Visibility = Visibility.Visible;
+            db_visiters.Visibility = Visibility.Hidden;
+            visits = 0;
+        }
+
+       
+
+        private void selch1_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
