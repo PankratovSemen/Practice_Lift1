@@ -1,0 +1,321 @@
+2022-11-18 21:25:44.9825 DEBUG Инициализация программы
+2022-11-18 21:25:45.3960 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:25:51.5543 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:25:51.5543 DEBUG Попытка входа
+2022-11-18 21:25:51.5543 INFO Успешный вход
+2022-11-18 21:30:05.2174 DEBUG Инициализация программы
+2022-11-18 21:30:05.4492 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:30:06.5772 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:30:06.5772 DEBUG Попытка входа
+2022-11-18 21:30:06.5772 INFO Успешный вход
+2022-11-18 21:32:06.4246 DEBUG Инициализация программы
+2022-11-18 21:32:06.4784 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:32:07.2472 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:32:07.2472 DEBUG Попытка входа
+2022-11-18 21:32:07.2472 INFO Успешный вход
+2022-11-18 21:33:19.2386 DEBUG Инициализация программы
+2022-11-18 21:33:19.2914 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:33:20.3110 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:33:20.3110 DEBUG Попытка входа
+2022-11-18 21:33:20.3110 INFO Успешный вход
+2022-11-18 21:34:30.0814 DEBUG Инициализация программы
+2022-11-18 21:34:30.1333 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:34:30.9400 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:34:30.9400 DEBUG Попытка входа
+2022-11-18 21:34:30.9400 INFO Успешный вход
+2022-11-18 21:35:51.3532 DEBUG Инициализация программы
+2022-11-18 21:35:51.4061 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:35:51.6395 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:35:51.6395 DEBUG Попытка входа
+2022-11-18 21:35:51.6395 INFO Успешный вход
+2022-11-18 21:38:36.3957 DEBUG Инициализация программы
+2022-11-18 21:38:36.4545 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:38:36.7737 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:38:36.7737 DEBUG Попытка входа
+2022-11-18 21:38:36.7737 INFO Успешный вход
+2022-11-18 21:39:41.4292 DEBUG Инициализация программы
+2022-11-18 21:39:41.4811 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:39:41.8655 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:39:41.8655 DEBUG Попытка входа
+2022-11-18 21:39:41.8655 INFO Успешный вход
+2022-11-18 21:49:48.9879 DEBUG Инициализация программы
+2022-11-18 21:49:49.0408 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:49:49.2865 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:49:49.2865 DEBUG Попытка входа
+2022-11-18 21:49:49.2865 INFO Успешный вход
+2022-11-18 21:51:46.0845 DEBUG Инициализация программы
+2022-11-18 21:51:46.1373 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 21:51:46.3755 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 21:51:46.3755 DEBUG Попытка входа
+2022-11-18 21:51:46.3755 INFO Успешный вход
+2022-11-18 23:20:59.3972 DEBUG Инициализация программы
+2022-11-18 23:21:00.7385 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:21:02.4473 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:21:02.4473 DEBUG Попытка входа
+2022-11-18 23:21:02.4473 INFO Успешный вход
+2022-11-18 23:21:21.0999 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 918
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:22:57.6651 DEBUG Инициализация программы
+2022-11-18 23:22:57.7179 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:22:58.0928 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:22:58.0928 DEBUG Попытка входа
+2022-11-18 23:22:58.0928 INFO Успешный вход
+2022-11-18 23:23:11.5724 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Convert.ToInt32(String value)
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 913
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:24:44.8527 DEBUG Инициализация программы
+2022-11-18 23:24:44.9056 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:24:45.1426 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:24:45.1426 DEBUG Попытка входа
+2022-11-18 23:24:45.1426 INFO Успешный вход
+2022-11-18 23:24:52.8997 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Convert.ToInt32(String value)
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 913
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:31:13.1001 DEBUG Инициализация программы
+2022-11-18 23:31:15.7509 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:31:21.6781 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:31:21.6781 DEBUG Попытка входа
+2022-11-18 23:31:21.6781 INFO Успешный вход
+2022-11-18 23:36:03.9313 DEBUG Инициализация программы
+2022-11-18 23:36:04.4149 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:36:06.6822 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:36:06.6822 DEBUG Попытка входа
+2022-11-18 23:36:06.6822 INFO Успешный вход
+2022-11-18 23:38:24.6404 DEBUG Инициализация программы
+2022-11-18 23:38:24.6933 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:38:25.0268 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:38:25.0268 DEBUG Попытка входа
+2022-11-18 23:38:25.0268 INFO Успешный вход
+2022-11-18 23:38:36.3150 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Convert.ToInt32(String value)
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 917
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:39:39.7281 DEBUG Инициализация программы
+2022-11-18 23:39:39.7805 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:39:40.4102 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:39:40.4102 DEBUG Попытка входа
+2022-11-18 23:39:40.4102 INFO Успешный вход
+2022-11-18 23:39:54.9655 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Convert.ToInt32(String value)
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 917
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:41:05.0229 DEBUG Инициализация программы
+2022-11-18 23:41:05.0748 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:41:05.4570 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:41:05.4570 DEBUG Попытка входа
+2022-11-18 23:41:05.4570 INFO Успешный вход
+2022-11-18 23:41:13.5891 ERROR Ошибка System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Convert.ToInt32(String value)
+   в Liftais.Ais.Search_visiters_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 919
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-18 23:48:53.7964 DEBUG Инициализация программы
+2022-11-18 23:48:54.7066 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-18 23:48:57.1541 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-18 23:48:57.1541 DEBUG Попытка входа
+2022-11-18 23:48:57.1541 INFO Успешный вход

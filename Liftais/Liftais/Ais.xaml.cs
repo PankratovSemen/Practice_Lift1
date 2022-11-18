@@ -729,6 +729,7 @@ namespace Liftais
 
         private void TextBlock_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
         {
+            //Переход в меню журнал посещений
             lists.Visibility = Visibility.Visible;
             dbj1.Visibility = Visibility.Visible;
             cr_notes.Visibility = Visibility.Hidden;
@@ -807,7 +808,10 @@ namespace Liftais
 
         private void Visiter_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            //Открытие вкладки Просмотр посетителей
             db_visiters.Visibility = Visibility.Visible;
+            lists.Visibility = Visibility.Hidden;
+            select_visiters.Visibility = Visibility.Visible;
             dbj1.Visibility = Visibility.Hidden;
             cr_notes.Visibility = Visibility.Hidden;
         }
@@ -815,6 +819,118 @@ namespace Liftais
         private void Reg_visiters_note_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void Search_visiters_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            string s = Search_visiters.Text;
+            if (e.Key == Key.Enter)
+            {
+
+
+                if (Search_visiters.Text == "")
+                {
+                    DB db = new DB();
+                    db.openconn();
+                    string cmd = "SELECT * FROM visiter";
+                    MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                    command.ExecuteNonQuery();
+
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                    DataTable dt = new DataTable("visiter");
+                    dataAdp.Fill(dt);
+                    db_visiters.ItemsSource = dt.DefaultView;
+
+                    db.closedconn();
+
+                    select_visiters.Text = "";
+                }
+                else if (Search_visiters.Text != "")
+                {
+
+
+                    if (select_visiters.Text == "Номер посетителя")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM visiter WHERE id_visiter LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_visiters.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                    else if (select_visiters.Text == "Фамилия")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM visiter WHERE surname LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_visiters.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                    else if (select_visiters.Text == "Имя")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM visiter WHERE name LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_visiters.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                    else if (select_visiters.Text == "Отчество")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM visiter WHERE middle_name LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_visiters.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                    
+                    else if (select_visiters.Text == "Возраст")
+                    {
+                        
+                        DB db = new DB();
+                        db.openconn();
+                        
+                        int agev = Convert.ToInt32(s);
+                        
+                        string cmd = "SELECT * FROM visiter WHERE TIMESTAMPDIFF(YEAR,birthday, CURDATE()) = @age";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@age", MySqlDbType.Int32).Value = agev;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                }
+            }
         }
     }
 }

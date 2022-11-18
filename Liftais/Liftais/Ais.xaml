@@ -36,9 +36,17 @@
                     </LinearGradientBrush>
                 </ComboBox.Background>
             </ComboBox>
-            <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="959,3,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2"/>
+            <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="959,3,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
+            <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2"/>
             <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16"/>
+            <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-53,242,0" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Right">
+                <TextBlock x:Name="id_visiters">Номер посетителя</TextBlock>
+                <TextBlock x:Name="surname">Фамилия</TextBlock>
+                <TextBlock x:Name="name">Имя</TextBlock>
+                <TextBlock x:Name="middle_name">Отчество</TextBlock>
+                <TextBlock x:Name="year_old">Возраст</TextBlock>
+            </ComboBox>
         </StackPanel>
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
             <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1" Click="btnexp_Click"/>
