@@ -1,0 +1,289 @@
+2022-11-19 17:40:59.9759 DEBUG Инициализация программы
+2022-11-19 17:41:00.5232 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 17:41:01.9334 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 17:41:01.9334 DEBUG Попытка входа
+2022-11-19 17:41:01.9334 INFO Успешный вход
+2022-11-19 17:58:19.2435 DEBUG Инициализация программы
+2022-11-19 17:58:19.4197 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 17:58:19.8223 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 17:58:19.8223 DEBUG Попытка входа
+2022-11-19 17:58:19.8223 INFO Успешный вход
+2022-11-19 17:59:05.1529 DEBUG Инициализация программы
+2022-11-19 17:59:05.2058 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 17:59:05.3779 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 17:59:05.3779 DEBUG Попытка входа
+2022-11-19 17:59:05.3779 INFO Успешный вход
+2022-11-19 18:00:10.8010 DEBUG Инициализация программы
+2022-11-19 18:00:10.8539 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:00:11.0479 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:00:11.0479 DEBUG Попытка входа
+2022-11-19 18:00:11.0479 INFO Успешный вход
+2022-11-19 18:02:14.3531 DEBUG Инициализация программы
+2022-11-19 18:02:14.4059 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:02:14.6577 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:02:14.6577 DEBUG Попытка входа
+2022-11-19 18:02:14.6577 INFO Успешный вход
+2022-11-19 18:29:04.3811 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 785
+2022-11-19 18:29:07.4213 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 803
+2022-11-19 18:29:10.6846 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 785
+2022-11-19 18:29:14.0929 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 785
+2022-11-19 18:29:23.1724 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 785
+2022-11-19 18:29:26.0603 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 803
+2022-11-19 18:29:28.9092 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 785
+2022-11-19 18:29:32.6292 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы visiter ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 803
+2022-11-19 18:31:56.6398 DEBUG Инициализация программы
+2022-11-19 18:31:56.6937 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:31:57.0560 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:31:57.0560 DEBUG Попытка входа
+2022-11-19 18:31:57.0560 INFO Успешный вход
+2022-11-19 18:32:03.9419 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы resident ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 786
+2022-11-19 18:33:01.7089 ERROR Ошибка: 
+System.ArgumentException: date_join не является для таблицы resident ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 786
+2022-11-19 18:35:58.4344 DEBUG Инициализация программы
+2022-11-19 18:35:58.4873 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:35:58.7381 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:35:58.7381 DEBUG Попытка входа
+2022-11-19 18:35:58.7381 INFO Успешный вход
+2022-11-19 18:40:46.3386 DEBUG Инициализация программы
+2022-11-19 18:40:46.3924 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:40:46.7824 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:40:46.7824 DEBUG Попытка входа
+2022-11-19 18:40:46.7824 INFO Успешный вход
+2022-11-19 18:46:52.8702 DEBUG Инициализация программы
+2022-11-19 18:46:52.9241 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:46:53.3623 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:46:53.3623 DEBUG Попытка входа
+2022-11-19 18:46:53.3623 INFO Успешный вход
+2022-11-19 18:51:54.8140 DEBUG Инициализация программы
+2022-11-19 18:51:54.8669 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:51:55.1121 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:51:55.1121 DEBUG Попытка входа
+2022-11-19 18:51:55.1121 INFO Успешный вход
+2022-11-19 18:57:11.2863 DEBUG Инициализация программы
+2022-11-19 18:57:11.3398 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 18:57:11.7733 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 18:57:11.7733 DEBUG Попытка входа
+2022-11-19 18:57:11.7733 INFO Успешный вход
+2022-11-19 21:43:52.4060 DEBUG Инициализация программы
+2022-11-19 21:43:52.8020 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 21:43:54.8223 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 21:43:54.8223 DEBUG Попытка входа
+2022-11-19 21:43:54.8223 INFO Успешный вход
+2022-11-19 21:46:12.5730 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1043
+2022-11-19 21:50:08.3042 DEBUG Инициализация программы
+2022-11-19 21:50:08.3586 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 21:50:09.2217 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 21:50:09.2217 DEBUG Попытка входа
+2022-11-19 21:50:09.2217 INFO Успешный вход
+2022-11-19 21:51:09.9844 DEBUG Инициализация программы
+2022-11-19 21:51:10.0382 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 21:51:10.2154 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 21:51:10.2154 DEBUG Попытка входа
+2022-11-19 21:51:10.2154 INFO Успешный вход
+2022-11-19 21:52:18.0967 DEBUG Инициализация программы
+2022-11-19 21:52:18.1476 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 21:52:18.3251 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 21:52:18.3251 DEBUG Попытка входа
+2022-11-19 21:52:18.3251 INFO Успешный вход
+2022-11-19 21:53:15.1206 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:22.8781 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:32.5741 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:32.7925 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:32.9426 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:33.0680 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:33.3105 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:53:33.3229 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 21:54:34.3831 DEBUG Инициализация программы
+2022-11-19 21:54:34.4360 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 21:54:34.7749 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 21:54:34.7749 DEBUG Попытка входа
+2022-11-19 21:54:34.7749 INFO Успешный вход
+2022-11-19 22:00:05.1414 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19.11.2022' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 22:00:10.1168 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19.11.2022' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1045
+2022-11-19 22:37:54.3164 DEBUG Инициализация программы
+2022-11-19 22:37:54.5095 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 22:37:57.9944 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 22:37:57.9944 DEBUG Попытка входа
+2022-11-19 22:37:57.9944 INFO Успешный вход
+2022-11-19 22:39:26.5340 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19 ноября 2022 г.' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1046
+2022-11-19 22:41:38.7805 DEBUG Инициализация программы
+2022-11-19 22:41:38.8736 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 22:41:40.3807 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 22:41:40.3807 DEBUG Попытка входа
+2022-11-19 22:41:40.3807 INFO Успешный вход
+2022-11-19 22:42:31.4061 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19.11.2022' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1046
+2022-11-19 22:56:46.0530 DEBUG Инициализация программы
+2022-11-19 22:56:46.5468 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-19 22:56:48.9880 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-19 22:56:48.9880 DEBUG Попытка входа
+2022-11-19 22:56:48.9880 INFO Успешный вход
+2022-11-19 22:58:05.0210 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19.11.2002' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1046
+2022-11-19 22:59:06.1578 ERROR Ошибка создания записи в модуле ПосетителиMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect date value: '19.11.2002' for column `lift`.`visiter`.`birthday` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.cr_note_visiter_btn_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1046

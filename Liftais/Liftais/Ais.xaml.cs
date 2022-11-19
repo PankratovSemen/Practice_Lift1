@@ -18,6 +18,7 @@ using NLog;
 
 using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Spreadsheet;
+using DocumentFormat.OpenXml.Office.Word;
 
 namespace Liftais
 {
@@ -71,15 +72,20 @@ namespace Liftais
 
 
 
-
+        //Загрузка формы
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Search.Visibility = Visibility.Visible;
+            lists.Visibility = Visibility.Visible;
+
             dbj1.Visibility = Visibility.Visible;
             db_visiters.Visibility = Visibility.Hidden;
             JP.Visibility = Visibility.Visible;
             Reg_vis.Visibility = Visibility.Visible;
             Visiter_View.Visibility = Visibility.Hidden;
             Reg_visiters_note.Visibility = Visibility.Hidden;
+            Search_visiters.Visibility = Visibility.Hidden;
+            select_visiters.Visibility = Visibility.Hidden;
             //При загрузке формы вывести таблицу журнал посетителей
             DB db = new DB();
             db.openconn();
@@ -356,8 +362,9 @@ namespace Liftais
 
 
             }
-            catch
+            catch(Exception ex)
             {
+                logger.Error("Ошибка выделения таблицы: " + ex);
                 MessageBox.Show("Внимание \n Выделите строку");
 
             }
@@ -678,8 +685,21 @@ namespace Liftais
                         a--;
                         
                     }
+
                     counts.Content = "Элементов: " + a;
                     MessageBox.Show("Удаление завершено");
+                    //Вывод обновленной таблицы
+                    string cmd1 = "SELECT * FROM magazine";
+                    MySqlCommand command1 = new MySqlCommand(cmd1, db.getconn());
+                    command1.ExecuteNonQuery();
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command1);
+                    DataTable dt = new DataTable("magazine");
+                    dataAdp.Fill(dt);
+                    dbj1.ItemsSource = dt.DefaultView;
+
+
+
+
                 }
                 else if (db_visiters.Visibility == Visibility.Visible)
                 {
@@ -694,7 +714,18 @@ namespace Liftais
                         counts.Content = "Элементов: " + b;
                     }
                     MessageBox.Show("Удаление завершено");
+                    string cmd1 = "SELECT * FROM visiter";
+                    MySqlCommand command1 = new MySqlCommand(cmd1, db.getconn());
+                    command1.ExecuteNonQuery();
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command1);
+                    DataTable dt = new DataTable("visiters");
+                    dataAdp.Fill(dt);
+                    db_visiters.ItemsSource = dt.DefaultView;
+
+
                 }
+
+                
                 db.closedconn();
               
             }
@@ -714,6 +745,8 @@ namespace Liftais
             Reg_visiters_note.Visibility = Visibility.Visible;
             visits++;
             db_visiters.Visibility = Visibility.Visible;
+            select_visiters.Visibility = Visibility.Visible;
+            Search_visiters.Visibility = Visibility.Visible;
             DB db = new DB();
             db.openconn();
             string cmd = "SELECT * FROM visiter";
@@ -739,6 +772,10 @@ namespace Liftais
             visits = 0;
             Visiter_View.Visibility = Visibility.Hidden;
             Reg_visiters_note.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Visible;
+
+            select_visiters.Visibility = Visibility.Hidden;
+            Search_visiters.Visibility = Visibility.Hidden;
         }
 
 
@@ -814,11 +851,17 @@ namespace Liftais
             select_visiters.Visibility = Visibility.Visible;
             dbj1.Visibility = Visibility.Hidden;
             cr_notes.Visibility = Visibility.Hidden;
+            ExpP.Visibility = Visibility.Visible;
+            sep.Visibility = Visibility.Visible;
+            cr_notes_visiter_visiters.Visibility = Visibility.Hidden;
         }
 
         private void Reg_visiters_note_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            ExpP.Visibility = Visibility.Hidden;
+            sep.Visibility = Visibility.Hidden;
+            db_visiters.Visibility = Visibility.Hidden;
+            cr_notes_visiter_visiters.Visibility = Visibility.Visible;
         }
 
         private void Search_visiters_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -844,6 +887,7 @@ namespace Liftais
                     db.closedconn();
 
                     select_visiters.Text = "";
+                    Search_visiters.Text = "Поиск";
                 }
                 else if (Search_visiters.Text != "")
                 {
@@ -929,8 +973,94 @@ namespace Liftais
 
                         db.closedconn();
                     }
+
+                    else if (select_visiters.Text == "Возраст до")
+                    {
+
+                        DB db = new DB();
+                        db.openconn();
+
+                        int agev = Convert.ToInt32(s);
+
+                        string cmd = "SELECT * FROM visiter WHERE TIMESTAMPDIFF(YEAR,birthday, CURDATE()) < @age";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@age", MySqlDbType.Int32).Value = agev;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+
+                    else if (select_visiters.Text == "Возраст после")
+                    {
+
+                        DB db = new DB();
+                        db.openconn();
+
+                        int agev = Convert.ToInt32(s);
+
+                        string cmd = "SELECT * FROM visiter WHERE TIMESTAMPDIFF(YEAR,birthday, CURDATE()) > @age";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@age", MySqlDbType.Int32).Value = agev;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("visiters");
+                        dataAdp.Fill(dt);
+                        db_visiters.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                    }
+                    Search_visiters.Text = "Поиск";
                 }
             }
+        }
+
+        private void Search_visiters_MouseMove(object sender, MouseEventArgs e)
+        {
+            Search_visiters.Text = "";
+        }
+
+        private void cr_note_visiter_btn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+               
+                DB db = new DB();
+                db.openconn();
+                string cmd = "INSERT INTO visiter(id_visiter,surname,name,middle_name,birthday,phone,email,place,social_networks,find_us,date_join) VALUE(@id,@sur,@nam,@mn,@birth,@phone,@email,@place,@sn,@find_us,@date_join)";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                command.Parameters.Add("@id", MySqlDbType.Int32).Value = id_visiter_visiters.Text;
+                command.Parameters.Add("@sur", MySqlDbType.VarChar).Value = surname_visiters.Text;
+                command.Parameters.Add("@nam", MySqlDbType.VarChar).Value = name_visiters.Text;
+                command.Parameters.Add("@mn", MySqlDbType.VarChar).Value = middle_name_visiters.Text;
+                command.Parameters.Add("@birth", MySqlDbType.VarChar).Value = birthday_visiters.Text;
+                command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone_visiters.Text;
+                command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email_visiters.Text;
+                command.Parameters.Add("@place", MySqlDbType.VarChar).Value = place_visiters.Text;
+                command.Parameters.Add("@sn", MySqlDbType.VarChar).Value = social_net_visiters.Text;
+                command.Parameters.Add("@find_us", MySqlDbType.VarChar).Value = find_us_visiters.Text;
+                command.Parameters.Add("@date_join", MySqlDbType.VarChar).Value = date_join_visiters.Text;
+                command.ExecuteNonQuery();
+
+                id_visiter_visiters.Clear();
+                surname_visiters.Clear();
+                name_visiters.Clear();
+                middle_name_visiters.Clear();
+                phone_visiters.Clear();
+                email_visiters.Clear();
+                place_visiters.Clear();
+                social_net_visiters.Clear();
+                find_us_visiters.Clear();
+            }
+            catch(Exception ex)
+            {
+                logger.Error("Ошибка создания записи в модуле Посетители" + ex);
+            }
+               
+
         }
     }
 }

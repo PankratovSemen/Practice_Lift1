@@ -37,7 +37,7 @@
                 </ComboBox.Background>
             </ComboBox>
             <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="959,3,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
-            <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2"/>
+            <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_visiters_MouseMove" Padding="0,-3,0,2"/>
             <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16"/>
             <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-53,242,0" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Right">
@@ -46,6 +46,8 @@
                 <TextBlock x:Name="name">Имя</TextBlock>
                 <TextBlock x:Name="middle_name">Отчество</TextBlock>
                 <TextBlock x:Name="year_old">Возраст</TextBlock>
+                <TextBlock x:Name="year_old_before">Возраст до</TextBlock>
+                <TextBlock x:Name="year_old_after">Возраст после</TextBlock>
             </ComboBox>
         </StackPanel>
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
@@ -113,7 +115,7 @@
                     <DataGridTextColumn Header="Фамилия" Width="*" Binding="{Binding Path=surname }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Имя" Width="*" Binding="{Binding Path=name }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Отчество" Width="*" Binding="{Binding Path=middle_name }" IsReadOnly="True"/>
-                    <DataGridTextColumn Header="Дата рождения" Width="*" Binding="{Binding Path=birthday }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Дата рождения" Width="*" Binding="{Binding Path=birthday }" IsReadOnly="True" FontSize="15"/>
                     <DataGridTextColumn Header="Номер телефона" Width="*" Binding="{Binding Path=phone }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Email" Width="*" Binding="{Binding Path=email }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Место учебы/Работы" Width="*" Binding="{Binding Path=place }" IsReadOnly="True"/>
@@ -122,6 +124,59 @@
                     <DataGridTextColumn Header="Дата присоединения" Width="*" Binding="{Binding Path=date_join }" IsReadOnly="True"/>
                 </DataGrid.Columns>
             </DataGrid>
+            <StackPanel Height="599" HorizontalAlignment="Left" Margin="0,-523,0,0" Width="1898" Background="#FFD1D0D0" x:Name="cr_notes_visiter_visiters" Visibility="Visible">
+                <TextBox x:Name="id_visiter_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,73,1,0" FontSize="20"/>
+                <TextBox x:Name="surname_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" FontSize="20" Margin="160,31,-7,0"/>
+                <TextBox x:Name="name_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" FontSize="20" Margin="158,48,0,0"/>
+                <TextBox x:Name="middle_name_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" FontSize="20" Margin="159,49,-2,0"/>
+                <DatePicker x:Name="birthday_visiters" HorizontalAlignment="Left" Margin="157,25,1,0"  Width="114" >
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox">
+                            <Setter Property="Control.Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <TextBox x:Name="PART_TextBox"
+                     Text="{Binding Path=SelectedDate, StringFormat={}{0:yyyy.MM.dd}, 
+                     RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <TextBox x:Name="phone_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" Margin="158,42,0,0" FontSize="20"/>
+                <TextBox x:Name="email_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" FontSize="20" Margin="157,28,0,0"/>
+                <TextBox x:Name="place_visiters" TextWrapping="Wrap" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="542,-423,0,0" FontSize="20"/>
+                <TextBox x:Name="social_net_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="542,-362,0,0" FontSize="20"/>
+                <TextBox x:Name="find_us_visiters" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" FontSize="20" Margin="544,-279,0,0" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Номер" HorizontalAlignment="Left" Margin="93,-419,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <TextBlock TextWrapping="Wrap" Text="Фамилия" HorizontalAlignment="Left" Margin="84,-356,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <TextBlock TextWrapping="Wrap" Text="Имя" HorizontalAlignment="Left" FontSize="16" Margin="118,-282,3,0" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Отчество" FontSize="16" HorizontalAlignment="Left" Margin="82,-200,0,0" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Дата рождения" HorizontalAlignment="Left" Margin="31,-150,0,0" FontSize="16" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Телефон" HorizontalAlignment="Left" FontSize="16" Margin="74,-80,0,0" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Email" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="91,-25,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Место учебы/работы" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="377,-421,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Какие соц.сети используете?" Margin="322,-361,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16"/>
+                <TextBlock TextWrapping="Wrap" Text="Откуда узнали о нас" FontSize="16" HorizontalAlignment="Left" Margin="388,-276,0,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="date_join_visiters" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="554,-227,0,0" Width="100" VerticalAlignment="Top">
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox">
+                            <Setter Property="Control.Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <TextBox x:Name="PART_TextBox"
+                     Text="{Binding Path=SelectedDate, StringFormat={}{0:yyyy.MM.dd}, 
+                     RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <TextBlock TextWrapping="Wrap" Text="Дата регистрации" FontSize="16" HorizontalAlignment="Left" Margin="405.1,-222,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click"/>
+            </StackPanel>
         </StackPanel>
 
 

@@ -138,14 +138,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Liftais.exe" size="344576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Liftais.exe" size="352256">
       <assemblyIdentity name="Liftais" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dxUaLeCIc5dZD5CyK20lacFlK8Vtzf8qw8VEZ2VB4wg=</dsig:DigestValue>
+        <dsig:DigestValue>0d19Okb+FD/WwhlihjyPclm4YtPKcMjwen4Qy4bwJUU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
