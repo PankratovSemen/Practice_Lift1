@@ -1030,19 +1030,21 @@ namespace Liftais
                
                 DB db = new DB();
                 db.openconn();
+                string birth = Convert.ToDateTime(birthday_visiters.Text).ToString("yyyy-MM-dd");
+                string date_join_convert = Convert.ToDateTime(date_join_visiters.Text).ToString("yyyy-MM-dd");
                 string cmd = "INSERT INTO visiter(id_visiter,surname,name,middle_name,birthday,phone,email,place,social_networks,find_us,date_join) VALUE(@id,@sur,@nam,@mn,@birth,@phone,@email,@place,@sn,@find_us,@date_join)";
                 MySqlCommand command = new MySqlCommand(cmd, db.getconn());
                 command.Parameters.Add("@id", MySqlDbType.Int32).Value = id_visiter_visiters.Text;
                 command.Parameters.Add("@sur", MySqlDbType.VarChar).Value = surname_visiters.Text;
                 command.Parameters.Add("@nam", MySqlDbType.VarChar).Value = name_visiters.Text;
                 command.Parameters.Add("@mn", MySqlDbType.VarChar).Value = middle_name_visiters.Text;
-                command.Parameters.Add("@birth", MySqlDbType.VarChar).Value = birthday_visiters.Text;
+                command.Parameters.Add("@birth", MySqlDbType.VarChar).Value = birth;
                 command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone_visiters.Text;
                 command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email_visiters.Text;
                 command.Parameters.Add("@place", MySqlDbType.VarChar).Value = place_visiters.Text;
                 command.Parameters.Add("@sn", MySqlDbType.VarChar).Value = social_net_visiters.Text;
                 command.Parameters.Add("@find_us", MySqlDbType.VarChar).Value = find_us_visiters.Text;
-                command.Parameters.Add("@date_join", MySqlDbType.VarChar).Value = date_join_visiters.Text;
+                command.Parameters.Add("@date_join", MySqlDbType.VarChar).Value = date_join_convert;
                 command.ExecuteNonQuery();
 
                 id_visiter_visiters.Clear();
