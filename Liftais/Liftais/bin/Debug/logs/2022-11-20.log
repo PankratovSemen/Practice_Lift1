@@ -10,3 +10,76 @@
 Аккаунт: admin
 2022-11-20 13:04:42.6051 DEBUG Попытка входа
 2022-11-20 13:04:42.6051 INFO Успешный вход
+2022-11-20 15:14:52.8577 DEBUG Инициализация программы
+2022-11-20 15:14:53.4542 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 15:14:56.0876 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 15:14:56.0876 DEBUG Попытка входа
+2022-11-20 15:14:56.0876 INFO Успешный вход
+2022-11-20 15:17:15.5783 DEBUG Инициализация программы
+2022-11-20 15:17:15.6312 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 15:17:15.8281 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 15:17:15.8281 DEBUG Попытка входа
+2022-11-20 15:17:15.8281 INFO Успешный вход
+2022-11-20 15:17:20.6826 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'lift.resident' doesn't exist
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.resident_menu_PreviewMouseDown(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1095
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   в MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-20 15:18:05.4265 DEBUG Инициализация программы
+2022-11-20 15:18:05.4794 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 15:18:05.6543 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 15:18:05.6543 DEBUG Попытка входа
+2022-11-20 15:18:05.6543 INFO Успешный вход
+2022-11-20 15:23:54.3293 DEBUG Инициализация программы
+2022-11-20 15:23:54.3811 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 15:23:55.0314 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 15:23:55.0314 DEBUG Попытка входа
+2022-11-20 15:23:55.0314 INFO Успешный вход
+2022-11-20 15:24:01.1577 ERROR Ошибка: 
+System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в System.Collections.ObjectModel.Collection`1.System.Collections.IList.get_Item(Int32 index)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 796
+2022-11-20 15:24:07.9748 ERROR Ошибка: 
+System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в System.Collections.ObjectModel.Collection`1.System.Collections.IList.get_Item(Int32 index)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 796

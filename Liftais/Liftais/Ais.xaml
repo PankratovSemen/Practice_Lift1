@@ -15,13 +15,14 @@
             <TextBlock Margin="141,18,0,0" TextWrapping="Wrap" Text="Меню" FontSize="50" Width="177" Height="59" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White"/>
             <TextBlock Width="238" Margin="-221,114,0,16" LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Журнал посещений" Height="40" VerticalAlignment="Top" Foreground="White" PreviewMouseDown="TextBlock_PreviewMouseDown_1" />
             <TextBlock LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Посетители" Foreground="White" Width="140" Margin="-248,190,0,0" Height="34" VerticalAlignment="Top" PreviewMouseDown="TextBlock_PreviewMouseDown" />
+            <TextBlock x:Name="resident_menu" Text="Резиденты" FontSize="25" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-187,267,0,1" PreviewMouseDown="resident_menu_PreviewMouseDown"/>
         </DockPanel>
         <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
         <StackPanel x:Name="sp2" Background="#FF6D6C6C" Height="44" VerticalAlignment="Top" Margin="1,45,-1,0">
             <Label x:Name="JP" Content="Журнал посещений" Foreground="Blue" Width="155" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="JP_MouseLeftButtonDown" Visibility="Hidden"/>
             <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Hidden" />
-            <Label x:Name="Visiter_View" Content="Просмотр посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Visible" Margin="0,-21,0,0" />
-            <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Visible" />
+            <Label x:Name="Visiter_View" Content="Просмотр посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-21,0,0" />
+            <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Hidden" />
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">
@@ -37,10 +38,10 @@
                 </ComboBox.Background>
             </ComboBox>
             <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="959,3,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
-            <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_visiters_MouseMove" Padding="0,-3,0,2"/>
+            <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_visiters_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
             <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16"/>
-            <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-53,242,0" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Right">
+            <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-53,242,0" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Visibility="Hidden">
                 <TextBlock x:Name="id_visiters">Номер посетителя</TextBlock>
                 <TextBlock x:Name="surname">Фамилия</TextBlock>
                 <TextBlock x:Name="name">Имя</TextBlock>
@@ -150,7 +151,24 @@
                 <TextBlock TextWrapping="Wrap" Text="Дата регистрации" FontSize="16" HorizontalAlignment="Left" Margin="405.1,-222,0,0" VerticalAlignment="Top"/>
                 <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click"/>
             </StackPanel>
+
         </StackPanel>
+
+        <DataGrid x:Name="db_resident" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test2}" HorizontalContentAlignment="Center" Margin="0,121,0,90" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox x:Name="selch2" PreviewMouseLeftButtonDown="selch2_PreviewMouseLeftButtonDown_1" ></CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn  Header="Номер резидента" Width="*" Binding="{Binding Path=id_resident }" IsReadOnly="True"/>
+                <DataGridTextColumn  Header="Название клуба" Width="*" Binding="{Binding Path=title }" IsReadOnly="True"/>
+                <DataGridTextColumn  Header="Деятельность" Width="*" Binding="{Binding Path=type_activity }" IsReadOnly="True"/>
+                <DataGridTextColumn  Header="Руководитель" Width="*" Binding="{Binding Path=teamlead }" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
 
 

@@ -137,7 +137,8 @@ namespace Liftais
             resident_combo.SelectedValuePath = ds1.Tables[0].Columns["title"].ToString();
             db.closedconn();
 
-
+            Search.Visibility = Visibility.Visible;
+            lists.Visibility = Visibility.Visible;
 
 
         }
@@ -1030,7 +1031,9 @@ namespace Liftais
                
                 DB db = new DB();
                 db.openconn();
+                //Изменение формата даты
                 string birth = Convert.ToDateTime(birthday_visiters.Text).ToString("yyyy-MM-dd");
+                //Изменение формата данных
                 string date_join_convert = Convert.ToDateTime(date_join_visiters.Text).ToString("yyyy-MM-dd");
                 string cmd = "INSERT INTO visiter(id_visiter,surname,name,middle_name,birthday,phone,email,place,social_networks,find_us,date_join) VALUE(@id,@sur,@nam,@mn,@birth,@phone,@email,@place,@sn,@find_us,@date_join)";
                 MySqlCommand command = new MySqlCommand(cmd, db.getconn());
@@ -1062,6 +1065,50 @@ namespace Liftais
                 logger.Error("Ошибка создания записи в модуле Посетители" + ex);
             }
                
+
+        }
+
+        private void resident_menu_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Переход в меню резиденты
+            JP.Visibility = Visibility.Hidden;
+            Reg_vis.Visibility = Visibility.Hidden;
+            Visiter_View.Visibility = Visibility.Hidden;
+            Reg_visiters_note.Visibility = Visibility.Hidden;
+            dbj1.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Hidden;
+            lists.Visibility = Visibility.Hidden;
+            cr_notes.Visibility = Visibility.Hidden;
+            db_visiters.Visibility = Visibility.Hidden;
+            Search_visiters.Visibility = Visibility.Hidden;
+            select_visiters.Visibility = Visibility.Hidden;
+            cr_notes_visiter_visiters.Visibility= Visibility.Hidden;
+            Visiter_View.Visibility = Visibility.Hidden;
+            Reg_visiters_note.Visibility = Visibility.Hidden;
+            sep.Visibility = Visibility.Visible;
+            ExpP.Visibility = Visibility.Visible;
+            db_resident.Visibility = Visibility.Visible;
+
+            //Открытие таблицы БД
+
+            DB db = new DB();
+            db.openconn();
+
+            string cmd = "SELECT * FROM residents";
+            MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+            command.ExecuteNonQuery();
+
+            DataTable dt = new DataTable("resident");
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            adapter.Fill(dt);
+
+            db_resident.ItemsSource = dt.DefaultView;
+
+            db.closedconn();
+        }
+
+        private void selch2_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
 
         }
     }
