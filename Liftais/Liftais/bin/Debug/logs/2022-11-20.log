@@ -522,3 +522,36 @@ System.ArgumentOutOfRangeException: Индекс за пределами диа�
    в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
    в System.Data.DataRowView.get_Item(Int32 ndx)
    в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 474
+2022-11-20 23:08:03.1518 DEBUG Инициализация программы
+2022-11-20 23:08:03.2057 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 23:08:03.5367 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 23:08:03.5367 DEBUG Попытка входа
+2022-11-20 23:08:03.5367 INFO Успешный вход
+2022-11-20 23:08:15.5305 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 474
+2022-11-20 23:09:10.0863 DEBUG Инициализация программы
+2022-11-20 23:09:10.1392 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 23:09:10.3181 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 23:09:10.3181 DEBUG Попытка входа
+2022-11-20 23:09:10.3181 INFO Успешный вход
+2022-11-20 23:09:22.7691 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 475
+2022-11-20 23:10:02.8539 DEBUG Инициализация программы
+2022-11-20 23:10:02.9117 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-20 23:10:03.0988 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-20 23:10:03.0988 DEBUG Попытка входа
+2022-11-20 23:10:03.0988 INFO Успешный вход
+2022-11-20 23:10:14.4481 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 475

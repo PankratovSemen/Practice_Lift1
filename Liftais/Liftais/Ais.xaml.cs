@@ -447,6 +447,7 @@ namespace Liftais
                 else if (db_resident.Visibility == Visibility.Visible)
                 {
                     //Экспорт в Excel
+                    MessageBox.Show(f.ToString());
                     var wb = new XLWorkbook();
                     var sh = wb.Worksheets.Add("Export");
                     for (int j = 0; j < db_resident.Columns.Count; j++)
@@ -473,10 +474,10 @@ namespace Liftais
                             DataRowView row = (DataRowView)db_resident.Items[j];
                             if (residents_id_ch.Contains(row[i].ToString()))
                             {
-                                sh.Cell(2+j , i + 2).SetValue(row[i]);
-                                sh.Cell(2+j, i + 3).SetValue(row[i + 1]);
-                                sh.Cell(2+j, i + 4).SetValue(row[i + 2]);
-                                sh.Cell(2 + j, i + 5).SetValue(row[i + 3]);
+                                sh.Cell(f+j , i + 2).SetValue(row[i]);
+                                sh.Cell(f+j, i + 3).SetValue(row[i + 1]);
+                                sh.Cell(f+j, i + 4).SetValue(row[i + 2]);
+                                sh.Cell(f + j, i + 5).SetValue(row[i + 3]);
                                 
                                 MessageBox.Show(row[i].ToString());
                                
@@ -510,6 +511,7 @@ namespace Liftais
                 else if (db_visiters.Visibility == Visibility.Visible)
                 {
                     //Экспорт в Excel
+                   
                     var wb = new XLWorkbook();
                     var sh = wb.Worksheets.Add("Export");
                     for (int j = 0; j < db_visiters.Columns.Count; j++)
