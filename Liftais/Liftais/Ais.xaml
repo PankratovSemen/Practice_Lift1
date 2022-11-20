@@ -23,6 +23,7 @@
             <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Hidden" />
             <Label x:Name="Visiter_View" Content="Просмотр посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-21,0,0" />
             <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Hidden" />
+            <Label x:Name="visiter_View" Content="Просмотр записей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">

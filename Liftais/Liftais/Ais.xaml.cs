@@ -36,23 +36,11 @@ namespace Liftais
             InitializeComponent();
         }
         List<string> selection_ch = new List<string>();
-        List<string> visiter_ch = new List<string>();
-        List<string> resident_ch = new List<string>();
-        List<string> events_ch = new List<string>();
-        List<string> open_ch = new List<string>();
-        List<string> close_ch = new List<string>();
+       
 
         List<string> visiter_id_ch = new List<string>();
-        List<string> surname_ch = new List<string>();
-        List<string> name_ch = new List<string>();
-        List<string> middle_name_ch = new List<string>();
-        List<string> birth_ch = new List<string>();
-        List<string> phone_ch = new List<string>();
-        List<string> email_ch = new List<string>();
-        List<string> place_ch = new List<string>();
-        List<string> social_net_ch = new List<string>();
-        List<string> find_us_ch = new List<string>();
-        List<string> date_join_ch = new List<string>();
+        List<string> residents_id_ch = new List<string>();
+        
         //При нажатии на иконку отерывается панель меню
         private void ms1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -66,7 +54,7 @@ namespace Liftais
 
 
         }
-
+        int f = 0;
 
 
 
@@ -323,6 +311,7 @@ namespace Liftais
 
             try
             {
+                //Выделение строк
                 //Проверка checkbox и добавление элементов в список для последующего использования
                 CheckBox selch = (CheckBox)sender;
 
@@ -336,11 +325,7 @@ namespace Liftais
                     {
 
                         selection_ch.Add(row["id_note"].ToString());
-                        visiter_ch.Add(row["id_visiter"].ToString());
-                        resident_ch.Add(row["id_resident"].ToString());
-                        events_ch.Add(row["id_event"].ToString());
-                        open_ch.Add(row["date_open"].ToString());
-                        close_ch.Add(row["date_close"].ToString());
+                       
                         MessageBox.Show("Элемент №: " + row["id_note"].ToString() + " добавлен в список");
                         a++;
                         counts.Content = "Элементов" + a;
@@ -348,11 +333,7 @@ namespace Liftais
                     else
                     {
                         selection_ch.Remove(row["id_note"].ToString());
-                        visiter_ch.Remove(row["id_visiter"].ToString());
-                        resident_ch.Remove(row["id_resident"].ToString());
-                        events_ch.Remove(row["id_event"].ToString());
-                        open_ch.Remove(row["date_open"].ToString());
-                        close_ch.Remove(row["date_close"].ToString());
+                        
                         MessageBox.Show("Элемент №: " + row["id_note"].ToString() + " удален из списка");
                         a -= 1;
                         counts.Content = "Элементов: " + a;
@@ -416,42 +397,101 @@ namespace Liftais
 
 
                                 MessageBox.Show(row[i].ToString());
-                                sh.Cell(j + 1, i + 2).SetValue(row[i]);
+                                sh.Cell(j + a, i + 2).SetValue(row[i]);
 
-                                if (visiter_ch.Contains(row[i + 1].ToString()))
-                                {
-                                    sh.Cell(j + 1, i + 3).SetValue(row[i + 1]);
-                                }
+                                
+                                
+                                    sh.Cell(j + a, i + 3).SetValue(row[i + 1]);
+                                
 
-                                if (resident_ch.Contains(row[i + 3].ToString()))
-                                {
-                                    sh.Cell(j + 1, i + 5).SetValue(row[i + 3]);
-                                }
+                               
+                                    sh.Cell(j + a, i + 5).SetValue(row[i + 3]);
+                                
 
-                                if (events_ch.Contains(row[i + 2].ToString()))
-                                {
-                                    if (events_ch.Contains(row[i + 2].ToString()) != selection_ch.Contains(row[i]))
-                                    {
-                                        sh.Cell(j + 1, i + 4).SetValue(row[i + 2]);
-                                    }
+                               
+                                    
+                                    sh.Cell(j + a, i + 4).SetValue(row[i + 2]);
+                                    
 
 
-                                }
-                                if (open_ch.Contains(row[i + 4].ToString()))
-                                {
-                                    sh.Cell(j + 1, i + 6).SetValue(row[i + 4]);
-                                }
+                                
+                                
+                                   sh.Cell(j + a, i + 6).SetValue(row[i + 4]);
+                                
 
-                                if (close_ch.Contains(row[i + 5].ToString()))
-                                {
-                                    sh.Cell(j + 1, i + 7).SetValue(row[i + 5]);
+                               
+                                
+                                   sh.Cell(j + a, i + 7).SetValue(row[i + 5]);
 
 
-                                }
+                                
 
 
                             }
                             else if (a == 0)
+                            {
+                                sh.Cell(j + 2, i + 2).SetValue(row[i]);
+
+
+                            }
+
+                            wb.SaveAs("Export_AIS\\data.xlsx");
+                            if (q == 1)
+                            {
+                                MessageBox.Show("Таблица экспортирована");
+                                q++;
+                            }
+                        }
+                    }
+                }
+                else if (db_resident.Visibility == Visibility.Visible)
+                {
+                    //Экспорт в Excel
+                    var wb = new XLWorkbook();
+                    var sh = wb.Worksheets.Add("Export");
+                    for (int j = 0; j < db_resident.Columns.Count; j++)
+                    {
+
+
+                        sh.Cell(1, j + 1).SetValue(db_resident.Columns[j].Header);
+                        sh.Cell(1, j + 1).Style.Font.Bold = true;
+                        sh.Columns().AdjustToContents();
+                        sh.Rows().AdjustToContents();
+                    }
+
+                    int q = 1;
+                    for (int i = 0; i < db_resident.Columns.Count; i++)
+                    {
+
+
+                        for (int j = 0; j < db_resident.Items.Count; j++)
+                        {
+
+                            int w = i + 1;
+
+
+                            DataRowView row = (DataRowView)db_resident.Items[j];
+                            if (residents_id_ch.Contains(row[i].ToString()))
+                            {
+                                sh.Cell(2+j , i + 2).SetValue(row[i]);
+                                sh.Cell(2+j, i + 3).SetValue(row[i + 1]);
+                                sh.Cell(2+j, i + 4).SetValue(row[i + 2]);
+                                sh.Cell(2 + j, i + 5).SetValue(row[i + 3]);
+                                
+                                MessageBox.Show(row[i].ToString());
+                               
+                                
+                             
+                                
+                                
+                                
+                                
+
+                                
+
+
+                            }
+                            else if (f == 0)
                             {
                                 sh.Cell(j + 2, i + 2).SetValue(row[i]);
 
@@ -496,11 +536,11 @@ namespace Liftais
                             DataRowView row = (DataRowView)db_visiters.Items[j];
                             if (visiter_id_ch.Contains(row[i].ToString()))
                             {
-                                sh.Cell(b+j , i + 2).SetValue(row[i]);
-                                sh.Cell(b+j, i + 3).SetValue(row[i + 1]);
-                                sh.Cell(b+j, i + 4).SetValue(row[i + 2]);
+                                sh.Cell(b + j, i + 2).SetValue(row[i]);
+                                sh.Cell(b + j, i + 3).SetValue(row[i + 1]);
+                                sh.Cell(b + j, i + 4).SetValue(row[i + 2]);
                                 sh.Cell(b + j, i + 5).SetValue(row[i + 3]);
-                                sh.Cell(b +j, i + 6).SetValue(row[i + 4]);
+                                sh.Cell(b + j, i + 6).SetValue(row[i + 4]);
                                 sh.Cell(b + j, i + 7).SetValue(row[i + 5]);
                                 sh.Cell(b + j, i + 8).SetValue(row[i + 6]);
                                 sh.Cell(b + j, i + 9).SetValue(row[i + 7]);
@@ -508,15 +548,15 @@ namespace Liftais
                                 sh.Cell(b + j, i + 11).SetValue(row[i + 9]);
                                 sh.Cell(b + j, i + 12).SetValue(row[i + 10]);
                                 MessageBox.Show(row[i].ToString());
-                               
-                                
-                             
-                                
-                                
-                                
-                                
 
-                                
+
+
+
+
+
+
+
+
 
 
                             }
@@ -632,7 +672,7 @@ namespace Liftais
             //Заполнение даты выхода по номеру посетителя с помощью обновления записи
             DB db = new DB();
             db.openconn();
-            string cmd = "SELECT id_note FROM `magazine` ORDER BY id_visiter=@vis DESC LIMIT 1";
+            string cmd = "SELECT MAX(id_note) FROM `magazine` WHERE id_visiter = 1144 ORDER BY id_visiter LIMIT 1;";
 
             MySqlCommand command = new MySqlCommand(cmd, db.getconn());
             command.Parameters.Add("@vis", MySqlDbType.Int32).Value = id_vis_tb_close.Text;
@@ -726,6 +766,28 @@ namespace Liftais
 
                 }
 
+                else if (db_resident.Visibility == Visibility.Visible)
+                {
+                    for (int i = 0; i < residents_id_ch.Count; i++)
+                    {
+                        string cmd = "DELETE FROM residents WHERE id_resident = @del";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@del", MySqlDbType.Int32).Value = residents_id_ch[i].ToString();
+                        command.ExecuteNonQuery();
+                        
+                        f--;
+                        counts.Content = "Элементов: " + b;
+                    }
+                    MessageBox.Show("Удаление завершено");
+                    string cmd1 = "SELECT * FROM visiter";
+                    MySqlCommand command1 = new MySqlCommand(cmd1, db.getconn());
+                    command1.ExecuteNonQuery();
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command1);
+                    DataTable dt = new DataTable("visiters");
+                    dataAdp.Fill(dt);
+                    db_resident.ItemsSource = dt.DefaultView;
+                }
+
                 
                 db.closedconn();
               
@@ -800,16 +862,7 @@ namespace Liftais
                     {
 
                         visiter_id_ch.Add(row["id_visiter"].ToString());
-                        surname_ch.Add(row["surname"].ToString());
-                        name_ch.Add(row["name"].ToString());
-                        middle_name_ch.Add(row["middle_name"].ToString());
-                        birth_ch.Add(row["birthday"].ToString());
-                        phone_ch.Add(row["phone"].ToString());
-                        email_ch.Add(row["email"].ToString());
-                        place_ch.Add(row["place"].ToString());
-                        social_net_ch.Add(row["social_networks"].ToString());
-                        find_us_ch.Add(row["find_us"].ToString());
-                        date_join_ch.Add(row["date_join"].ToString());
+                       
                         MessageBox.Show("Элемент №: " + row["id_visiter"].ToString() + " добавлен в список");
                         b++;
                         counts.Content = "Элементов" + b;
@@ -818,16 +871,7 @@ namespace Liftais
                     {
                         selch1.IsChecked = false;
                         visiter_id_ch.Remove(row["id_visiter"].ToString());
-                        surname_ch.Remove(row["surname"].ToString());
-                        name_ch.Remove(row["name"].ToString());
-                        middle_name_ch.Remove(row["middle_name"].ToString());
-                        birth_ch.Remove(row["birthday"].ToString());
-                        phone_ch.Remove(row["phone"].ToString());
-                        email_ch.Remove(row["email"].ToString());
-                        place_ch.Remove(row["place"].ToString());
-                        social_net_ch.Remove(row["social_networks"].ToString());
-                        find_us_ch.Remove(row["find_us"].ToString());
-                        date_join_ch.Remove(row["date_join"].ToString());
+                        
                         MessageBox.Show("Элемент №: " + row["id_visiter"].ToString() + " удален из списка");
                         b -= 1;
                         counts.Content = "Элементов: " + b;
@@ -1088,7 +1132,7 @@ namespace Liftais
             sep.Visibility = Visibility.Visible;
             ExpP.Visibility = Visibility.Visible;
             db_resident.Visibility = Visibility.Visible;
-
+            visiter_View.Visibility = Visibility.Visible;
             //Открытие таблицы БД
 
             DB db = new DB();
@@ -1107,9 +1151,47 @@ namespace Liftais
             db.closedconn();
         }
 
+        
         private void selch2_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
+            try
+            {
+                CheckBox selch2 = (CheckBox)sender;
+                DataRowView row1 = (DataRowView)db_resident.SelectedItems[0];
 
+                if (selch2.IsChecked == false)
+                {
+                    selch2.IsChecked = true;
+                    
+
+
+                    if (residents_id_ch.Contains(row1["id_resident"].ToString()) == false)
+                    {
+
+                        residents_id_ch.Add(row1["id_resident"].ToString());
+
+                        MessageBox.Show("Элемент №: " + row1["id_resident"].ToString() + " добавлен в список");
+                        f++;
+                        counts.Content = "Элементов" + f;
+                    }
+                    else
+                    {
+                        selection_ch.Remove(row1["id_resident"].ToString());
+
+                        MessageBox.Show("Элемент №: " + row1["id_resident"].ToString() + " удален из списка");
+                        f -= 1;
+                        counts.Content = "Элементов: " + f;
+                    }
+
+
+                }
+            }
+
+            catch ( Exception ex)
+            {
+                MessageBox.Show("Внимание выделите строку");
+                logger.Error("Ошибка выделения " + ex);
+            }
         }
     }
 }
