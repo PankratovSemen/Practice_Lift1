@@ -176,7 +176,31 @@ namespace Liftais
             resident_combo.SelectedValuePath = ds1.Tables[0].Columns["title"].ToString();
             db.closedconn();
 
+            //Обновление таблицы resident
+            
 
+            db.openconn();
+            string cmd1 = "SELECT * FROM residents";
+            MySqlCommand command3 = new MySqlCommand(cmd1, db.getconn());
+            command.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp3 = new MySqlDataAdapter(command3);
+            DataTable dt3 = new DataTable("residents");
+            dataAdp.Fill(dt3);
+            db_resident.ItemsSource = dt3.DefaultView;
+
+            db.closedconn();
+
+            //Обновление таблицы visiters
+            db.openconn();
+            string cmd4 = "SELECT * FROM visiter";
+            MySqlCommand command4 = new MySqlCommand(cmd4, db.getconn());
+            command.ExecuteNonQuery();
+
+            MySqlDataAdapter dataAdp4 = new MySqlDataAdapter(command4);
+            DataTable dt4 = new DataTable("visiter");
+            dataAdp.Fill(dt4);
+            db_visiters.ItemsSource = dt4.DefaultView;
         }
 
 
@@ -806,12 +830,17 @@ namespace Liftais
             lists.Visibility = Visibility.Hidden;
             JP.Visibility = Visibility.Hidden;
             Reg_vis.Visibility = Visibility.Hidden;
+            db_resident.Visibility = Visibility.Hidden;
             Visiter_View.Visibility = Visibility.Visible;
             Reg_visiters_note.Visibility = Visibility.Visible;
             visits++;
             db_visiters.Visibility = Visibility.Visible;
             select_visiters.Visibility = Visibility.Visible;
             Search_visiters.Visibility = Visibility.Visible;
+            Search_resident.Visibility = Visibility.Hidden;
+            select_resident.Visibility = Visibility.Hidden;
+            Search.Visibility = Visibility.Hidden;
+            resident_View.Visibility = Visibility.Hidden;
             DB db = new DB();
             db.openconn();
             string cmd = "SELECT * FROM visiter";
@@ -819,7 +848,7 @@ namespace Liftais
             command.ExecuteNonQuery();
 
             MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
-            DataTable dt = new DataTable("resident");
+            DataTable dt = new DataTable("visiter");
             dataAdp.Fill(dt);
             db_visiters.ItemsSource = dt.DefaultView;
 
@@ -841,6 +870,9 @@ namespace Liftais
 
             select_visiters.Visibility = Visibility.Hidden;
             Search_visiters.Visibility = Visibility.Hidden;
+            Search_resident.Visibility = Visibility.Hidden;
+            select_resident.Visibility = Visibility.Hidden;
+            resident_View.Visibility = Visibility.Hidden;
         }
 
 
@@ -1134,7 +1166,10 @@ namespace Liftais
             sep.Visibility = Visibility.Visible;
             ExpP.Visibility = Visibility.Visible;
             db_resident.Visibility = Visibility.Visible;
-            visiter_View.Visibility = Visibility.Visible;
+            resident_View.Visibility = Visibility.Visible;
+            Search_resident.Visibility = Visibility.Visible;
+            select_resident.Visibility = Visibility.Visible;
+            Visiter_View.Visibility = Visibility.Hidden;
             //Открытие таблицы БД
 
             DB db = new DB();
@@ -1195,5 +1230,128 @@ namespace Liftais
                 logger.Error("Ошибка выделения " + ex);
             }
         }
+
+        private void Search_resident_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+
+
+                if (Search_resident.Text == "")
+                {
+                    DB db = new DB();
+                    db.openconn();
+                    string cmd = "SELECT * FROM residents";
+                    MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                    command.ExecuteNonQuery();
+
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                    DataTable dt = new DataTable("residents");
+                    dataAdp.Fill(dt);
+                    db_resident.ItemsSource = dt.DefaultView;
+
+                    db.closedconn();
+
+                    select_resident.Text = "";
+                    Search_resident.Text = "Поиск";
+                }
+                else if (Search_resident.Text != "")
+                {
+
+
+                    if (select_resident.Text == "Номер резидента")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM residents WHERE id_resident LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_resident.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("resident");
+                        dataAdp.Fill(dt);
+                        db_resident.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_resident.Text = "Поиск";
+                    }
+                    else if (select_resident.Text == "Название клуба")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM residents WHERE title LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_resident.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("resident");
+                        dataAdp.Fill(dt);
+                        db_resident.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_resident.Text = "Поиск";
+                    }
+                    else if (select_resident.Text == "Руководитель")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM residents WHERE teamlead LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_resident.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("resident");
+                        dataAdp.Fill(dt);
+                        db_resident.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_resident.Text = "Поиск";
+                    }
+                    else if (select_resident.Text == "Вид деятельности")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM residents WHERE type_activity LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_resident.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("resident");
+                        dataAdp.Fill(dt);
+                        db_resident.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_resident.Text = "Поиск";
+                    }
+                    else
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM residents WHERE title LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_resident.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("resident");
+                        dataAdp.Fill(dt);
+                        db_resident.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_resident.Text = "Поиск";
+                    }
+                }
+            }
+        }
+
+        private void Search_resident_MouseMove(object sender, MouseEventArgs e)
+        {
+            Search_resident.Text = "";
+        }
+
+        private void resident_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
+
 }

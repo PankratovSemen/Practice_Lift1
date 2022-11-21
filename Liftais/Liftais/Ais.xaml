@@ -23,7 +23,7 @@
             <Label x:Name="Reg_vis" Content="Создание записей посещения" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-32,0,0" MouseLeftButtonDown="JP_Copy_MouseLeftButtonDown" Visibility="Hidden" />
             <Label x:Name="Visiter_View" Content="Просмотр посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-21,0,0" />
             <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Hidden" />
-            <Label x:Name="visiter_View" Content="Просмотр записей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="Visiter_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
+            <Label x:Name="resident_View" Content="Просмотр резидентов" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="resident_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">
@@ -40,9 +40,8 @@
             </ComboBox>
             <TextBox x:Name="Search" HorizontalAlignment="Right" Margin="959,3,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
             <TextBox x:Name="Search_visiters" HorizontalAlignment="Right" Margin="959,-21,38,0" Text="Поиск" VerticalAlignment="Top" Width="150" FontSize="14" PreviewKeyDown="Search_visiters_PreviewKeyDown" MouseLeftButtonDown="Search_MouseLeftButtonDown_1" MouseLeftButtonUp="Search_MouseLeftButtonUp" MouseMove="Search_visiters_MouseMove" Padding="0,-3,0,2" Visibility="Hidden"/>
-            <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-            <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16"/>
-            <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-53,242,0" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Visibility="Hidden">
+            <Label x:Name="counts" Content="Элементов: " Foreground="White" HorizontalAlignment="Left" Margin="0,-40,0,0" FontSize="16" Height="28"/>
+            <ComboBox x:Name="select_visiters" Width="120" Margin="-4,-29,242,0" Height="23" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Visibility="Hidden">
                 <TextBlock x:Name="id_visiters">Номер посетителя</TextBlock>
                 <TextBlock x:Name="surname">Фамилия</TextBlock>
                 <TextBlock x:Name="name">Имя</TextBlock>
@@ -50,6 +49,13 @@
                 <TextBlock x:Name="year_old">Возраст</TextBlock>
                 <TextBlock x:Name="year_old_before">Возраст до</TextBlock>
                 <TextBlock x:Name="year_old_after">Возраст после</TextBlock>
+            </ComboBox>
+            <TextBox x:Name="Search_resident" Text="Поиск" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-24,9,0" PreviewKeyDown="Search_resident_PreviewKeyDown" MouseMove="Search_resident_MouseMove" Visibility="Hidden"/>
+            <ComboBox x:Name="select_resident" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-27,152,0" Visibility="Hidden">
+                <TextBlock x:Name="id_residetn_resident">Номер резидента</TextBlock>
+                <TextBlock x:Name="club_title">Название клуба</TextBlock>
+                <TextBlock x:Name="teamlead_resident">Руководитель</TextBlock>
+                <TextBlock x:Name="type_activity">Вид деятельности</TextBlock>
             </ComboBox>
         </StackPanel>
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
@@ -127,17 +133,17 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Height="599" HorizontalAlignment="Left" Margin="0,-523,0,0" Width="1898" Background="#FFD1D0D0" x:Name="cr_notes_visiter_visiters" Visibility="Hidden">
-                <TextBox x:Name="id_visiter_visiters" TextWrapping="Wrap" Width="150" HorizontalAlignment="Left" Margin="156,73,1,0" FontSize="20"/>
-                <TextBox x:Name="surname_visiters" TextWrapping="Wrap" Width="143" HorizontalAlignment="Left" FontSize="20" Margin="160,31,-7,0"/>
-                <TextBox x:Name="name_visiters" TextWrapping="Wrap" Width="144" HorizontalAlignment="Left" FontSize="20" Margin="158,48,0,0"/>
-                <TextBox x:Name="middle_name_visiters" TextWrapping="Wrap" Width="138" HorizontalAlignment="Left" FontSize="20" Margin="159,49,-2,0"/>
+                <TextBox x:Name="id_visiter_visiters" Width="238" HorizontalAlignment="Left" Margin="156,73,1,0" FontSize="20" AcceptsReturn="True"/>
+                <TextBox x:Name="surname_visiters" Width="236" HorizontalAlignment="Left" FontSize="20" Margin="160,31,-7,0"/>
+                <TextBox x:Name="name_visiters" Width="238" HorizontalAlignment="Left" FontSize="20" Margin="158,48,0,0"/>
+                <TextBox x:Name="middle_name_visiters" Width="239" HorizontalAlignment="Left" FontSize="20" Margin="159,49,-2,0"/>
                 <DatePicker x:Name="birthday_visiters" HorizontalAlignment="Left" Margin="157,25,1,0"  Width="137" />
 
-                <TextBox x:Name="phone_visiters" TextWrapping="Wrap" Width="134" HorizontalAlignment="Left" Margin="158,42,0,0" FontSize="20"/>
-                <TextBox x:Name="email_visiters" TextWrapping="Wrap" Width="131" HorizontalAlignment="Left" FontSize="20" Margin="157,28,0,0"/>
-                <TextBox x:Name="place_visiters" TextWrapping="Wrap" Width="139" HorizontalAlignment="Left" Margin="542,-423,0,0" FontSize="20" VerticalAlignment="Top"/>
-                <TextBox x:Name="social_net_visiters" TextWrapping="Wrap" Width="138" HorizontalAlignment="Left" Margin="542,-362,0,0" FontSize="20" VerticalAlignment="Top"/>
-                <TextBox x:Name="find_us_visiters" TextWrapping="Wrap" Width="136" HorizontalAlignment="Left" FontSize="20" Margin="544,-279,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="phone_visiters" Width="235" HorizontalAlignment="Left" Margin="158,42,0,0" FontSize="20"/>
+                <TextBox x:Name="email_visiters" Width="235" HorizontalAlignment="Left" FontSize="20" Margin="157,28,0,0"/>
+                <TextBox x:Name="place_visiters" Width="277" HorizontalAlignment="Left" Margin="641,-422,0,0" FontSize="20" VerticalAlignment="Top"/>
+                <TextBox x:Name="social_net_visiters" Width="274" HorizontalAlignment="Left" Margin="641,-362,0,0" FontSize="20" VerticalAlignment="Top"/>
+                <TextBox x:Name="find_us_visiters" Width="277" HorizontalAlignment="Left" FontSize="20" Margin="641,-279,0,0" VerticalAlignment="Top"/>
                 <TextBlock TextWrapping="Wrap" Text="Номер" HorizontalAlignment="Left" Margin="93,-419,0,0" VerticalAlignment="Top" FontSize="16"/>
                 <TextBlock TextWrapping="Wrap" Text="Фамилия" HorizontalAlignment="Left" Margin="84,-356,0,0" VerticalAlignment="Top" FontSize="16"/>
                 <TextBlock TextWrapping="Wrap" Text="Имя" HorizontalAlignment="Left" FontSize="16" Margin="118,-282,3,0" VerticalAlignment="Top"/>
@@ -145,12 +151,12 @@
                 <TextBlock TextWrapping="Wrap" Text="Дата рождения" HorizontalAlignment="Left" Margin="31,-150,0,0" FontSize="16" VerticalAlignment="Top"/>
                 <TextBlock TextWrapping="Wrap" Text="Телефон" HorizontalAlignment="Left" FontSize="16" Margin="74,-80,0,0" VerticalAlignment="Top"/>
                 <TextBlock TextWrapping="Wrap" Text="Email" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="91,-25,0,0"/>
-                <TextBlock TextWrapping="Wrap" Text="Место учебы/работы" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="377,-421,0,0"/>
-                <TextBlock x:Name ="find_us" TextWrapping="Wrap" Text="Какие соц.сети используете?" Margin="322,-361,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16"/>
-                <TextBlock TextWrapping="Wrap" Text="Откуда узнали о нас" FontSize="16" HorizontalAlignment="Left" Margin="388,-276,0,0" VerticalAlignment="Top"/>
-                <DatePicker x:Name="date_join_visiters" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="554,-227,0,0" Width="124" VerticalAlignment="Top"/>
-                <TextBlock TextWrapping="Wrap" Text="Дата регистрации" FontSize="16" HorizontalAlignment="Left" Margin="405.1,-222,0,0" VerticalAlignment="Top"/>
-                <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click"/>
+                <TextBlock TextWrapping="Wrap" Text="Место учебы/работы" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="473,-421,0,0"/>
+                <TextBlock x:Name ="find_us" TextWrapping="Wrap" Text="Какие соц.сети используете?" Margin="418,-361,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16"/>
+                <TextBlock TextWrapping="Wrap" Text="Откуда узнали о нас" FontSize="16" HorizontalAlignment="Left" Margin="482,-276,0,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="date_join_visiters" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="641,-227,0,0" Width="124" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Дата регистрации" FontSize="16" HorizontalAlignment="Left" Margin="492,-222,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click" Height="47" Width="102"/>
             </StackPanel>
 
         </StackPanel>
@@ -166,7 +172,7 @@
                 </DataGridTemplateColumn>
                 <DataGridTextColumn  Header="Номер резидента" Width="*" Binding="{Binding Path=id_resident }" IsReadOnly="True"/>
                 <DataGridTextColumn  Header="Название клуба" Width="*" Binding="{Binding Path=title }" IsReadOnly="True"/>
-                <DataGridTextColumn  Header="Деятельность" Width="*" Binding="{Binding Path=type_activity }" IsReadOnly="True"/>
+                <DataGridTextColumn  Header="Вид деятельности" Width="*" Binding="{Binding Path=type_activity }" IsReadOnly="True"/>
                 <DataGridTextColumn  Header="Руководитель" Width="*" Binding="{Binding Path=teamlead }" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>

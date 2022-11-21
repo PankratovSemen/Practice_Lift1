@@ -1,0 +1,197 @@
+2022-11-21 17:47:18.2848 DEBUG Инициализация программы
+2022-11-21 17:47:18.6327 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 17:47:20.8487 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3307
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 51
+2022-11-21 17:53:06.6798 DEBUG Инициализация программы
+2022-11-21 17:53:07.4512 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 17:53:08.4002 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 17:53:08.4002 DEBUG Попытка входа
+2022-11-21 17:53:08.4002 INFO Успешный вход
+2022-11-21 17:53:49.1660 DEBUG Инициализация программы
+2022-11-21 17:53:49.2300 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 17:53:49.4777 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 17:53:49.4777 DEBUG Попытка входа
+2022-11-21 17:53:49.4777 INFO Успешный вход
+2022-11-21 18:05:31.5345 DEBUG Инициализация программы
+2022-11-21 18:05:31.5874 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 18:05:31.7788 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 18:05:31.7788 DEBUG Попытка входа
+2022-11-21 18:05:31.7788 INFO Успешный вход
+2022-11-21 18:24:50.2422 DEBUG Инициализация программы
+2022-11-21 18:24:50.2976 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 18:24:50.4928 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 18:24:50.4928 DEBUG Попытка входа
+2022-11-21 18:24:50.4928 INFO Успешный вход
+2022-11-21 18:27:16.3866 DEBUG Инициализация программы
+2022-11-21 18:27:16.4394 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 18:27:16.6353 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 18:27:16.6353 DEBUG Попытка входа
+2022-11-21 18:27:16.6353 INFO Успешный вход
+2022-11-21 21:55:28.4154 DEBUG Инициализация программы
+2022-11-21 21:55:28.7472 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 21:55:30.3463 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 21:55:30.3463 DEBUG Попытка входа
+2022-11-21 21:55:30.3463 INFO Успешный вход
+2022-11-21 21:56:44.8085 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'lift.resident' doesn't exist
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.Search_resident_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1294
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-21 21:58:17.1246 DEBUG Инициализация программы
+2022-11-21 21:58:17.1775 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 21:58:17.4423 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 21:58:17.4423 DEBUG Попытка входа
+2022-11-21 21:58:17.4423 INFO Успешный вход
+2022-11-21 22:01:17.6378 DEBUG Инициализация программы
+2022-11-21 22:01:17.7160 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:01:17.9373 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:01:17.9373 DEBUG Попытка входа
+2022-11-21 22:01:17.9373 INFO Успешный вход
+2022-11-21 22:13:27.0429 DEBUG Инициализация программы
+2022-11-21 22:13:27.0988 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:13:27.3394 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:13:27.3394 DEBUG Попытка входа
+2022-11-21 22:13:27.3394 INFO Успешный вход
+2022-11-21 22:14:35.2117 DEBUG Инициализация программы
+2022-11-21 22:14:35.2752 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:14:35.5688 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:14:35.5688 DEBUG Попытка входа
+2022-11-21 22:14:35.5688 INFO Успешный вход
+2022-11-21 22:15:40.9390 DEBUG Инициализация программы
+2022-11-21 22:15:40.9919 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:15:41.1715 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:15:41.1715 DEBUG Попытка входа
+2022-11-21 22:15:41.1715 INFO Успешный вход
+2022-11-21 22:16:39.1229 DEBUG Инициализация программы
+2022-11-21 22:16:39.1748 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:16:39.3655 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:16:39.3655 DEBUG Попытка входа
+2022-11-21 22:16:39.3655 INFO Успешный вход
+2022-11-21 22:22:26.6369 DEBUG Инициализация программы
+2022-11-21 22:22:26.6898 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:22:26.8932 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:22:26.8932 DEBUG Попытка входа
+2022-11-21 22:22:26.8932 INFO Успешный вход
+2022-11-21 22:23:19.6840 DEBUG Инициализация программы
+2022-11-21 22:23:19.7359 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:23:19.9178 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:23:19.9178 DEBUG Попытка входа
+2022-11-21 22:23:19.9178 INFO Успешный вход
+2022-11-21 22:28:21.6446 DEBUG Инициализация программы
+2022-11-21 22:28:21.6975 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:28:21.8807 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:28:21.8807 DEBUG Попытка входа
+2022-11-21 22:28:21.8807 INFO Успешный вход
+2022-11-21 22:30:01.5982 DEBUG Инициализация программы
+2022-11-21 22:30:01.6511 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:30:01.8332 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:30:01.8332 DEBUG Попытка входа
+2022-11-21 22:30:02.4652 INFO Неправильный логин или пароль
+Аккаунт: admin
+2022-11-21 22:30:16.5075 DEBUG Инициализация программы
+2022-11-21 22:30:16.5604 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:30:16.7420 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:30:16.7420 DEBUG Попытка входа
+2022-11-21 22:30:16.7420 INFO Успешный вход
+2022-11-21 22:30:55.8442 DEBUG Инициализация программы
+2022-11-21 22:30:55.8971 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:30:56.2113 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:30:56.2113 DEBUG Попытка входа
+2022-11-21 22:30:56.2113 INFO Успешный вход
+2022-11-21 22:33:51.3576 DEBUG Инициализация программы
+2022-11-21 22:33:51.4110 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:33:51.5807 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:33:51.5807 DEBUG Попытка входа
+2022-11-21 22:33:51.5807 INFO Успешный вход
+2022-11-21 22:36:33.0544 DEBUG Инициализация программы
+2022-11-21 22:36:33.1063 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 22:36:33.3896 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 22:36:33.3896 DEBUG Попытка входа
+2022-11-21 22:36:33.3896 INFO Успешный вход
+2022-11-21 23:19:27.5652 DEBUG Инициализация программы
+2022-11-21 23:19:27.6180 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 23:19:27.8143 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 23:19:27.8143 DEBUG Попытка входа
+2022-11-21 23:19:27.8143 INFO Успешный вход
+2022-11-21 23:23:58.9334 DEBUG Инициализация программы
+2022-11-21 23:23:59.4837 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 23:24:00.5643 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 23:24:00.5643 DEBUG Попытка входа
+2022-11-21 23:24:00.5643 INFO Успешный вход
+2022-11-21 23:25:35.0055 DEBUG Инициализация программы
+2022-11-21 23:25:35.0594 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-21 23:25:35.2660 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-21 23:25:35.2660 DEBUG Попытка входа
+2022-11-21 23:25:35.2660 INFO Успешный вход
