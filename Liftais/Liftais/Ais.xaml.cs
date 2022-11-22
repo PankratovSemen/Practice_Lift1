@@ -182,11 +182,11 @@ namespace Liftais
             db.openconn();
             string cmd1 = "SELECT * FROM residents";
             MySqlCommand command3 = new MySqlCommand(cmd1, db.getconn());
-            command.ExecuteNonQuery();
+            command3.ExecuteNonQuery();
 
             MySqlDataAdapter dataAdp3 = new MySqlDataAdapter(command3);
             DataTable dt3 = new DataTable("residents");
-            dataAdp.Fill(dt3);
+            dataAdp3.Fill(dt3);
             db_resident.ItemsSource = dt3.DefaultView;
 
             db.closedconn();
@@ -195,11 +195,11 @@ namespace Liftais
             db.openconn();
             string cmd4 = "SELECT * FROM visiter";
             MySqlCommand command4 = new MySqlCommand(cmd4, db.getconn());
-            command.ExecuteNonQuery();
+            command4.ExecuteNonQuery();
 
             MySqlDataAdapter dataAdp4 = new MySqlDataAdapter(command4);
             DataTable dt4 = new DataTable("visiter");
-            dataAdp.Fill(dt4);
+            dataAdp4.Fill(dt4);
             db_visiters.ItemsSource = dt4.DefaultView;
         }
 
@@ -459,7 +459,7 @@ namespace Liftais
 
                             }
 
-                            wb.SaveAs("Export_AIS\\data.xlsx");
+                            wb.SaveAs("Export_AIS\\Журнал_посещений.xlsx");
                             if (q == 1)
                             {
                                 MessageBox.Show("Таблица экспортирована");
@@ -498,10 +498,10 @@ namespace Liftais
                             DataRowView row = (DataRowView)db_resident.Items[j];
                             if (residents_id_ch.Contains(row[i].ToString()))
                             {
-                                sh.Cell(f+j , i + 2).SetValue(row[i]);
-                                sh.Cell(f+j, i + 3).SetValue(row[i + 1]);
-                                sh.Cell(f+j, i + 4).SetValue(row[i + 2]);
-                                sh.Cell(f + j, i + 5).SetValue(row[i + 3]);
+                                sh.Cell((f + j)+1 , i + 2).SetValue(row[i]);
+                                sh.Cell((f + j)+1 , i + 3).SetValue(row[i + 1]);
+                                sh.Cell((f + j)+1 , i + 4).SetValue(row[i + 2]);
+                                sh.Cell((f + j)+1, i + 5).SetValue(row[i + 3]);
                                 
                                 MessageBox.Show(row[i].ToString());
                                
@@ -523,7 +523,7 @@ namespace Liftais
 
                             }
 
-                            wb.SaveAs("Export_AIS\\data.xlsx");
+                            wb.SaveAs("Export_AIS\\Резиденты.xlsx");
                             if (q == 1)
                             {
                                 MessageBox.Show("Таблица экспортирована");
@@ -593,7 +593,7 @@ namespace Liftais
 
                             }
 
-                            wb.SaveAs("Export_AIS\\data.xlsx");
+                            wb.SaveAs("Export_AIS\\Посетители.xlsx");
                             if (q == 1)
                             {
                                 MessageBox.Show("Таблица экспортирована");
@@ -612,25 +612,6 @@ namespace Liftais
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-        
 
         private void JP_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -805,11 +786,11 @@ namespace Liftais
                         counts.Content = "Элементов: " + b;
                     }
                     MessageBox.Show("Удаление завершено");
-                    string cmd1 = "SELECT * FROM visiter";
+                    string cmd1 = "SELECT * FROM residents";
                     MySqlCommand command1 = new MySqlCommand(cmd1, db.getconn());
                     command1.ExecuteNonQuery();
                     MySqlDataAdapter dataAdp = new MySqlDataAdapter(command1);
-                    DataTable dt = new DataTable("visiters");
+                    DataTable dt = new DataTable("residents");
                     dataAdp.Fill(dt);
                     db_resident.ItemsSource = dt.DefaultView;
                 }
@@ -841,6 +822,8 @@ namespace Liftais
             select_resident.Visibility = Visibility.Hidden;
             Search.Visibility = Visibility.Hidden;
             resident_View.Visibility = Visibility.Hidden;
+            create_residents.Visibility = Visibility.Hidden;
+            cr_notes_residents_menu.Visibility = Visibility.Hidden;
             DB db = new DB();
             db.openconn();
             string cmd = "SELECT * FROM visiter";
@@ -867,12 +850,13 @@ namespace Liftais
             Visiter_View.Visibility = Visibility.Hidden;
             Reg_visiters_note.Visibility = Visibility.Hidden;
             Search.Visibility = Visibility.Visible;
-
+            create_residents.Visibility = Visibility.Hidden;
             select_visiters.Visibility = Visibility.Hidden;
             Search_visiters.Visibility = Visibility.Hidden;
             Search_resident.Visibility = Visibility.Hidden;
             select_resident.Visibility = Visibility.Hidden;
             resident_View.Visibility = Visibility.Hidden;
+            cr_notes_residents_menu.Visibility = Visibility.Hidden;
         }
 
 
@@ -1162,7 +1146,8 @@ namespace Liftais
             select_visiters.Visibility = Visibility.Hidden;
             cr_notes_visiter_visiters.Visibility= Visibility.Hidden;
             Visiter_View.Visibility = Visibility.Hidden;
-            Reg_visiters_note.Visibility = Visibility.Hidden;
+            resident_View.Visibility = Visibility.Visible;
+            create_residents.Visibility = Visibility.Visible;
             sep.Visibility = Visibility.Visible;
             ExpP.Visibility = Visibility.Visible;
             db_resident.Visibility = Visibility.Visible;
@@ -1170,6 +1155,8 @@ namespace Liftais
             Search_resident.Visibility = Visibility.Visible;
             select_resident.Visibility = Visibility.Visible;
             Visiter_View.Visibility = Visibility.Hidden;
+            cr_notes_residents_menu.Visibility = Visibility.Hidden;
+
             //Открытие таблицы БД
 
             DB db = new DB();
@@ -1350,7 +1337,50 @@ namespace Liftais
 
         private void resident_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            DB db = new DB();
+            db.openconn();
+            string cmd1 = "SELECT * FROM residents";
+            MySqlCommand command3 = new MySqlCommand(cmd1, db.getconn());
+            command3.ExecuteNonQuery();
 
+            MySqlDataAdapter dataAdp3 = new MySqlDataAdapter(command3);
+            DataTable dt3 = new DataTable("residents");
+            dataAdp3.Fill(dt3);
+            db_resident.ItemsSource = dt3.DefaultView;
+
+            db.closedconn();
+
+
+            ExpP.Visibility = Visibility.Visible;
+            sep.Visibility = Visibility.Visible;
+            db_resident.Visibility = Visibility.Visible;
+            cr_notes_residents_menu.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DB db = new DB();
+            db.openconn();
+            string cmd = "INSERT INTO residents(title,type_activity,teamlead) VALUES(@title,@ta,@tl)";
+
+            MySqlCommand command = new MySqlCommand(cmd,db.getconn());
+
+            command.Parameters.Add("@title", MySqlDbType.VarChar).Value = title_residents_menu.Text;
+            command.Parameters.Add("@ta", MySqlDbType.VarChar).Value = type_activity_resident.Text;
+            command.Parameters.Add("@tl", MySqlDbType.VarChar).Value = teamlead_resident_menu.Text;
+            command.ExecuteNonQuery();
+            db.closedconn();
+        }
+
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Открытие вкладки Создание резидентов
+            db_resident.Visibility = Visibility.Hidden;
+            ExpP.Visibility = Visibility.Hidden;
+            sep.Visibility = Visibility.Hidden;
+
+            cr_notes_residents_menu.Visibility = Visibility.Visible;
         }
     }
 
