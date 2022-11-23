@@ -1,0 +1,351 @@
+2022-11-23 19:43:43.0139 DEBUG Инициализация программы
+2022-11-23 19:43:43.5649 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 19:43:45.3984 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 19:43:45.3984 DEBUG Попытка входа
+2022-11-23 19:43:45.3984 INFO Успешный вход
+2022-11-23 19:44:40.6634 DEBUG Инициализация программы
+2022-11-23 19:44:40.8218 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 19:44:41.0009 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 19:44:41.0009 DEBUG Попытка входа
+2022-11-23 19:44:41.0009 INFO Успешный вход
+2022-11-23 19:45:45.3438 DEBUG Инициализация программы
+2022-11-23 19:45:45.3957 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 19:45:45.5671 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 19:45:45.5671 DEBUG Попытка входа
+2022-11-23 19:45:45.5671 INFO Успешный вход
+2022-11-23 19:49:19.0557 DEBUG Инициализация программы
+2022-11-23 19:49:19.1096 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 19:49:19.2876 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 19:49:19.2876 DEBUG Попытка входа
+2022-11-23 19:49:19.2876 INFO Успешный вход
+2022-11-23 20:42:37.2058 DEBUG Инициализация программы
+2022-11-23 20:42:37.4419 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:42:38.2571 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:42:38.2571 DEBUG Попытка входа
+2022-11-23 20:42:38.2571 INFO Успешный вход
+2022-11-23 20:43:03.9342 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:45:17.8021 DEBUG Инициализация программы
+2022-11-23 20:45:17.8550 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:45:18.0549 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:45:18.0549 DEBUG Попытка входа
+2022-11-23 20:45:18.0549 INFO Успешный вход
+2022-11-23 20:46:42.7779 DEBUG Инициализация программы
+2022-11-23 20:46:42.8297 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:46:42.9992 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:46:42.9992 DEBUG Попытка входа
+2022-11-23 20:46:42.9992 INFO Успешный вход
+2022-11-23 20:46:55.6948 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:47:23.4652 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:49:18.7884 DEBUG Инициализация программы
+2022-11-23 20:49:18.8432 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:49:19.0307 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:49:19.0307 DEBUG Попытка входа
+2022-11-23 20:49:19.0307 INFO Успешный вход
+2022-11-23 20:49:30.5512 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:50:32.7697 DEBUG Инициализация программы
+2022-11-23 20:50:32.8225 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:50:32.9928 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:50:32.9928 DEBUG Попытка входа
+2022-11-23 20:50:32.9928 INFO Успешный вход
+2022-11-23 20:50:44.2041 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:53:37.0500 DEBUG Инициализация программы
+2022-11-23 20:53:37.1019 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:53:37.2936 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:53:37.2936 DEBUG Попытка входа
+2022-11-23 20:53:37.2936 INFO Успешный вход
+2022-11-23 20:53:53.5116 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 5.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 637
+2022-11-23 20:57:56.3383 DEBUG Инициализация программы
+2022-11-23 20:57:56.3911 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 20:57:56.5701 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 20:57:56.5701 DEBUG Попытка входа
+2022-11-23 20:57:56.5701 INFO Успешный вход
+2022-11-23 21:10:54.0129 DEBUG Инициализация программы
+2022-11-23 21:10:54.0657 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:10:54.2411 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:10:54.2411 DEBUG Попытка входа
+2022-11-23 21:10:54.2411 INFO Успешный вход
+2022-11-23 21:14:22.6926 DEBUG Инициализация программы
+2022-11-23 21:14:22.7445 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:14:23.0400 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:14:23.0400 DEBUG Попытка входа
+2022-11-23 21:14:23.0400 INFO Успешный вход
+2022-11-23 21:16:25.0118 DEBUG Инициализация программы
+2022-11-23 21:16:25.0646 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:16:25.2450 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:16:25.2450 DEBUG Попытка входа
+2022-11-23 21:16:25.2450 INFO Успешный вход
+2022-11-23 21:40:58.6929 DEBUG Инициализация программы
+2022-11-23 21:40:58.7458 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:40:58.9210 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:40:58.9210 DEBUG Попытка входа
+2022-11-23 21:40:58.9210 INFO Успешный вход
+2022-11-23 21:41:39.6936 DEBUG Инициализация программы
+2022-11-23 21:41:39.7464 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:41:39.9116 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:41:39.9116 DEBUG Попытка входа
+2022-11-23 21:41:39.9116 INFO Успешный вход
+2022-11-23 21:43:30.0756 DEBUG Инициализация программы
+2022-11-23 21:43:30.1274 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:43:30.3020 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:43:30.3020 DEBUG Попытка входа
+2022-11-23 21:43:30.3020 INFO Успешный вход
+2022-11-23 21:46:43.3012 DEBUG Инициализация программы
+2022-11-23 21:46:43.3571 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 21:46:43.5314 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 21:46:43.5314 DEBUG Попытка входа
+2022-11-23 21:46:43.5314 INFO Успешный вход
+2022-11-23 22:09:13.7999 DEBUG Инициализация программы
+2022-11-23 22:09:13.8518 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:09:14.0386 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:09:14.0386 DEBUG Попытка входа
+2022-11-23 22:09:14.0386 INFO Успешный вход
+2022-11-23 22:10:09.5373 DEBUG Инициализация программы
+2022-11-23 22:10:09.5892 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:10:09.7581 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:10:09.7581 DEBUG Попытка входа
+2022-11-23 22:10:09.7581 INFO Успешный вход
+2022-11-23 22:11:17.2028 DEBUG Инициализация программы
+2022-11-23 22:11:17.2546 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:11:17.4270 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:11:17.4270 DEBUG Попытка входа
+2022-11-23 22:11:17.4270 INFO Успешный вход
+2022-11-23 22:34:41.5706 DEBUG Инициализация программы
+2022-11-23 22:34:41.6275 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:34:42.1605 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:34:42.1605 DEBUG Попытка входа
+2022-11-23 22:34:42.1605 INFO Успешный вход
+2022-11-23 22:35:25.1851 DEBUG Инициализация программы
+2022-11-23 22:35:25.2390 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:35:25.4310 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:35:25.4310 DEBUG Попытка входа
+2022-11-23 22:35:25.4310 INFO Успешный вход
+2022-11-23 22:50:06.3078 DEBUG Инициализация программы
+2022-11-23 22:50:07.5818 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:50:09.2841 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:50:09.2841 DEBUG Попытка входа
+2022-11-23 22:50:09.2841 INFO Успешный вход
+2022-11-23 22:50:53.9204 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(Title_event,date_begin,date_end,organizer) VALUES ('Tests','2022-11-23 12:00...' at line 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   в Liftais.Ais.Button_Click_2(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1720
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   в MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-23 22:52:24.2492 DEBUG Инициализация программы
+2022-11-23 22:52:24.3021 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:52:24.5379 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:52:24.5379 DEBUG Попытка входа
+2022-11-23 22:52:24.5379 INFO Успешный вход
+2022-11-23 22:54:15.4330 DEBUG Инициализация программы
+2022-11-23 22:54:15.4849 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 22:54:15.6684 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 22:54:15.6684 DEBUG Попытка входа
+2022-11-23 22:54:15.6684 INFO Успешный вход
+2022-11-23 23:01:12.0464 DEBUG Инициализация программы
+2022-11-23 23:01:12.0992 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 23:01:12.2784 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 23:01:12.2784 DEBUG Попытка входа
+2022-11-23 23:01:12.2784 INFO Успешный вход
+2022-11-23 23:03:36.5310 DEBUG Инициализация программы
+2022-11-23 23:03:36.5839 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 23:03:36.8062 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 23:03:36.8062 DEBUG Попытка входа
+2022-11-23 23:03:36.8062 INFO Успешный вход
+2022-11-23 23:03:55.0914 DEBUG Инициализация программы
+2022-11-23 23:03:55.1433 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 23:03:55.3168 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 23:03:55.3168 DEBUG Попытка входа
+2022-11-23 23:03:55.3168 INFO Успешный вход
+2022-11-23 23:04:31.2833 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Column count doesn't match value count at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   в Liftais.Ais.Button_Click_2(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1725
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   в MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-23 23:05:52.9365 DEBUG Инициализация программы
+2022-11-23 23:05:52.9893 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 23:05:53.1660 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 23:05:53.1660 DEBUG Попытка входа
+2022-11-23 23:05:53.1660 INFO Успешный вход
+2022-11-23 23:06:40.7503 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'id_events' in 'where clause'
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.Search_events_PreviewKeyDown(Object sender, KeyEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1636
+   в System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   в System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   в System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   в System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   в System.Windows.Interop.HwndSource.OnPreprocessMessageThunk(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.HwndSource.WeakEventPreprocessMessage.OnPreprocessMessage(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ThreadMessageEventHandler.Invoke(MSG& msg, Boolean& handled)
+   в System.Windows.Interop.ComponentDispatcherThread.RaiseThreadMessage(MSG& msg)
+   в System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   в System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   в System.Windows.Window.ShowHelper(Object booleanBox)
+   в System.Windows.Window.Show()
+   в System.Windows.Window.ShowDialog()
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 62
+2022-11-23 23:07:38.7127 DEBUG Инициализация программы
+2022-11-23 23:07:38.7676 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-11-23 23:07:38.9380 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-11-23 23:07:38.9380 DEBUG Попытка входа
+2022-11-23 23:07:38.9380 INFO Успешный вход

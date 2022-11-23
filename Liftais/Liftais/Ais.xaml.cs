@@ -40,6 +40,7 @@ namespace Liftais
 
         List<string> visiter_id_ch = new List<string>();
         List<string> residents_id_ch = new List<string>();
+        List<string> event_id = new List<string>();
         
         //При нажатии на иконку отерывается панель меню
         private void ms1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -74,6 +75,8 @@ namespace Liftais
             Reg_visiters_note.Visibility = Visibility.Hidden;
             Search_visiters.Visibility = Visibility.Hidden;
             select_visiters.Visibility = Visibility.Hidden;
+            events_View.Visibility = Visibility.Hidden;
+            create_events.Visibility = Visibility.Hidden;
             //При загрузке формы вывести таблицу журнал посетителей
             DB db = new DB();
             db.openconn();
@@ -423,32 +426,32 @@ namespace Liftais
                                 MessageBox.Show(row[i].ToString());
                                 sh.Cell(j + a, i + 2).SetValue(row[i]);
 
-                                
-                                
-                                    sh.Cell(j + a, i + 3).SetValue(row[i + 1]);
-                                
-
-                               
-                                    sh.Cell(j + a, i + 5).SetValue(row[i + 3]);
-                                
-
-                               
-                                    
-                                    sh.Cell(j + a, i + 4).SetValue(row[i + 2]);
-                                    
 
 
-                                
-                                
-                                   sh.Cell(j + a, i + 6).SetValue(row[i + 4]);
-                                
-
-                               
-                                
-                                   sh.Cell(j + a, i + 7).SetValue(row[i + 5]);
+                                sh.Cell(j + a, i + 3).SetValue(row[i + 1]);
 
 
-                                
+
+                                sh.Cell(j + a, i + 5).SetValue(row[i + 3]);
+
+
+
+
+                                sh.Cell(j + a, i + 4).SetValue(row[i + 2]);
+
+
+
+
+
+                                sh.Cell(j + a, i + 6).SetValue(row[i + 4]);
+
+
+
+
+                                sh.Cell(j + a, i + 7).SetValue(row[i + 5]);
+
+
+
 
 
                             }
@@ -498,21 +501,21 @@ namespace Liftais
                             DataRowView row = (DataRowView)db_resident.Items[j];
                             if (residents_id_ch.Contains(row[i].ToString()))
                             {
-                                sh.Cell((f + j)+1 , i + 2).SetValue(row[i]);
-                                sh.Cell((f + j)+1 , i + 3).SetValue(row[i + 1]);
-                                sh.Cell((f + j)+1 , i + 4).SetValue(row[i + 2]);
-                                sh.Cell((f + j)+1, i + 5).SetValue(row[i + 3]);
-                                
-                                MessageBox.Show(row[i].ToString());
-                               
-                                
-                             
-                                
-                                
-                                
-                                
+                                sh.Cell((f + j) + 1, i + 2).SetValue(row[i]);
+                                sh.Cell((f + j) + 1, i + 3).SetValue(row[i + 1]);
+                                sh.Cell((f + j) + 1, i + 4).SetValue(row[i + 2]);
+                                sh.Cell((f + j) + 1, i + 5).SetValue(row[i + 3]);
 
-                                
+                                MessageBox.Show(row[i].ToString());
+
+
+
+
+
+
+
+
+
 
 
                             }
@@ -535,7 +538,7 @@ namespace Liftais
                 else if (db_visiters.Visibility == Visibility.Visible)
                 {
                     //Экспорт в Excel
-                   
+
                     var wb = new XLWorkbook();
                     var sh = wb.Worksheets.Add("Export");
                     for (int j = 0; j < db_visiters.Columns.Count; j++)
@@ -594,6 +597,72 @@ namespace Liftais
                             }
 
                             wb.SaveAs("Export_AIS\\Посетители.xlsx");
+                            if (q == 1)
+                            {
+                                MessageBox.Show("Таблица экспортирована");
+                                q++;
+                            }
+                        }
+                    }
+                }
+
+                else if (db_events.Visibility == Visibility.Visible)
+                {
+                    //Экспорт в Excel
+
+                    var wb = new XLWorkbook();
+                    var sh = wb.Worksheets.Add("Export");
+                    for (int j = 0; j < db_events.Columns.Count; j++)
+                    {
+
+
+                        sh.Cell(1, j + 1).SetValue(db_events.Columns[j].Header);
+                        sh.Cell(1, j + 1).Style.Font.Bold = true;
+                        sh.Columns().AdjustToContents();
+                        sh.Rows().AdjustToContents();
+                    }
+
+                    int q = 1;
+                    for (int i = 0; i < db_events.Columns.Count; i++)
+                    {
+
+
+                        for (int j = 0; j < db_events.Items.Count; j++)
+                        {
+
+                            int w = i + 1;
+
+
+                            DataRowView row = (DataRowView)db_events.Items[j];
+                            if (event_id.Contains(row[i].ToString()))
+                            {
+                                sh.Cell(2 + j, i + 2).SetValue(row[i]);
+                                sh.Cell(2 + j, i + 3).SetValue(row[i + 1]);
+                                sh.Cell(2 + j, i + 4).SetValue(row[i + 2]);
+                                sh.Cell(2 + j, i + 5).SetValue(row[i + 3]);
+                                sh.Cell(2 + j, i + 6).SetValue(row[i + 4]);
+                                
+                                MessageBox.Show(row[i].ToString());
+
+
+
+
+
+
+
+
+
+
+
+                            }
+                            else if (b == 0)
+                            {
+                                sh.Cell(j + 2, i + 2).SetValue(row[i]);
+
+
+                            }
+
+                            wb.SaveAs("Export_AIS\\События.xlsx");
                             if (q == 1)
                             {
                                 MessageBox.Show("Таблица экспортирована");
@@ -795,6 +864,32 @@ namespace Liftais
                     db_resident.ItemsSource = dt.DefaultView;
                 }
 
+                else if(db_events.Visibility == Visibility.Visible)
+                {
+                    for (int i = 0; i < event_id.Count; i++)
+                    {
+                        string cmd = "DELETE FROM events WHERE id_event = @del";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@del", MySqlDbType.Int32).Value = event_id[i].ToString();
+                        command.ExecuteNonQuery();
+
+                        l--;
+                        counts.Content = "Элементов: " + l;
+                    }
+
+                    for (int i = 0; i < event_id.Count; i++)
+                    {
+                        event_id.RemoveAt(i);
+                    }
+                    MessageBox.Show("Удаление завершено");
+                    string cmd1 = "SELECT * FROM events";
+                    MySqlCommand command1 = new MySqlCommand(cmd1, db.getconn());
+                    command1.ExecuteNonQuery();
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command1);
+                    DataTable dt = new DataTable("events");
+                    dataAdp.Fill(dt);
+                    db_events.ItemsSource = dt.DefaultView;
+                }
                 
                 db.closedconn();
               
@@ -824,6 +919,12 @@ namespace Liftais
             resident_View.Visibility = Visibility.Hidden;
             create_residents.Visibility = Visibility.Hidden;
             cr_notes_residents_menu.Visibility = Visibility.Hidden;
+            db_events.Visibility = Visibility.Hidden;
+            events_View.Visibility = Visibility.Hidden;
+            create_events.Visibility = Visibility.Hidden;
+            Search_events.Visibility = Visibility.Hidden;
+            select_events.Visibility = Visibility.Hidden;
+            cr_notes_events_menu.Visibility = Visibility.Hidden;
             DB db = new DB();
             db.openconn();
             string cmd = "SELECT * FROM visiter";
@@ -857,6 +958,13 @@ namespace Liftais
             select_resident.Visibility = Visibility.Hidden;
             resident_View.Visibility = Visibility.Hidden;
             cr_notes_residents_menu.Visibility = Visibility.Hidden;
+            db_events.Visibility = Visibility.Hidden;
+            db_resident.Visibility = Visibility.Hidden;
+            events_View.Visibility = Visibility.Hidden;
+            create_events.Visibility = Visibility.Hidden;
+            Search_events.Visibility = Visibility.Hidden;
+            select_events.Visibility = Visibility.Hidden;
+            cr_notes_events_menu.Visibility = Visibility.Hidden;
         }
 
 
@@ -929,6 +1037,7 @@ namespace Liftais
 
         private void Search_visiters_PreviewKeyDown(object sender, KeyEventArgs e)
         {
+            //Функционал поиска в Посетителях
             string s = Search_visiters.Text;
             if (e.Key == Key.Enter)
             {
@@ -1156,7 +1265,12 @@ namespace Liftais
             select_resident.Visibility = Visibility.Visible;
             Visiter_View.Visibility = Visibility.Hidden;
             cr_notes_residents_menu.Visibility = Visibility.Hidden;
-
+            db_events.Visibility = Visibility.Hidden ;
+            events_View.Visibility = Visibility.Hidden;
+            create_events.Visibility = Visibility.Hidden;
+            Search_events.Visibility = Visibility.Hidden;
+            select_events.Visibility = Visibility.Hidden;
+            cr_notes_events_menu.Visibility = Visibility.Hidden;
             //Открытие таблицы БД
 
             DB db = new DB();
@@ -1178,6 +1292,7 @@ namespace Liftais
         
         private void selch2_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
+            //Функционал CheckBox
             try
             {
                 CheckBox selch2 = (CheckBox)sender;
@@ -1220,6 +1335,7 @@ namespace Liftais
 
         private void Search_resident_PreviewKeyDown(object sender, KeyEventArgs e)
         {
+            //Поиск в таблице Резиденты 
             if (e.Key == Key.Enter)
             {
 
@@ -1337,6 +1453,7 @@ namespace Liftais
 
         private void resident_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            //Открытие вкладки Просмотр резидентов и вывод таблицы БД
             DB db = new DB();
             db.openconn();
             string cmd1 = "SELECT * FROM residents";
@@ -1360,6 +1477,7 @@ namespace Liftais
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //Заполнени таблицы Резиденты
             DB db = new DB();
             db.openconn();
             string cmd = "INSERT INTO residents(title,type_activity,teamlead) VALUES(@title,@ta,@tl)";
@@ -1381,6 +1499,230 @@ namespace Liftais
             sep.Visibility = Visibility.Hidden;
 
             cr_notes_residents_menu.Visibility = Visibility.Visible;
+        }
+        int l = 0;
+        private void selch3_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            //Действия checkbox в Событиях 
+            try
+            {
+                CheckBox selch3 = (CheckBox)sender;
+
+                if (selch3.IsChecked == false)
+                {
+                    selch3.IsChecked = true;
+                    DataRowView row = (DataRowView)db_events.SelectedItems[0];
+
+
+                    if (event_id.Contains(row["id_event"].ToString()) == false)
+                    {
+
+                        event_id.Add(row["id_event"].ToString());
+
+                        MessageBox.Show("Элемент №: " + row["id_event"].ToString() + " добавлен в список");
+                        l++;
+                        counts.Content = "Элементов" + l;
+                    }
+                    else
+                    {
+                        event_id.Remove(row["id_event"].ToString());
+
+                        MessageBox.Show("Элемент №: " + row["id_event"].ToString() + " удален из списка");
+                        l -= 1;
+                        counts.Content = "Элементов: " + l;
+                    }
+                    selch3.IsChecked = false;
+                }
+            }
+            catch(Exception ex)
+            {
+                logger.Error("Ошибка выделения таблицы: " + ex);
+                MessageBox.Show("Внимание \n Выделите строку");
+            }
+        }
+
+        private void event_menu_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Переход во вкладку События
+            Search.Visibility = Visibility.Hidden;
+            Search_visiters.Visibility = Visibility.Hidden;
+            Search_resident.Visibility = Visibility.Hidden;
+            lists.Visibility = Visibility.Hidden;
+            select_visiters.Visibility = Visibility.Hidden;
+            select_resident.Visibility = Visibility.Hidden;
+            dbj1.Visibility = Visibility.Hidden;
+            cr_notes.Visibility = Visibility.Hidden;
+            db_visiters.Visibility = Visibility.Hidden;
+            cr_notes_visiter_visiters.Visibility = Visibility.Hidden;
+            db_resident.Visibility = Visibility.Hidden;
+            cr_notes_residents_menu.Visibility = Visibility.Hidden;
+            events_View.Visibility = Visibility.Visible;
+            create_events.Visibility = Visibility.Visible;
+            db_events.Visibility = Visibility.Visible;
+            Search_events.Visibility = Visibility.Visible;
+            select_events.Visibility = Visibility.Visible;
+            JP.Visibility = Visibility.Hidden;
+            Reg_vis.Visibility = Visibility.Hidden;
+            Visiter_View.Visibility = Visibility.Hidden;
+            Reg_visiters_note.Visibility = Visibility.Hidden;
+            resident_View.Visibility = Visibility.Hidden;
+            create_residents.Visibility=Visibility.Hidden;
+
+            DB db = new DB();
+            db.openconn();
+            string cmd = "SELECT * FROM events";
+            MySqlCommand command = new MySqlCommand(cmd,db.getconn());
+            command.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            adapter.Fill(dt);
+
+            db_events.ItemsSource = dt.DefaultView;
+
+            db.closedconn();
+        }
+
+        private void events_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            sep.Visibility = Visibility.Visible;
+            ExpP.Visibility = Visibility.Visible;
+            db_events.Visibility = Visibility.Visible;
+            cr_notes_events_menu.Visibility = Visibility.Hidden;
+        }
+
+        private void create_events_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            sep.Visibility = Visibility.Hidden;
+            ExpP.Visibility = Visibility.Hidden;
+            db_events.Visibility = Visibility.Hidden;
+            cr_notes_events_menu.Visibility = Visibility.Visible;
+        }
+
+        private void Search_events_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+
+
+                if (Search_events.Text == "")
+                {
+                    DB db = new DB();
+                    db.openconn();
+                    string cmd = "SELECT * FROM events";
+                    MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                    command.ExecuteNonQuery();
+
+                    MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                    DataTable dt = new DataTable("events");
+                    dataAdp.Fill(dt);
+                    db_events.ItemsSource = dt.DefaultView;
+
+                    db.closedconn();
+
+                    select_events.Text = "";
+                    Search_events.Text = "Поиск";
+                }
+                else if (Search_resident.Text != "")
+                {
+
+
+                    if (select_events.Text == "Номер события")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM events WHERE id_event LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_events.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("events");
+                        dataAdp.Fill(dt);
+                        db_events.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_events.Text = "Поиск";
+                    }
+                    else if (select_resident.Text == "Название события")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM events WHERE Title_event LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_events.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("events");
+                        dataAdp.Fill(dt);
+                        db_events.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_events.Text = "Поиск";
+                    }
+                    else if (select_resident.Text == "Организатор")
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM events WHERE organizer LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_events.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("events");
+                        dataAdp.Fill(dt);
+                        db_events.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_events.Text = "Поиск";
+                    }
+                    
+                    else
+                    {
+                        DB db = new DB();
+                        db.openconn();
+                        string cmd = "SELECT * FROM events WHERE Title_event LIKE @ser";
+                        MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                        command.Parameters.Add("@ser", MySqlDbType.VarChar).Value = Search_events.Text;
+                        command.ExecuteNonQuery();
+                        MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                        DataTable dt = new DataTable("events");
+                        dataAdp.Fill(dt);
+                        db_events.ItemsSource = dt.DefaultView;
+
+                        db.closedconn();
+                        Search_events.Text = "Поиск";
+                    }
+                }
+            }
+        }
+
+        private void Search_events_MouseMove(object sender, MouseEventArgs e)
+        {
+            Search_events.Text = "";
+        }
+
+        private void date_begin_events_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string title = Title_event_events.Text;
+            string dateBegin = Convert.ToDateTime(date_begin_events.Text).ToString("yyyy-MM-dd hh:mm:ss");
+            
+            string org = organaizer_events.Text;
+
+
+            DB db = new DB();
+            db.openconn();
+            string cmd = "INSERT INTO events(Title_event,date_begin,organizer) VALUES (@te,@begd,@organ)";
+            MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+            command.Parameters.Add("@te", MySqlDbType.VarChar).Value = title;
+            command.Parameters.Add("@begd", MySqlDbType.VarChar).Value = dateBegin;
+          
+            command.Parameters.Add("@organ", MySqlDbType.VarChar).Value = org;
+
+            command.ExecuteReader();
         }
     }
 

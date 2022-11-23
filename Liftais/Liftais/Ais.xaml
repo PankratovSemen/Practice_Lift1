@@ -16,9 +16,9 @@
             <TextBlock Width="238" Margin="-221,114,0,16" LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Журнал посещений" Height="40" VerticalAlignment="Top" Foreground="White" PreviewMouseDown="TextBlock_PreviewMouseDown_1" />
             <TextBlock LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Посетители" Foreground="White" Width="140" Margin="-248,190,0,0" Height="34" VerticalAlignment="Top" PreviewMouseDown="TextBlock_PreviewMouseDown" />
             <TextBlock x:Name="resident_menu" Text="Резиденты" FontSize="25" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-187,267,0,1" PreviewMouseDown="resident_menu_PreviewMouseDown"/>
-            <TextBlock x:Name="event_menu" Text="События" FontSize="25" Margin="-178,331,0,0" Foreground="White" Width="121" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock x:Name="event_menu" Text="События" FontSize="25" Margin="-178,331,0,0" Foreground="White" Width="121" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewMouseDown="event_menu_PreviewMouseDown"/>
             <TextBlock x:Name="users" Text="Пользователи" FontSize="25" Margin="-238,390,0,0" Foreground="White" Width="177" VerticalAlignment="Top"/>
-            
+
         </DockPanel>
         <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
         <StackPanel x:Name="sp2" Background="#FF6D6C6C" Height="44" VerticalAlignment="Top" Margin="1,45,-1,0">
@@ -28,6 +28,8 @@
             <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Hidden" />
             <Label x:Name="resident_View" Content="Просмотр резидентов" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="resident_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
             <TextBlock x:Name="create_residents" TextWrapping="Wrap" Text="Создание резидентов" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="198,-29,0,0" Foreground="White" MouseDown="TextBlock_MouseDown" Visibility="Hidden"/>
+            <Label x:Name="events_View" Content="Просмотр событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="events_View_MouseLeftButtonDown" Visibility="Visible" Margin="0,-35,0,0"/>
+            <Label x:Name="create_events" Content="Создание событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="create_events_MouseLeftButtonDown" Visibility="Visible" />
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">
@@ -60,6 +62,13 @@
                 <TextBlock x:Name="club_title">Название клуба</TextBlock>
                 <TextBlock x:Name="teamlead_resident">Руководитель</TextBlock>
                 <TextBlock x:Name="type_activity">Вид деятельности</TextBlock>
+            </ComboBox>
+            <TextBox x:Name="Search_events" Text="Поиск" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-24,9,0" PreviewKeyDown="Search_events_PreviewKeyDown" MouseMove="Search_events_MouseMove" Visibility="Hidden"/>
+            <ComboBox x:Name="select_events" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-27,152,0" Visibility="Hidden">
+                <TextBlock x:Name="id_event_resident">Номер события</TextBlock>
+                <TextBlock x:Name="title_ev">Название события</TextBlock>
+                <TextBlock x:Name="teamlead_event">Организатор</TextBlock>
+
             </ComboBox>
         </StackPanel>
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
@@ -172,7 +181,7 @@
                 <TextBlock TextWrapping="Wrap" Text="Руководитель" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-11,-19,0,0" FontSize="14"/>
                 <Button Content="Создать" HorizontalAlignment="Center" FontSize="14" Margin="235,19,0,0" BorderBrush="White" Background="#FF150B75" Foreground="White" Height="38" Width="77" Click="Button_Click_1"/>
             </StackPanel>
-            <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+
 
         </StackPanel>
 
@@ -191,6 +200,40 @@
                 <DataGridTextColumn  Header="Руководитель" Width="*" Binding="{Binding Path=teamlead }" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
+
+
+        <DataGrid x:Name="db_events" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,121,10,90" AutoGenerateColumns="False" ItemsSource="{Binding Test}" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox x:Name="selch3" PreviewMouseLeftButtonDown="selch3_PreviewMouseLeftButtonDown"></CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Номер записи" Width="*" Binding="{Binding Path=id_event }" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Название события" Width="*" Binding="{Binding Path=Title_event }" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Дата проведения события" Width="*" Binding="{Binding Path=date_begin }" IsReadOnly="True"/>
+                
+                <DataGridTextColumn Header="Организатор" Width="*" Binding="{Binding Path=organizer }" IsReadOnly="True"/>
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <StackPanel x:Name="cr_notes_events_menu" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFC5C3C3" Height="614" Width="1823" Margin="46,94,0,0" Visibility="Hidden">
+            <TextBox x:Name="Title_event_events" TextWrapping="Wrap" Width="142" Margin="0,122,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" FontSize="14"/>
+            <TextBlock TextWrapping="Wrap" Text="Создание событий" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-147,0,0" FontSize="40"/>
+            <TextBox x:Name="organaizer_events" TextWrapping="Wrap" Width="142" Height="29" Margin="0,76,0,0" FontSize="14"/>
+            <DatePicker x:Name="date_begin_events" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,-150,0,0" Width="138" FontSize="15" VerticalAlignment="Center" SelectedDateFormat="Long" Loaded="date_begin_events_Loaded"  />
+            <TextBlock TextWrapping="Wrap" Text="Название события" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Margin="-305,-134,0,0"/>
+            <TextBlock x:Name="Дата_проведения_события" TextWrapping="Wrap" Text="Дата проведения события" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" Margin="-351,-87,0,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Организатор" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-248,-24,0,0"/>
+            <Button Content="Создать" BorderBrush="#FF1815A4" Background="#FF1637E5" Foreground="White" HorizontalAlignment="Center" Height="44" Width="89" FontSize="14" Margin="0,29,0,0" Click="Button_Click_2"/>
+        </StackPanel>
+
 
 
 
