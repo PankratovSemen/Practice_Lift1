@@ -17,7 +17,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NLog;
-
+using System.Reflection;
+using System.Net;
+using System.Globalization;
 
 namespace Liftais
 {
@@ -27,6 +29,7 @@ namespace Liftais
     
     public partial class MainWindow : Window
     {
+        
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
         
@@ -36,6 +39,7 @@ namespace Liftais
            
             try
             {
+                
                 logger.Debug("Инициализация программы");
                 String logins = login.Text;
                 String passwords = Password1.Password;
@@ -83,6 +87,11 @@ namespace Liftais
 
         }
 
-        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            updater up = new updater();
+
+            up.Show();
+        }
     }
 }
