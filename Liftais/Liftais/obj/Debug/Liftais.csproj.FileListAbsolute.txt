@@ -147,3 +147,4 @@ C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Sy
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\updater.g.cs
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\updater.baml
 C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais.csproj.Fody.CopyLocal.cache
+C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\obj\Debug\Liftais.exe.config

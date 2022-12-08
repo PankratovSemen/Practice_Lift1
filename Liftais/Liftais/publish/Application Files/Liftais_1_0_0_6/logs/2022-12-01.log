@@ -1,0 +1,18 @@
+2022-12-01 23:05:58.3740 DEBUG Инициализация программы
+2022-12-01 23:05:58.4449 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-01 23:05:58.8318 DEBUG Успешное подключение 
+Аккаунт: 
+2022-12-01 23:05:58.8318 DEBUG Попытка входа
+2022-12-01 23:06:00.2303 INFO Неправильный логин или пароль
+Аккаунт: 
+2022-12-01 23:06:05.2021 DEBUG Инициализация программы
+2022-12-01 23:06:05.2021 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-01 23:06:05.2021 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-01 23:06:05.2021 DEBUG Попытка входа
+2022-12-01 23:06:05.2021 INFO Успешный вход
+2022-12-01 23:06:14.8640 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e)

@@ -35,7 +35,7 @@ namespace Liftais
         {
             try
             {
-                var readver = clients.DownloadString("http://lift.ru/programm/liftprogramm/version.txt");
+                var readver = clients.DownloadString("http://192.168.88.54/version.txt");
                 this.Hide();
                 MessageBox.Show(curver);
                 if (Convert.ToDouble(curver,CultureInfo.InvariantCulture) == Convert.ToDouble(readver,CultureInfo.InvariantCulture))
@@ -46,8 +46,8 @@ namespace Liftais
                 else
                 {
                     MessageBox.Show("Найдена новая версия. Обновление произойдет автоматически. Пожалуйста подождите", "Обновление", MessageBoxButton.OK);
-                    MessageBox.Show("Идет обновление");
-                    clients.DownloadFile("http://lift.ru/programm/liftprogramm/Liftais.exe", "Liftais1.exe");
+                    this.Show();
+                    clients.DownloadFile("http://192.168.f88.54/Liftais.exe", "Liftais1.exe");
                     ProcessStartInfo psi = new ProcessStartInfo();
                     //Имя запускаемого приложения
                     psi.FileName = "cmd.exe";
@@ -58,9 +58,9 @@ namespace Liftais
                     Process.Start(psi);
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Ошибка обновления");
+                MessageBox.Show("Ошибка обновления " + ex);
             }
         }
 

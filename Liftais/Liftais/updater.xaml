@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="updater" Height="76" Width="246" Loaded="Window_Loaded" Activated="Window_Activated">
     <Grid Margin="0,0,598,288">
+        <ProgressBar x:Name="pg" HorizontalAlignment="Left" Height="18" Margin="19,34,0,0" VerticalAlignment="Top" Width="201" Background="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="5,6,0,0" Text="Идет обновление" Height="16" VerticalAlignment="Top" Foreground="#FF252424" Width="237"/>
 
     </Grid>
 </Window>

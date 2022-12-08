@@ -82,7 +82,7 @@ namespace Liftais
             }
             finally
             {
-                System.Environment.Exit(0);
+               
             }
 
         }
@@ -92,6 +92,11 @@ namespace Liftais
             updater up = new updater();
 
             up.Show();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

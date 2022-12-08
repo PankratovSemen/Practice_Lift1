@@ -1,0 +1,45 @@
+2022-12-01 20:43:10.7135 DEBUG Инициализация программы
+2022-12-01 20:43:11.1734 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-01 20:43:26.5824 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.194:3307
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-01 22:51:36.2947 DEBUG Инициализация программы
+2022-12-01 22:51:36.9623 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-01 22:51:54.8649 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.TimeoutException: Время ожидания операции истекло.
+   в MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings, MyNetworkStream& networkStream)
+   в MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings, MyNetworkStream& networkStream)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-01 22:52:44.2915 DEBUG Инициализация программы
+2022-12-01 22:52:44.3483 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-01 22:52:47.1203 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-01 22:52:47.1203 DEBUG Попытка входа
+2022-12-01 22:52:47.1203 INFO Успешный вход
