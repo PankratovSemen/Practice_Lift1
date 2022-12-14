@@ -31,7 +31,7 @@ namespace Liftais
     {
         
 
-        private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static MyLogger logger =new MyLogger();
         
        
         private void SingIn_Click(object sender, RoutedEventArgs y)
@@ -40,27 +40,27 @@ namespace Liftais
             try
             {
                 
-                logger.Debug("Инициализация программы");
+               
                 String logins = login.Text;
                 String passwords = Password1.Password;
                 
                 DB db = new DB();
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
-                logger.Debug("Выполнение запроса Sql + Подключение к Базе данных");
+                
                 MySqlCommand command = new MySqlCommand("SELECT role FROM usr WHERE login = @lg AND password = @ps", db.getconn());
                 command.Parameters.Add("@lg", MySqlDbType.VarChar).Value = logins;
                 command.Parameters.Add("@ps", MySqlDbType.VarChar).Value = passwords;
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
-                logger.Debug("Успешное подключение \n"+ "Аккаунт: " + logins);
-                logger.Debug("Попытка входа");
+                
                 if (table.Rows.Count > 0)
                 {
-                    logger.Info("Успешный вход");
+                    
                     Ais ais1 = new Ais();
                     this.Hide();
                     ais1.logV = login.Text;
+                    MyLogger.username = login.Text;
                     var g = table.Rows[0].ItemArray[0];
                     ais1.roled = g.ToString();
                     ais1.ShowDialog();
@@ -69,7 +69,7 @@ namespace Liftais
                 else
                 {
                     MessageBox.Show("Неправильный логин или пароль", "Error");
-                    logger.Info("Неправильный логин или пароль\n" + "Аккаунт: " +logins );
+                    logger.ErrorFile("Неправильный логин или пароль\n" + "Аккаунт: " +logins );
                 }
                     
 
@@ -77,7 +77,7 @@ namespace Liftais
             }
             catch (Exception e)
             {
-                logger.Error("Ошибка " + e);
+                logger.ErrorFile("Ошибка " + e);
                 MessageBox.Show("Ошибка подключения к базе данных" , "Ошибка");
             }
             finally

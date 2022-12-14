@@ -1,0 +1,377 @@
+
+ 14.12.2022 20:37:58 Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 39
+
+ 14.12.2022 20:38:23 Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+
+ 14.12.2022 20:41:07 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 39
+
+ 14.12.2022 20:41:30 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+
+ 14.12.2022 20:49:23 INFO Проверка версии системы
+
+ 14.12.2022 20:49:23 INFO Версия1.3
+
+ 14.12.2022 20:49:39 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 14.12.2022 20:50:01 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+
+ 14.12.2022 22:06:17 INFO Проверка версии системы
+
+ 14.12.2022 22:06:17 INFO Версия: 1.3
+
+ 14.12.2022 22:06:45 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 14.12.2022 22:07:14ERROR Ошибка в окне вахтера: 
+ MySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect integer value: 'fefefe' for column `lift`.`magazine`.`id_visiter` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   в Liftais.Ais.create_note_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 730
+
+ 14.12.2022 22:07:32ERROR System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.create_date_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 757
+
+ 14.12.2022 22:10:20ERROR System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.create_date_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 757
+
+ 14.12.2022 22:11:20 INFO Проверка версии системы
+
+ 14.12.2022 22:11:20 INFO Версия: 1.3
+
+ 14.12.2022 22:11:35 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 14.12.2022 22:11:53ERROR System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.create_date_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 757
+
+ 14.12.2022 22:12:55ERROR System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в MySql.Data.Types.MySqlInt32.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object val, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Ais.create_date_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 757
+
+ 14.12.2022 22:13:44ERROR Ошибка в окне вахтера: 
+ MySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect integer value: 'wfwff' for column `lift`.`magazine`.`id_visiter` at row 1
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   в Liftais.Ais.create_note_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 730
+
+ 14.12.2022 22:30:25 INFO Проверка версии системы
+
+ 14.12.2022 22:30:26 INFO Версия: 1.3
+
+ 14.12.2022 22:31:14 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 14.12.2022 22:31:58ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:07ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:11ERROR Ошибка в окне вахтера: 
+ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.create_note_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 722
+
+ 14.12.2022 22:32:15ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:26ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:31ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:34ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:40ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в Liftais.DB.openconn() в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\DB.cs:строка 25
+   в Liftais.Ais.Window_Activated(Object sender, EventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 160
+
+ 14.12.2022 22:32:51 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 127.0.0.1:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55

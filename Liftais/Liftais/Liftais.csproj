@@ -33,7 +33,7 @@
     <PublisherName>GOLDLAB GROUP %28Ткачук,Панкратов%29</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <DisallowUrlActivation>true</DisallowUrlActivation>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -357,6 +357,7 @@
     <Compile Include="Editer.xaml.cs">
       <DependentUpon>Editer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyLogger.cs" />
     <Compile Include="table_c.cs" />
     <Compile Include="updater.xaml.cs">
       <DependentUpon>updater.xaml</DependentUpon>

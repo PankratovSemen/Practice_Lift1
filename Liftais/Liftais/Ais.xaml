@@ -159,6 +159,7 @@
                     <DataGridTextColumn Header="Социальная сеть" Width="*" Binding="{Binding Path=social_networks }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Откуда узнали о нас" Width="*" Binding="{Binding Path=find_us }" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Дата присоединения" Width="*" Binding="{Binding Path=date_join }" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Заметки" Width="*" Binding="{Binding Path=for_notes }" IsReadOnly="True"/>
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Height="599" HorizontalAlignment="Left" Margin="0,-523,0,0" Width="1898" Background="#FFD1D0D0" x:Name="cr_notes_visiter_visiters" Visibility="Hidden">

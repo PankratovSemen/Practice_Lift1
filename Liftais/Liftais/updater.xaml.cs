@@ -33,25 +33,33 @@ namespace Liftais
         string curver = Assembly.GetExecutingAssembly().GetName().Version.ToString(2);
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            MyLogger logger = new MyLogger();
             try
             {
+                logger.InfoFile("Проверка версии системы");
+                logger.InfoFile("Версия: " + curver);
                 var readver = clients.DownloadString("http://192.168.88.54/version.txt");
+                logger.Info("Актуальная версия системы = " + readver);
                 this.Hide();
-                MessageBox.Show(curver);
+                
+                logger.InfoFile("Сравнивание версий ");
                 if (Convert.ToDouble(curver,CultureInfo.InvariantCulture) == Convert.ToDouble(readver,CultureInfo.InvariantCulture))
                 {
-                    MessageBox.Show("У вас акутальная версия ПО");
+                    logger.InfoFile("У вас акутальная версия ПО");
                 }
 
                 else
                 {
+                    logger.InfoFile("Начало обновления");
                     MessageBox.Show("Найдена новая версия. Обновление произойдет автоматически. Пожалуйста подождите", "Обновление", MessageBoxButton.OK);
                     this.Hide();
+                    logger.InfoFile("Скачивание файла");
                     clients.DownloadFile("http://192.168.88.54/Liftais.exe", "Liftais1.exe");
                     ProcessStartInfo psi = new ProcessStartInfo();
                     //Имя запускаемого приложения
                     psi.FileName = "cmd.exe";
                     //команда, которую надо выполнить
+                    logger.InfoFile("Работа с cmd");
                     psi.Arguments = @"/c taskkill /f /im Liftais.exe && timeout /t 1 && del Liftais.exe && ren Liftais1.exe Liftais.exe &&  Liftais.exe ";
                     //  /c - после выполнения команды консоль закроется
                     //  /к - не закрывать консоль после выполнения команды
@@ -61,6 +69,7 @@ namespace Liftais
             catch (Exception ex)
             {
                 MessageBox.Show("Ошибка обновления " + ex.Message);
+                logger.ErrorFile("Ошибка обновления "+ ex.ToString());
                 this.Hide();
             }
         }
