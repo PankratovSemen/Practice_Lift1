@@ -1,0 +1,1037 @@
+2022-12-13 14:15:50.5890 DEBUG Инициализация программы
+2022-12-13 14:15:51.0012 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:15:52.7842 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 14:15:52.7842 DEBUG Попытка входа
+2022-12-13 14:15:52.7842 INFO Успешный вход
+2022-12-13 14:26:19.3196 DEBUG Инициализация программы
+2022-12-13 14:26:19.7142 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:26:22.4407 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 14:26:22.4407 DEBUG Попытка входа
+2022-12-13 14:26:22.4407 INFO Успешный вход
+2022-12-13 14:45:19.7385 DEBUG Инициализация программы
+2022-12-13 14:45:19.8882 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:45:20.2250 DEBUG Успешное подключение 
+Аккаунт: Dungeon_ma
+2022-12-13 14:45:20.2250 DEBUG Попытка входа
+2022-12-13 14:45:22.2895 INFO Неправильный логин или пароль
+Аккаунт: Dungeon_ma
+2022-12-13 14:45:25.8302 DEBUG Инициализация программы
+2022-12-13 14:45:25.8302 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:45:25.8302 DEBUG Успешное подключение 
+Аккаунт: Dungeon_ma
+2022-12-13 14:45:25.8302 DEBUG Попытка входа
+2022-12-13 14:45:29.2898 INFO Неправильный логин или пароль
+Аккаунт: Dungeon_ma
+2022-12-13 14:45:46.6381 DEBUG Инициализация программы
+2022-12-13 14:45:46.6381 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:45:46.6381 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 14:45:46.6381 DEBUG Попытка входа
+2022-12-13 14:45:47.6809 INFO Неправильный логин или пароль
+Аккаунт: admin
+2022-12-13 14:46:16.2292 DEBUG Инициализация программы
+2022-12-13 14:46:16.2292 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 14:46:16.2594 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 14:46:16.2594 DEBUG Попытка входа
+2022-12-13 14:46:16.2594 INFO Успешный вход
+2022-12-13 15:00:22.0552 DEBUG Инициализация программы
+2022-12-13 15:00:22.6223 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 15:00:25.6816 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 15:00:25.6816 DEBUG Попытка входа
+2022-12-13 15:00:26.9204 INFO Неправильный логин или пароль
+Аккаунт: admin
+2022-12-13 15:00:31.9980 DEBUG Инициализация программы
+2022-12-13 15:00:31.9980 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 15:00:32.0645 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 15:00:32.0645 DEBUG Попытка входа
+2022-12-13 15:00:32.0645 INFO Успешный вход
+2022-12-13 15:45:04.3413 DEBUG Инициализация программы
+2022-12-13 15:45:05.8798 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 15:45:10.0763 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 15:45:10.0763 DEBUG Попытка входа
+2022-12-13 15:45:10.0763 INFO Успешный вход
+2022-12-13 15:45:27.2994 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 15:45:38.9818 DEBUG Инициализация программы
+2022-12-13 15:45:38.9818 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 15:45:38.9818 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 15:45:38.9818 DEBUG Попытка входа
+2022-12-13 15:45:38.9818 INFO Успешный вход
+2022-12-13 15:45:59.8083 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 15:56:03.7542 DEBUG Инициализация программы
+2022-12-13 15:56:04.1955 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 15:56:05.5573 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 15:56:05.5573 DEBUG Попытка входа
+2022-12-13 15:56:05.5573 INFO Успешный вход
+2022-12-13 15:56:24.9656 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 581
+2022-12-13 16:02:32.6984 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 587
+2022-12-13 16:03:21.0383 DEBUG Инициализация программы
+2022-12-13 16:03:21.0383 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:03:21.0383 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:03:21.0383 DEBUG Попытка входа
+2022-12-13 16:03:21.0383 INFO Успешный вход
+2022-12-13 16:03:35.0451 ERROR Ошибка:  System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Export_AIS\События.xlsx", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalDelete(String path, Boolean checkHost)
+   в System.IO.File.Delete(String path)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 609
+2022-12-13 16:03:41.1324 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 587
+2022-12-13 16:04:14.9708 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:04:45.9584 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 16:08:58.6700 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 587
+2022-12-13 16:10:42.3781 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:11:03.0704 DEBUG Инициализация программы
+2022-12-13 16:11:03.0704 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:11:03.0704 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:11:03.0704 DEBUG Попытка входа
+2022-12-13 16:11:03.0704 INFO Успешный вход
+2022-12-13 16:11:14.1502 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:18:53.2129 DEBUG Инициализация программы
+2022-12-13 16:18:53.3870 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:18:54.3140 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:18:54.3140 DEBUG Попытка входа
+2022-12-13 16:18:54.3140 INFO Успешный вход
+2022-12-13 16:19:37.9476 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:21:31.8176 DEBUG Инициализация программы
+2022-12-13 16:21:31.9120 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:21:32.1276 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:21:32.1276 DEBUG Попытка входа
+2022-12-13 16:21:32.1276 INFO Успешный вход
+2022-12-13 16:22:17.5246 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:25:51.0352 DEBUG Инициализация программы
+2022-12-13 16:25:51.1108 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:25:51.3890 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:25:51.3890 DEBUG Попытка входа
+2022-12-13 16:25:51.3890 INFO Успешный вход
+2022-12-13 16:26:08.4081 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 511
+2022-12-13 16:26:37.8221 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 511
+2022-12-13 16:27:48.3159 DEBUG Инициализация программы
+2022-12-13 16:27:48.3738 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:27:48.6111 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:27:48.6111 DEBUG Попытка входа
+2022-12-13 16:27:48.6111 INFO Успешный вход
+2022-12-13 16:28:14.6110 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:30:14.8713 DEBUG Инициализация программы
+2022-12-13 16:30:14.9241 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:30:15.0925 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:30:15.0925 DEBUG Попытка входа
+2022-12-13 16:30:15.0925 INFO Успешный вход
+2022-12-13 16:30:41.2853 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:32:43.5018 DEBUG Инициализация программы
+2022-12-13 16:32:43.5567 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:32:43.7797 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:32:43.7797 DEBUG Попытка входа
+2022-12-13 16:32:43.7797 INFO Успешный вход
+2022-12-13 16:32:59.0799 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 511
+2022-12-13 16:34:29.7292 DEBUG Инициализация программы
+2022-12-13 16:34:29.7821 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:34:30.0762 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:34:30.0762 DEBUG Попытка входа
+2022-12-13 16:34:30.0762 INFO Успешный вход
+2022-12-13 16:34:43.5479 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 512
+2022-12-13 16:36:05.0563 DEBUG Инициализация программы
+2022-12-13 16:36:05.1092 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:36:05.2777 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:36:05.2777 DEBUG Попытка входа
+2022-12-13 16:36:05.2777 INFO Успешный вход
+2022-12-13 16:36:13.8323 ERROR Ошибка: 
+System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в System.Collections.ObjectModel.Collection`1.System.Collections.IList.get_Item(Int32 index)
+   в Liftais.Ais.selch1_PreviewMouseLeftButtonDown_1(Object sender, MouseButtonEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 1029
+2022-12-13 16:36:21.7996 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 511
+2022-12-13 16:37:49.3927 DEBUG Инициализация программы
+2022-12-13 16:37:49.4456 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:37:49.6154 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:37:49.6154 DEBUG Попытка входа
+2022-12-13 16:37:49.6154 INFO Успешный вход
+2022-12-13 16:38:04.5258 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 511
+2022-12-13 16:43:44.5765 DEBUG Инициализация программы
+2022-12-13 16:43:44.6323 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:43:45.1165 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:43:45.1165 DEBUG Попытка входа
+2022-12-13 16:43:45.1165 INFO Успешный вход
+2022-12-13 16:44:11.5765 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:45:53.7839 DEBUG Инициализация программы
+2022-12-13 16:45:53.8368 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:45:54.0152 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:45:54.0152 DEBUG Попытка входа
+2022-12-13 16:45:54.0152 INFO Успешный вход
+2022-12-13 16:46:18.4576 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:46:53.9514 DEBUG Инициализация программы
+2022-12-13 16:46:53.9514 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:46:53.9514 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:46:53.9514 DEBUG Попытка входа
+2022-12-13 16:46:53.9514 INFO Успешный вход
+2022-12-13 16:47:21.6974 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:48:07.8523 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 16:48:22.6892 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 4.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 579
+2022-12-13 16:51:13.2523 DEBUG Инициализация программы
+2022-12-13 16:51:13.3291 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 16:51:13.6202 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 16:51:13.6202 DEBUG Попытка входа
+2022-12-13 16:51:13.6202 INFO Успешный вход
+2022-12-13 16:52:35.0590 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 16:53:31.7676 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:53:45.8767 ERROR Ошибка:  System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Export_AIS\Посетители.xlsx", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   в MS.Internal.IO.Zip.ZipArchive.OpenOnFile(String path, FileMode mode, FileAccess access, FileShare share, Boolean streaming)
+   в System.IO.Packaging.ZipPackage..ctor(String path, FileMode mode, FileAccess access, FileShare share, Boolean streaming)
+   в System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare, Boolean streaming)
+   в DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   в DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   в ClosedXML.Excel.XLWorkbook.CreatePackage(String filePath, SpreadsheetDocumentType spreadsheetDocumentType, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 540
+2022-12-13 16:55:07.5873 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:55:53.6215 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 11.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 509
+2022-12-13 16:56:31.7569 ERROR Ошибка:  System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Export_AIS\Посетители.xlsx", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   в MS.Internal.IO.Zip.ZipArchive.OpenOnFile(String path, FileMode mode, FileAccess access, FileShare share, Boolean streaming)
+   в System.IO.Packaging.ZipPackage..ctor(String path, FileMode mode, FileAccess access, FileShare share, Boolean streaming)
+   в System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare, Boolean streaming)
+   в DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   в DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   в ClosedXML.Excel.XLWorkbook.CreatePackage(String filePath, SpreadsheetDocumentType spreadsheetDocumentType, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 540
+2022-12-13 16:59:36.1988 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 18:01:33.9158 DEBUG Инициализация программы
+2022-12-13 18:01:34.2784 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 18:01:49.8629 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: Не удается прочитать данные из транспортного соединения: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+   в System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   в MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-13 18:02:40.8345 DEBUG Инициализация программы
+2022-12-13 18:02:41.0234 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 18:02:52.0153 DEBUG Успешное подключение 
+Аккаунт: 
+2022-12-13 18:02:52.0153 DEBUG Попытка входа
+2022-12-13 18:03:11.1685 INFO Неправильный логин или пароль
+Аккаунт: 
+2022-12-13 18:03:13.8233 DEBUG Инициализация программы
+2022-12-13 18:03:13.8233 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 18:03:14.1407 DEBUG Успешное подключение 
+Аккаунт: 
+2022-12-13 18:03:14.1407 DEBUG Попытка входа
+2022-12-13 18:03:15.5682 INFO Неправильный логин или пароль
+Аккаунт: 
+2022-12-13 18:03:31.2916 DEBUG Инициализация программы
+2022-12-13 18:03:31.2916 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 18:03:46.3577 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: Не удается прочитать данные из транспортного соединения: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+   в System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   в MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.ReadOk(Boolean read)
+   в MySql.Data.MySqlClient.NativeDriver.SetDatabase(String dbName)
+   в MySql.Data.MySqlClient.Driver.SetDatabase(String dbName)
+   в MySql.Data.MySqlClient.MySqlConnection.ChangeDatabase(String databaseName)
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-13 18:03:49.2998 DEBUG Инициализация программы
+2022-12-13 18:03:49.2998 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 18:04:00.7079 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-13 18:04:00.7079 DEBUG Попытка входа
+2022-12-13 18:04:00.7079 INFO Успешный вход
+2022-12-13 19:34:06.6039 DEBUG Инициализация программы
+2022-12-13 19:34:07.3336 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 19:34:10.1824 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 19:34:10.1824 DEBUG Попытка входа
+2022-12-13 19:34:10.1824 INFO Успешный вход
+2022-12-13 19:34:56.1963 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 19:38:17.5809 DEBUG Инициализация программы
+2022-12-13 19:38:17.9488 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 19:38:18.2277 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 19:38:18.2277 DEBUG Попытка входа
+2022-12-13 19:38:18.2277 INFO Успешный вход
+2022-12-13 19:43:35.2568 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 20:04:56.3114 DEBUG Инициализация программы
+2022-12-13 20:04:57.0024 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:04:59.0942 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:04:59.0942 DEBUG Попытка входа
+2022-12-13 20:04:59.0942 INFO Успешный вход
+2022-12-13 20:05:34.3280 ERROR Ошибка:  System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Export_AIS\Журнал_посещений.xlsx", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalDelete(String path, Boolean checkHost)
+   в System.IO.File.Delete(String path)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 438
+2022-12-13 20:05:53.9037 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:08:53.6167 DEBUG Инициализация программы
+2022-12-13 20:08:53.7251 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:08:53.9838 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:08:53.9838 DEBUG Попытка входа
+2022-12-13 20:08:53.9838 INFO Успешный вход
+2022-12-13 20:09:16.4704 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 20:10:49.5634 DEBUG Инициализация программы
+2022-12-13 20:10:50.2618 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:10:50.6853 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:10:50.6853 DEBUG Попытка входа
+2022-12-13 20:10:50.6853 INFO Успешный вход
+2022-12-13 20:11:06.5353 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 20:12:28.2462 DEBUG Инициализация программы
+2022-12-13 20:12:28.6147 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:12:29.3763 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:12:29.3763 DEBUG Попытка входа
+2022-12-13 20:12:29.3763 INFO Успешный вход
+2022-12-13 20:12:41.2409 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 20:14:34.9257 DEBUG Инициализация программы
+2022-12-13 20:14:34.9837 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:14:35.1945 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:14:35.1945 DEBUG Попытка входа
+2022-12-13 20:14:35.1945 INFO Успешный вход
+2022-12-13 20:14:48.3509 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:14:51.4797 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:16:22.2735 DEBUG Инициализация программы
+2022-12-13 20:16:22.3304 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:16:22.5416 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:16:22.5416 DEBUG Попытка входа
+2022-12-13 20:16:22.5416 INFO Успешный вход
+2022-12-13 20:16:39.5363 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:18:41.4652 DEBUG Инициализация программы
+2022-12-13 20:18:41.5260 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:18:41.7577 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:18:41.7577 DEBUG Попытка входа
+2022-12-13 20:18:41.7577 INFO Успешный вход
+2022-12-13 20:18:56.3450 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 20:20:16.6272 DEBUG Инициализация программы
+2022-12-13 20:20:16.6801 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:20:16.8691 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:20:16.8691 DEBUG Попытка входа
+2022-12-13 20:20:16.8691 INFO Успешный вход
+2022-12-13 20:20:33.5170 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 20:32:25.1210 DEBUG Инициализация программы
+2022-12-13 20:32:25.8183 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:32:28.2411 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:32:28.2411 DEBUG Попытка входа
+2022-12-13 20:32:28.2411 INFO Успешный вход
+2022-12-13 20:32:53.4726 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:35:18.7034 DEBUG Инициализация программы
+2022-12-13 20:35:18.8238 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:35:19.0989 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:35:19.0989 DEBUG Попытка входа
+2022-12-13 20:35:19.0989 INFO Успешный вход
+2022-12-13 20:35:34.3645 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 20:40:00.8395 DEBUG Инициализация программы
+2022-12-13 20:40:01.1347 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 20:40:02.2944 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 20:40:02.2944 DEBUG Попытка входа
+2022-12-13 20:40:02.2944 INFO Успешный вход
+2022-12-13 20:40:20.0329 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:01:04.1514 DEBUG Инициализация программы
+2022-12-13 21:01:04.7090 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:01:07.5374 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:01:07.5374 DEBUG Попытка входа
+2022-12-13 21:01:07.5374 INFO Успешный вход
+2022-12-13 21:01:38.1350 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:03:35.1962 DEBUG Инициализация программы
+2022-12-13 21:03:35.3579 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:03:35.6476 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:03:35.6476 DEBUG Попытка входа
+2022-12-13 21:03:35.6476 INFO Успешный вход
+2022-12-13 21:03:48.9105 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:06:19.3963 DEBUG Инициализация программы
+2022-12-13 21:06:19.6291 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:06:20.1845 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:06:20.1845 DEBUG Попытка входа
+2022-12-13 21:06:20.1845 INFO Успешный вход
+2022-12-13 21:06:37.8658 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:07:48.9954 DEBUG Инициализация программы
+2022-12-13 21:07:49.3038 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:07:49.9666 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:07:49.9666 DEBUG Попытка входа
+2022-12-13 21:07:49.9666 INFO Успешный вход
+2022-12-13 21:08:00.7466 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:09:50.9055 DEBUG Инициализация программы
+2022-12-13 21:09:50.9614 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:09:51.4685 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:09:51.4685 DEBUG Попытка входа
+2022-12-13 21:09:51.4685 INFO Успешный вход
+2022-12-13 21:10:05.3856 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:11:40.5458 DEBUG Инициализация программы
+2022-12-13 21:11:40.6027 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:11:40.8163 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:11:40.8163 DEBUG Попытка входа
+2022-12-13 21:11:40.8163 INFO Успешный вход
+2022-12-13 21:11:55.2672 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 21:14:22.7713 DEBUG Инициализация программы
+2022-12-13 21:14:22.8281 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:14:23.0460 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:14:23.0460 DEBUG Попытка входа
+2022-12-13 21:14:23.0460 INFO Успешный вход
+2022-12-13 21:14:38.6358 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 426
+2022-12-13 21:19:02.5100 DEBUG Инициализация программы
+2022-12-13 21:19:02.5659 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:19:02.8545 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:19:02.8545 DEBUG Попытка входа
+2022-12-13 21:19:02.8545 INFO Успешный вход
+2022-12-13 21:19:16.0097 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 429
+2022-12-13 21:28:11.9008 DEBUG Инициализация программы
+2022-12-13 21:28:12.0705 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:28:13.5509 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:28:13.5509 DEBUG Попытка входа
+2022-12-13 21:28:13.5509 INFO Успешный вход
+2022-12-13 21:28:30.1346 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 429
+2022-12-13 21:30:11.9254 DEBUG Инициализация программы
+2022-12-13 21:30:12.0130 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:30:12.2606 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:30:12.2606 DEBUG Попытка входа
+2022-12-13 21:30:12.2606 INFO Успешный вход
+2022-12-13 21:30:21.8940 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 402
+2022-12-13 21:32:25.8192 DEBUG Инициализация программы
+2022-12-13 21:32:25.8976 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:32:26.1686 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:32:26.1686 DEBUG Попытка входа
+2022-12-13 21:32:26.1686 INFO Успешный вход
+2022-12-13 21:32:52.7961 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 402
+2022-12-13 21:36:02.6627 DEBUG Инициализация программы
+2022-12-13 21:36:03.6187 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:36:04.0976 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:36:04.0976 DEBUG Попытка входа
+2022-12-13 21:36:04.0976 INFO Успешный вход
+2022-12-13 21:37:26.6536 DEBUG Инициализация программы
+2022-12-13 21:37:26.7175 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:37:26.9127 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:37:26.9127 DEBUG Попытка входа
+2022-12-13 21:37:26.9127 INFO Успешный вход
+2022-12-13 21:37:49.7455 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 406
+2022-12-13 21:38:11.9060 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 406
+2022-12-13 21:41:51.6327 DEBUG Инициализация программы
+2022-12-13 21:41:51.6915 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 21:41:51.8999 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 21:41:51.8999 DEBUG Попытка входа
+2022-12-13 21:41:51.8999 INFO Успешный вход
+2022-12-13 21:42:06.6007 ERROR Ошибка:  System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 396
+2022-12-13 23:10:05.9693 ERROR Ошибка:  System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   в System.Collections.Generic.List`1.get_Item(Int32 index)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 396
+2022-12-13 23:12:01.3860 DEBUG Инициализация программы
+2022-12-13 23:12:01.6395 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:12:02.9478 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:12:02.9478 DEBUG Попытка входа
+2022-12-13 23:12:02.9478 INFO Успешный вход
+2022-12-13 23:12:28.0217 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:34.4493 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:35.8654 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:37.4631 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:38.9203 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:40.4664 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:42.0025 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:43.4995 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:45.1641 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:46.7698 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:48.2697 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:49.8383 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:51.6675 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:53.1365 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:54.6957 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:56.3200 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:57.8090 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:12:59.2321 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:13:00.7350 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:13:02.4352 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:13:03.9383 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:13:05.9792 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:13:13.4769 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 401
+2022-12-13 23:15:28.2291 DEBUG Инициализация программы
+2022-12-13 23:15:28.5318 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:15:29.2660 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:15:29.2660 DEBUG Попытка входа
+2022-12-13 23:15:29.2660 INFO Успешный вход
+2022-12-13 23:15:53.8252 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 403
+2022-12-13 23:17:49.0247 DEBUG Инициализация программы
+2022-12-13 23:17:49.1717 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:17:49.7306 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:17:49.7306 DEBUG Попытка входа
+2022-12-13 23:17:49.7306 INFO Успешный вход
+2022-12-13 23:18:03.1446 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 404
+2022-12-13 23:21:46.9612 DEBUG Инициализация программы
+2022-12-13 23:21:47.0825 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:21:47.4681 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:21:47.4681 DEBUG Попытка входа
+2022-12-13 23:21:47.4681 INFO Успешный вход
+2022-12-13 23:22:01.6398 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 404
+2022-12-13 23:23:03.7082 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 404
+2022-12-13 23:25:29.2499 DEBUG Инициализация программы
+2022-12-13 23:25:29.3349 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:25:29.6640 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:25:29.6640 DEBUG Попытка входа
+2022-12-13 23:25:29.6640 INFO Успешный вход
+2022-12-13 23:25:38.1367 ERROR Ошибка:  System.ArgumentException: 19 не является для таблицы magazine ни DataColumn, ни DataRelation.
+   в System.Data.DataRowView.get_Item(String property)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 405
+2022-12-13 23:28:58.2668 DEBUG Инициализация программы
+2022-12-13 23:28:58.3275 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:28:58.5746 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:28:58.5746 DEBUG Попытка входа
+2022-12-13 23:28:58.5746 INFO Успешный вход
+2022-12-13 23:29:08.9546 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 402
+2022-12-13 23:33:39.9376 DEBUG Инициализация программы
+2022-12-13 23:33:40.3992 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:33:41.7490 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:33:41.7490 DEBUG Попытка входа
+2022-12-13 23:33:41.7490 INFO Успешный вход
+2022-12-13 23:33:57.5411 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 403
+2022-12-13 23:38:59.0994 DEBUG Инициализация программы
+2022-12-13 23:38:59.5592 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:39:01.2614 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:39:01.2614 DEBUG Попытка входа
+2022-12-13 23:39:01.2614 INFO Успешный вход
+2022-12-13 23:39:17.6464 ERROR Ошибка:  System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\bin\Debug\Export_AIS\Журнал_посещений.xlsx", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.File.InternalDelete(String path, Boolean checkHost)
+   в System.IO.File.Delete(String path)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, SaveOptions options)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file, Boolean validate, Boolean evaluateFormulae)
+   в ClosedXML.Excel.XLWorkbook.SaveAs(String file)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 438
+2022-12-13 23:39:42.4296 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:41:34.8758 DEBUG Инициализация программы
+2022-12-13 23:41:34.9848 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:41:35.2185 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:41:35.2450 DEBUG Попытка входа
+2022-12-13 23:41:35.2450 INFO Успешный вход
+2022-12-13 23:41:55.5896 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 23:42:28.1272 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:43:47.1535 DEBUG Инициализация программы
+2022-12-13 23:43:47.2093 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:43:47.3871 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:43:47.3871 DEBUG Попытка входа
+2022-12-13 23:43:47.3871 INFO Успешный вход
+2022-12-13 23:45:01.7335 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 23:45:03.0627 ERROR Ошибка:  System.ArgumentOutOfRangeException: Row number must be between 1 and 1048576
+Имя параметра: cellAddressInRange
+   в ClosedXML.Excel.XLRangeBase.Cell(XLAddress& cellAddressInRange)
+   в ClosedXML.Excel.XLRangeBase.Cell(Int32 row, Int32 column)
+   в ClosedXML.Excel.XLWorksheet.ClosedXML.Excel.IXLWorksheet.Cell(Int32 row, Int32 column)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 400
+2022-12-13 23:47:27.4597 DEBUG Инициализация программы
+2022-12-13 23:47:27.5466 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:47:27.8267 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:47:27.8267 DEBUG Попытка входа
+2022-12-13 23:47:27.8267 INFO Успешный вход
+2022-12-13 23:47:39.6390 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:47:41.1682 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:47:42.5452 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:47:43.6636 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:47:45.1315 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:47:46.4152 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392
+2022-12-13 23:50:51.0901 DEBUG Инициализация программы
+2022-12-13 23:50:51.2111 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-13 23:50:51.8597 DEBUG Успешное подключение 
+Аккаунт: admin
+2022-12-13 23:50:51.8597 DEBUG Попытка входа
+2022-12-13 23:50:51.8597 INFO Успешный вход
+2022-12-13 23:51:08.3751 ERROR Ошибка:  System.IndexOutOfRangeException: Невозможно найти столбец 6.
+   в System.Data.DataColumnCollection.get_Item(Int32 index)
+   в System.Data.DataRow.get_Item(Int32 columnIndex, DataRowVersion version)
+   в System.Data.DataRowView.get_Item(Int32 ndx)
+   в Liftais.Ais.btnexp_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Ais.xaml.cs:строка 392

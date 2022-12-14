@@ -1,0 +1,155 @@
+2022-12-10 14:44:46.5605 DEBUG Инициализация программы
+2022-12-10 14:44:46.8283 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:45:01.3898 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Net.Sockets.SocketException (0x80004005): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:3306
+   в System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   в MySql.Data.MySqlClient.NativeDriver.<>c.<Open>b__40_0(Exception ex)
+   в System.AggregateException.Handle(Func`2 predicate)
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-10 14:50:30.4891 DEBUG Инициализация программы
+2022-12-10 14:50:30.4891 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:50:36.3186 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:50:36.3186 DEBUG Попытка входа
+2022-12-10 14:50:36.3186 INFO Успешный вход
+2022-12-10 14:52:51.7430 DEBUG Инициализация программы
+2022-12-10 14:52:51.8588 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:52:52.1831 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:52:52.1831 DEBUG Попытка входа
+2022-12-10 14:52:52.1831 INFO Успешный вход
+2022-12-10 14:53:11.6069 DEBUG Инициализация программы
+2022-12-10 14:53:11.6069 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:53:11.6449 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:53:11.6449 DEBUG Попытка входа
+2022-12-10 14:53:11.6449 INFO Успешный вход
+2022-12-10 14:54:23.4714 DEBUG Инициализация программы
+2022-12-10 14:54:23.5273 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:54:23.8481 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:54:23.8481 DEBUG Попытка входа
+2022-12-10 14:54:23.8481 INFO Успешный вход
+2022-12-10 14:56:26.5433 DEBUG Инициализация программы
+2022-12-10 14:56:26.5961 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:56:27.6549 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:56:27.6549 DEBUG Попытка входа
+2022-12-10 14:56:27.6549 INFO Успешный вход
+2022-12-10 14:56:44.7905 DEBUG Инициализация программы
+2022-12-10 14:56:44.7905 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:56:44.9012 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:56:44.9012 DEBUG Попытка входа
+2022-12-10 14:56:44.9012 INFO Успешный вход
+2022-12-10 14:58:21.1335 DEBUG Инициализация программы
+2022-12-10 14:58:21.1864 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:58:21.4860 DEBUG Успешное подключение 
+Аккаунт: Pankrtov
+2022-12-10 14:58:21.4860 DEBUG Попытка входа
+2022-12-10 14:58:22.5377 INFO Неправильный логин или пароль
+Аккаунт: Pankrtov
+2022-12-10 14:58:28.2955 DEBUG Инициализация программы
+2022-12-10 14:58:28.2955 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 14:58:28.3410 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 14:58:28.3410 DEBUG Попытка входа
+2022-12-10 14:58:28.3410 INFO Успешный вход
+2022-12-10 15:07:16.8890 DEBUG Инициализация программы
+2022-12-10 15:07:17.4049 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:07:19.8998 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:07:19.8998 DEBUG Попытка входа
+2022-12-10 15:07:19.8998 INFO Успешный вход
+2022-12-10 15:10:16.7057 DEBUG Инициализация программы
+2022-12-10 15:10:16.7606 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:10:17.0687 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:10:17.0687 DEBUG Попытка входа
+2022-12-10 15:10:17.0687 INFO Успешный вход
+2022-12-10 15:43:15.5572 DEBUG Инициализация программы
+2022-12-10 15:43:15.9883 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:43:19.1567 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:43:19.1567 DEBUG Попытка входа
+2022-12-10 15:43:20.5654 INFO Неправильный логин или пароль
+Аккаунт: Pankratov
+2022-12-10 15:43:23.3577 DEBUG Инициализация программы
+2022-12-10 15:43:23.3577 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:43:23.6588 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:43:23.6588 DEBUG Попытка входа
+2022-12-10 15:43:23.6588 INFO Успешный вход
+2022-12-10 15:43:44.6456 DEBUG Инициализация программы
+2022-12-10 15:43:44.6456 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:43:44.8525 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:43:44.8525 DEBUG Попытка входа
+2022-12-10 15:43:44.8525 INFO Успешный вход
+2022-12-10 15:47:54.4530 DEBUG Инициализация программы
+2022-12-10 15:47:54.5328 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:47:55.7217 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:47:55.7217 DEBUG Попытка входа
+2022-12-10 15:47:55.7217 INFO Успешный вход
+2022-12-10 15:50:20.7600 DEBUG Инициализация программы
+2022-12-10 15:50:20.8168 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 15:50:21.9050 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 15:50:21.9050 DEBUG Попытка входа
+2022-12-10 15:50:21.9050 INFO Успешный вход
+2022-12-10 15:59:40.9399 DEBUG Инициализация программы
+2022-12-10 15:59:41.0246 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 16:00:02.5936 ERROR Ошибка MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: Не удается прочитать данные из транспортного соединения: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+   в System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   в MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.Open()
+   в MySql.Data.MySqlClient.Driver.Open()
+   в MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   в MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   в MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   в MySql.Data.MySqlClient.MySqlConnection.Open()
+   в System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   в System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   в Liftais.MainWindow.SingIn_Click(Object sender, RoutedEventArgs y) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\MainWindow.xaml.cs:строка 55
+2022-12-10 16:00:18.2842 DEBUG Инициализация программы
+2022-12-10 16:00:18.2842 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 16:00:24.6995 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 16:00:24.6995 DEBUG Попытка входа
+2022-12-10 16:00:24.6995 INFO Успешный вход
+2022-12-10 16:01:55.1408 DEBUG Инициализация программы
+2022-12-10 16:01:55.1977 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 16:01:56.3519 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 16:01:56.3519 DEBUG Попытка входа
+2022-12-10 16:01:56.3519 INFO Успешный вход
+2022-12-10 16:06:50.2011 DEBUG Инициализация программы
+2022-12-10 16:06:50.4046 DEBUG Выполнение запроса Sql + Подключение к Базе данных
+2022-12-10 16:06:55.8019 DEBUG Успешное подключение 
+Аккаунт: Pankratov
+2022-12-10 16:06:55.8019 DEBUG Попытка входа
+2022-12-10 16:06:55.8019 INFO Успешный вход

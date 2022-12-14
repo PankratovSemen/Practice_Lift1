@@ -46,8 +46,8 @@ namespace Liftais
                 else
                 {
                     MessageBox.Show("Найдена новая версия. Обновление произойдет автоматически. Пожалуйста подождите", "Обновление", MessageBoxButton.OK);
-                    this.Show();
-                    clients.DownloadFile("http://192.168.f88.54/Liftais.exe", "Liftais1.exe");
+                    this.Hide();
+                    clients.DownloadFile("http://192.168.88.54/Liftais.exe", "Liftais1.exe");
                     ProcessStartInfo psi = new ProcessStartInfo();
                     //Имя запускаемого приложения
                     psi.FileName = "cmd.exe";
@@ -60,7 +60,8 @@ namespace Liftais
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка обновления " + ex);
+                MessageBox.Show("Ошибка обновления " + ex.Message);
+                this.Hide();
             }
         }
 

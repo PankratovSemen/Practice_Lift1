@@ -17,7 +17,7 @@
             <TextBlock LineStackingStrategy="BlockLineHeight" FontSize="25" Text="Посетители" Foreground="White" Width="140" Margin="-248,190,0,0" Height="34" VerticalAlignment="Top" PreviewMouseDown="TextBlock_PreviewMouseDown" />
             <TextBlock x:Name="resident_menu" Text="Резиденты" FontSize="25" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-187,267,0,1" PreviewMouseDown="resident_menu_PreviewMouseDown"/>
             <TextBlock x:Name="event_menu" Text="События" FontSize="25" Margin="-178,331,0,0" Foreground="White" Width="121" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewMouseDown="event_menu_PreviewMouseDown"/>
-            <TextBlock x:Name="users" Text="Пользователи" FontSize="25" Margin="-238,390,0,0" Foreground="White" Width="177" VerticalAlignment="Top"/>
+            <TextBlock x:Name="users" Text="Пользователи" FontSize="25" Margin="-238,390,0,0" Foreground="White" Width="177" VerticalAlignment="Top" MouseDown="users_MouseDown"/>
 
         </DockPanel>
         <Image x:Name="ms1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="42" Source="/12 (1).png" MouseLeftButtonDown="ms1_MouseLeftButtonDown" />
@@ -28,8 +28,11 @@
             <Label x:Name="Reg_visiters_note" Content="Регестрация посетителей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="Reg_visiters_note_MouseLeftButtonDown" Visibility="Hidden" />
             <Label x:Name="resident_View" Content="Просмотр резидентов" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="resident_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
             <TextBlock x:Name="create_residents" TextWrapping="Wrap" Text="Создание резидентов" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Margin="198,-29,0,0" Foreground="White" MouseDown="TextBlock_MouseDown" Visibility="Hidden"/>
-            <Label x:Name="events_View" Content="Просмотр событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="events_View_MouseLeftButtonDown" Visibility="Visible" Margin="0,-35,0,0"/>
-            <Label x:Name="create_events" Content="Создание событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="create_events_MouseLeftButtonDown" Visibility="Visible" />
+            <Label x:Name="events_View" Content="Просмотр событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="events_View_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
+            <Label x:Name="create_events" Content="Создание событий" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="create_events_MouseLeftButtonDown" Visibility="Hidden" />
+            <Label x:Name="cr_users" Content="Создание пользователей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left"  MouseLeftButtonDown="cr_users_MouseLeftButtonDown" Visibility="Hidden" Margin="0,-35,0,0"/>
+            <Label x:Name="reset_password" Content="Восстановление пароля" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="195,-31,0,0" MouseLeftButtonDown="reset_password_MouseLeftButtonDown" Visibility="Visible" />
+            <Label x:Name="users_Viewewr" Content="Просмотр пользователей" Foreground="White" Width="235" FontSize="16" HorizontalAlignment="Left" Margin="396,-31,0,0" MouseLeftButtonDown="users_Viewewr_MouseLeftButtonDown" Visibility="Visible" />
         </StackPanel>
         <StackPanel x:Name="sep" Background="#FF616161" Margin="0,89,0,581" MaxHeight="34.04" VerticalAlignment="Top" Visibility="Visible">
             <ComboBox x:Name="lists" Width="120" HorizontalAlignment="Right" BorderThickness="1,1,1,1" Margin="0,2,231,-18" Visibility="Hidden">
@@ -70,6 +73,16 @@
                 <TextBlock x:Name="teamlead_event">Организатор</TextBlock>
 
             </ComboBox>
+
+            <TextBox x:Name="Search_users" Text="Поиск" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-24,9,0" PreviewKeyDown="Search_users_PreviewKeyDown" MouseMove="Search_users_MouseMove" Visibility="Hidden"/>
+            <ComboBox x:Name="select_users" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-27,152,0" Visibility="Hidden">
+                <TextBlock x:Name="id_user">Номер пользователя</TextBlock>
+                <TextBlock x:Name="log_user">Логин</TextBlock>
+                <TextBlock x:Name="surname_user">Фамилия</TextBlock>
+                <TextBlock x:Name="name_user">Имя</TextBlock>
+
+            </ComboBox>
+
         </StackPanel>
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
             <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1" Click="btnexp_Click"/>
@@ -99,11 +112,14 @@
 
         </DataGrid>
 
-        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Hidden">
+        <StackPanel x:Name="cr_notes" Background="White" Margin="0,94,51,54" Visibility="Hidden" VerticalAlignment="Top" MaxWidth="1869" MinWidth="1869" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <StackPanel.ScrollOwner>
+                <ScrollViewer/>
+            </StackPanel.ScrollOwner>
             <TextBlock TextWrapping="Wrap" Text="Открытие записи" FontSize="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
-            <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,0,0" Height="83"/>
-            <StackPanel Height="513" Width="956" HorizontalAlignment="Left" Background="#FFD9D9D9">
+            <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,437,0" Height="83"/>
+            <StackPanel Height="513" Background="#FFD9D9D9" Width="920" MaxWidth="931" MinWidth="921" Margin="0,0,941,0">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Width="194" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="5,47,0,0"/>
 
                 <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0"/>
@@ -115,14 +131,14 @@
                 <ComboBox x:Name="resident_combo" Width="180" HorizontalAlignment="Center" Margin="-333,-411,0,0" Height="29"/>
 
             </StackPanel>
-            <StackPanel Height="514" Background="#FFD9D9D9" Width="956" HorizontalAlignment="Right" Margin="-4,-514,-48,0">
+            <StackPanel Height="514" Background="#FFD9D9D9" Margin="922,-514,-48,0" Width="996" MaxWidth="995" MinWidth="995">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Padding="3,0,5,2" Margin="61,51,0,3" Width="206" HorizontalAlignment="Left"/>
                 <TextBox x:Name="id_vis_tb_close" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" BorderThickness="0,1,1,1" Margin="265,-40,0,0"/>
                 <Button x:Name="create_date" Content="Записать" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-236,42,0,7" Click="create_date_Click"/>
             </StackPanel>
             <StackPanel Height="100"/>
         </StackPanel>
-        <StackPanel>
+        <StackPanel x:Name="Visiter_panel" Visibility="Hidden">
             <DataGrid x:Name="db_visiters" Height="493" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test1}" HorizontalContentAlignment="Center" Margin="0,124,0,0" SelectionMode="Single" CanUserAddRows="False" Visibility="Hidden" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTemplateColumn>
@@ -171,7 +187,7 @@
                 <TextBlock TextWrapping="Wrap" Text="Дата регистрации" FontSize="16" HorizontalAlignment="Left" Margin="492,-222,0,0" VerticalAlignment="Top"/>
                 <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click" Height="47" Width="102"/>
             </StackPanel>
-            <StackPanel x:Name="cr_notes_residents_menu" Height="597" Margin="0,-600,0,0" HorizontalAlignment="Right" Width="1896" Background="#FFCFCFCF" AutomationProperties.IsOffscreenBehavior="Onscreen" InputScope="Default" Visibility="Hidden">
+            <StackPanel x:Name="cr_notes_residents_menu" Height="597" Margin="0,-600,0,0" HorizontalAlignment="Right" Width="1896" Background="#FFCFCFCF" AutomationProperties.IsOffscreenBehavior="Onscreen" InputScope="Default" Visibility="Visible">
                 <TextBox x:Name="title_residents_menu" Width="120" HorizontalAlignment="Center" Margin="215,108,0,0" Height="23"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="type_activity_resident" Width="120" HorizontalAlignment="Center" BorderThickness="1,1,1,1" Margin="214,24,0,0" Height="23" FontSize="14" VerticalAlignment="Center"  />
                 <TextBox x:Name="teamlead_resident_menu" TextWrapping="NoWrap" Text="" Width="120" HorizontalAlignment="Center" Height="20" Margin="213,38,0,0"/>
@@ -181,6 +197,7 @@
                 <TextBlock TextWrapping="Wrap" Text="Руководитель" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-11,-19,0,0" FontSize="14"/>
                 <Button Content="Создать" HorizontalAlignment="Center" FontSize="14" Margin="235,19,0,0" BorderBrush="White" Background="#FF150B75" Foreground="White" Height="38" Width="77" Click="Button_Click_1"/>
             </StackPanel>
+
 
 
         </StackPanel>
@@ -214,7 +231,7 @@
                 <DataGridTextColumn Header="Номер записи" Width="*" Binding="{Binding Path=id_event }" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Название события" Width="*" Binding="{Binding Path=Title_event }" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Дата проведения события" Width="*" Binding="{Binding Path=date_begin }" IsReadOnly="True"/>
-                
+
                 <DataGridTextColumn Header="Организатор" Width="*" Binding="{Binding Path=organizer }" IsReadOnly="True"/>
 
 
@@ -223,7 +240,7 @@
 
 
         </DataGrid>
-        <StackPanel x:Name="cr_notes_events_menu" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFC5C3C3" Height="614" Width="1823" Margin="46,94,0,0" Visibility="Hidden">
+        <StackPanel x:Name="cr_notes_events_menu" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFC5C3C3" Height="614" Width="1921" Margin="0,94,0,0" Visibility="Hidden">
             <TextBox x:Name="Title_event_events" TextWrapping="Wrap" Width="142" Margin="0,122,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" FontSize="14"/>
             <TextBlock TextWrapping="Wrap" Text="Создание событий" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-147,0,0" FontSize="40"/>
             <TextBox x:Name="organaizer_events" TextWrapping="Wrap" Width="142" Height="29" Margin="0,76,0,0" FontSize="14"/>
@@ -233,7 +250,70 @@
             <TextBlock TextWrapping="Wrap" Text="Организатор" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-248,-24,0,0"/>
             <Button Content="Создать" BorderBrush="#FF1815A4" Background="#FF1637E5" Foreground="White" HorizontalAlignment="Center" Height="44" Width="89" FontSize="14" Margin="0,29,0,0" Click="Button_Click_2"/>
         </StackPanel>
+        <StackPanel x:Name="users_panel" Visibility="Hidden">
 
+            <StackPanel x:Name="users_Viewer" HorizontalAlignment="Center" Width="1920" Visibility="Visible"  Margin="0,121,0,85" Height="489">
+                <TextBlock TextWrapping="Wrap" Text="Создание пользователей" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                <TextBox x:Name="login_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Width="200" Margin="0,36,0,0" Background="#FFE8E7E7" />
+                <TextBox x:Name="password_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,28,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="surname_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="middle_name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="phone_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="email_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBlock Text="Логин" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-300,303,0"/>
+                <TextBlock Text="Пароль" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-250,303,0"/>
+                <TextBlock Text="Фамилия" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-208,303,0"/>
+                <TextBlock Text="Имя" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-167,303,0"/>
+                <TextBlock Text="Отчество" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-119,303,0"/>
+                <TextBlock Text="Телефон" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-76,303,0"/>
+                <TextBlock Text="Email" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-30,303,0"/>
+                <TextBlock Text="Роль" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,303,0"/>
+                <ComboBox x:Name="roles_select" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="197" Margin="0,-21,0,0">
+                    <TextBlock x:Name="admin_role">Администратор</TextBlock>
+                    <TextBlock x:Name="operator_role">Оператор</TextBlock>
+                </ComboBox>
+                <Button Content="Создать" Background="#FF240EB3" Foreground="White" HorizontalAlignment="Center" Height="40" Width="86" FontSize="16" Margin="0,15,0,0" Click="Button_Click_3"/>
+
+
+            </StackPanel>
+            <StackPanel Visibility="Hidden" HorizontalAlignment="Center" Height="607" Width="1924" Margin="0,-601,0,0" VerticalAlignment="Top" x:Name="res_pass">
+                <TextBlock Text="Восстановление пароля" HorizontalAlignment="Center" FontSize="29"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="log_reset"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_res"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_repeat"/>
+
+                <TextBlock Text="Логин" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-307,343,0" FontSize="18"/>
+                <TextBlock Text="Пароль" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-176,358,0" FontSize="18"/>
+                <TextBlock Text="Повторите пароль" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-39,450,0" FontSize="18"/>
+                <Button Content="Сменить" Width="106" Height="33" FontSize="18" Background="#FF391AE2" Foreground="White" Margin="0,13,0,0" Click="Button_Click_4"/>
+
+            </StackPanel>
+            <StackPanel Visibility="Hidden" HorizontalAlignment="Right" Height="466" Margin="0,-690,0,0" x:Name="users_Viewers_panel">
+                <TextBlock Text ="Просмотр пользователей" FontSize="30" HorizontalAlignment="Left"/>
+                <DataGrid x:Name="db_users" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test2}" HorizontalContentAlignment="Center" Margin="0,29,0,90" SelectionMode="Single" CanUserAddRows="False" Visibility="Visible" AutoGenerateColumns="False" Height="450" >
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox x:Name="selch2" PreviewMouseLeftButtonDown="selch2_PreviewMouseLeftButtonDown_2" ></CheckBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn  Header="Номер пользователя" Width="*" Binding="{Binding Path=id}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Логин" Width="*" Binding="{Binding Path=login}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Фамилия" Width="*" Binding="{Binding Path=surname}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Имя" Width="*" Binding="{Binding Path=name }" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Отчество" Width="*" Binding="{Binding Path=middle_name}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Номер телефона" Width="*" Binding="{Binding Path=phone}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Email" Width="*" Binding="{Binding Path=email}" IsReadOnly="True"/>
+                        <DataGridTextColumn  Header="Роль" Width="*" Binding="{Binding Path=role}" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </StackPanel>
+
+        </StackPanel>
 
 
 
