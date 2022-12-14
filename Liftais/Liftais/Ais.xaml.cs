@@ -2245,5 +2245,24 @@ namespace Liftais
                 logger.Error(ex.ToString());
             }
         }
+
+        private void edit_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Editer ed = new Editer();
+            if (dbj1.Visibility == Visibility.Visible)
+            {
+                DataRowView row = (DataRowView)dbj1.SelectedItems[0];
+
+                
+                Editer.ir_ = row["id_resident"].ToString();
+                Editer.ie_ = row["id_event"].ToString();
+                Editer.iv_ = row["id_visiter"].ToString();
+                Editer.idn_ = Convert.ToInt32(row["id_note"].ToString());
+
+                
+                ed.Show();
+
+            }
+        }
     }
 }

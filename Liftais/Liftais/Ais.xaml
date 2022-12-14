@@ -87,6 +87,7 @@
         <StackPanel x:Name="ExpP" Background="#FF595959" Margin="0,620,0,0" MaxHeight="85" VerticalAlignment="Bottom" Visibility="Visible">
             <Button x:Name="btnexp" Content="Экспорт" BorderBrush="#FF180D5F" Foreground="White" Background="#FF261692" FontSize="30" Width="179" Height="85" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Padding="1,1,1,1" Click="btnexp_Click"/>
             <Button x:Name="delbtn" Content="Удалить" Margin="0,-83,205,0" HorizontalAlignment="Right" Foreground="White" Width="177" Height="85" FontSize="30" Background="#FF261692" Click="Button_Click"/>
+            <Button x:Name="edit_btn" Content="Изменить" Margin="0,-83,413,0" HorizontalAlignment="Right" Foreground="White" Width="177" Height="85" FontSize="30" Background="#FF261692" Click="edit_btn_Click"/>
 
 
         </StackPanel>

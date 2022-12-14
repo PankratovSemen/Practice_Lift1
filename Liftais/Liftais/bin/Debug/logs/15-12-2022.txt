@@ -1,0 +1,320 @@
+
+ 15.12.2022 0:00:18ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@dc' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:00:20ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@dc' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:01:24 INFO Проверка версии системы
+
+ 15.12.2022 0:01:24 INFO Версия: 1.3
+
+ 15.12.2022 0:01:43 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:02:07ERROR System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в MySql.Data.Types.MySqlDateTime.ParseMySql(String s)
+   в MySql.Data.Types.MySqlDateTime.MySql.Data.Types.IMySqlValue.WriteValue(MySqlPacket packet, Boolean binary, Object value, Int32 length)
+   в MySql.Data.MySqlClient.MySqlParameter.Serialize(MySqlPacket packet, Boolean binary, MySqlConnectionStringBuilder settings)
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:03:17 INFO Проверка версии системы
+
+ 15.12.2022 0:03:17 INFO Версия: 1.3
+
+ 15.12.2022 0:03:32 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:03:47ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:05:33 INFO Проверка версии системы
+
+ 15.12.2022 0:05:33 INFO Версия: 1.3
+
+ 15.12.2022 0:05:49 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:06:06ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:07:56 INFO Проверка версии системы
+
+ 15.12.2022 0:07:56 INFO Версия: 1.3
+
+ 15.12.2022 0:08:13 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:08:28ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:09:40 INFO Проверка версии системы
+
+ 15.12.2022 0:09:40 INFO Версия: 1.3
+
+ 15.12.2022 0:09:55 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:10:09ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:11:04 INFO Проверка версии системы
+
+ 15.12.2022 0:11:04 INFO Версия: 1.3
+
+ 15.12.2022 0:11:20 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:11:34ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:14:01 INFO Проверка версии системы
+
+ 15.12.2022 0:14:01 INFO Версия: 1.3
+
+ 15.12.2022 0:14:17 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:14:34ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@id_n' must be defined.
+   в MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   в MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   в MySql.Data.MySqlClient.Statement.BindParameters()
+   в MySql.Data.MySqlClient.PreparableStatement.Execute()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:15:18 INFO Проверка версии системы
+
+ 15.12.2022 0:15:18 INFO Версия: 1.3
+
+ 15.12.2022 0:15:34 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:15:56ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: 'Школа трюкового мастерства "Экшен"'
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:16:27 INFO Проверка версии системы
+
+ 15.12.2022 0:16:27 INFO Версия: 1.3
+
+ 15.12.2022 0:16:44 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:20:04 INFO Проверка версии системы
+
+ 15.12.2022 0:20:04 INFO Версия: 1.3
+
+ 15.12.2022 0:20:20 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:20:52 INFO Проверка версии системы
+
+ 15.12.2022 0:20:52 INFO Версия: 1.3
+
+ 15.12.2022 0:21:11 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
+
+ 15.12.2022 0:21:47ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: ''
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:22:07ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: 'Сергей Терпиловский'
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:22:22ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: 'Сергей Терпиловскийа'
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:22:26ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: ''
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:22:29ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: ''
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:25:19ERROR MySql.Data.MySqlClient.MySqlException (0x80004005): Truncated incorrect DOUBLE value: 'ррр'
+   в MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   в MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   в MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   в MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   в MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   в Liftais.Editer.Button_Click(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\Editer.xaml.cs:строка 49
+
+ 15.12.2022 0:27:15 INFO Проверка версии системы
+
+ 15.12.2022 0:27:15 INFO Версия: 1.3
+
+ 15.12.2022 0:27:31 ERROR Ошибка обновления System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 192.168.88.54:80
+   в System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   в System.Net.WebClient.DownloadString(Uri address)
+   в System.Net.WebClient.DownloadString(String address)
+   в Liftais.updater.Window_Loaded(Object sender, RoutedEventArgs e) в C:\Users\Семён\Documents\GitHub\Practice_Lift1\Liftais\Liftais\updater.xaml.cs:строка 41
