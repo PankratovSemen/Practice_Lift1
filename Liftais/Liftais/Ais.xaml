@@ -291,7 +291,7 @@
                 <Button Content="Сменить" Width="106" Height="33" FontSize="18" Background="#FF391AE2" Foreground="White" Margin="0,13,0,0" Click="Button_Click_4"/>
 
             </StackPanel>
-            <StackPanel Visibility="Hidden" HorizontalAlignment="Right" Height="466" Margin="0,-690,0,0" x:Name="users_Viewers_panel">
+            <StackPanel Visibility="Hidden" HorizontalAlignment="Right" Height="466" Margin="0,-236,0,0" x:Name="users_Viewers_panel">
                 <TextBlock Text ="Просмотр пользователей" FontSize="30" HorizontalAlignment="Left"/>
                 <DataGrid x:Name="db_users" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test2}" HorizontalContentAlignment="Center" Margin="0,29,0,90" SelectionMode="Single" CanUserAddRows="False" Visibility="Visible" AutoGenerateColumns="False" Height="450" >
                     <DataGrid.Columns>

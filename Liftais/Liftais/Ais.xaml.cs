@@ -2258,10 +2258,48 @@ namespace Liftais
                 Editer.ie_ = row["id_event"].ToString();
                 Editer.iv_ = row["id_visiter"].ToString();
                 Editer.idn_ = Convert.ToInt32(row["id_note"].ToString());
-
+                Editer.state = "dbj1";
                 
-                ed.Show();
+                ed.ShowDialog();
 
+            }
+            else if(db_visiters.Visibility == Visibility.Visible)
+            {
+                DataRowView row = (DataRowView)db_visiters.SelectedItems[0];
+                Editer.state = "db_visiters";
+                Editer.ive_ = row["id_visiter"].ToString();
+                Editer.surn_ = row["surname"].ToString();
+                Editer.name_ = row["name"].ToString();
+                Editer.mn_ = row["middle_name"].ToString();
+                Editer.birth_ = row["birthday"].ToString();
+                Editer.ph_ = row["phone"].ToString();
+                Editer.em_ = row["email"].ToString();
+                Editer.place_ = row["place"].ToString();
+                Editer.social_ = row["social_networks"].ToString();
+                Editer.findus_ = row["find_us"].ToString();
+                Editer.dj_ = row["date_join"].ToString();
+                Editer.note_ = row["for_notes"].ToString();
+                ed.ShowDialog();
+            }
+            else if(db_resident.Visibility == Visibility.Visible)
+            {
+                DataRowView row = (DataRowView)db_resident.SelectedItems[0];
+                Editer.id_res_ = row["id_resident"].ToString();
+                Editer.title_ = row["title"].ToString();
+                Editer.tya_ = row["type_activity"].ToString();
+                Editer.teaml_ = row["teamlead"].ToString();
+                Editer.state = "db_resident";
+                ed.ShowDialog();
+            }
+            else if (db_events.Visibility == Visibility.Visible)
+            {
+                DataRowView row = (DataRowView)db_events.SelectedItems[0];
+                Editer.id_event_ = row["id_event"].ToString();
+                Editer.Te_ = row["Title_event"].ToString();
+                Editer.date_begin_ = row["date_begin"].ToString();
+                Editer.organizer_ = row["organizer"].ToString();
+                Editer.state = "db_events";
+                ed.ShowDialog();
             }
         }
     }

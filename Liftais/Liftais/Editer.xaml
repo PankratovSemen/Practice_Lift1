@@ -5,18 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liftais"
         mc:Ignorable="d"
-        Title="Editer" Height="404" Width="1080" MinWidth="1081" MinHeight="404" Loaded="Window_Loaded">
+        Title="Editer" Height="468" Width="1080" MinWidth="1081" MinHeight="404" Loaded="Window_Loaded">
     <Grid Margin="0,0,0,-6">
-        <StackPanel Margin="0,15,0,0" x:Name="dbj1_edit">
+        <StackPanel Margin="0,15,0,0" x:Name="dbj1_edit" Visibility="Hidden">
             <TextBox x:Name="id_vis_mv" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Center" Width="156" Background="#FFEBE7E7" Margin="0,45,0,0" Focusable="True" ForceCursor="True"/>
             <TextBox x:Name="id_event_mv" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Center" Width="156" Background="#FFEBE7E7" Margin="0,45,0,0" Focusable="True"/>
             <TextBox x:Name="id_resident_mv" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Center" Width="156" Background="#FFEBE7E7" Margin="0,45,0,0" Focusable="True" />
-            
+
             <Button Content="Изменить" Background="#FF3F18D7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17" Foreground="White" Margin="0,18,0,0" Click="Button_Click"/>
             <Label Content="Номер посетителя" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" VerticalAlignment="Top" Margin="0,-192,289,0" HorizontalAlignment="Left"/>
             <Label Content="Номер события" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" VerticalAlignment="Top" Margin="0,-132,289,0" HorizontalAlignment="Left"/>
             <Label Content="Номер резидента" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" VerticalAlignment="Top" Margin="0,-71,289,0" HorizontalAlignment="Left"/>
-           
+
+        </StackPanel>
+        <StackPanel  x:Name="db_visiters_edit" HorizontalAlignment="Left" Visibility="Visible">
+            
+            <TextBlock Text="Номер посетителя" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="id_visiter_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="152" />
+            <TextBlock Text="Фамилия" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="surname_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="149" Background="#FFF7F5F5" />
+            <TextBlock Text="Имя" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="name_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="149" Background="#FFF7F5F5" />
+            <TextBlock Text="Отчество" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="middle_name_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="149" Background="#FFF7F5F5" />
+            <TextBlock Text="Дата рождения" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <DatePicker x:Name="birth_vis_edit" Width="131" VerticalAlignment="Top" Margin="163,-25,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Left"/>
+            <TextBlock Text="Номер телефона" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="phone_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="149" Background="#FFF7F5F5" />
+            <TextBlock Text="Email" FontSize="18" HorizontalAlignment="Left" Margin="0,27,0,0"/>
+            <TextBox x:Name="email_vis_edit" HorizontalAlignment="Left" Margin="164.3,-19,2,0" Width="149" Background="#FFF7F5F5" />
+            <TextBlock Text="Место учебы/работы" FontSize="18" HorizontalAlignment="Left" Margin="381,-320,3,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="place_vis_edit" HorizontalAlignment="Left" Margin="594,-318,2,0" Width="149" Background="#FFF7F5F5" VerticalAlignment="Top" />
+            <TextBlock Text="Социальная сеть" FontSize="18" HorizontalAlignment="Left" Margin="381,-275,3,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="social_vis_edit" HorizontalAlignment="Left" Margin="594,-268,2,0" Width="149" Background="#FFF7F5F5" VerticalAlignment="Top" />
+            <TextBlock Text="Откуда узнали о нас" FontSize="18" HorizontalAlignment="Left" Margin="381,-233,3,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="find_us_edit" HorizontalAlignment="Left" Margin="594,-226,2,0" Width="149" Background="#FFF7F5F5" VerticalAlignment="Top" />
+            <TextBlock Text="Дата регистрации" FontSize="18" HorizontalAlignment="Left" Margin="381,-178,3,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="date_join_vis_edit" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalAlignment="Top" Margin="594,-183,0,0"/>
+            <TextBlock Text="Для заметок" FontSize="18" HorizontalAlignment="Left" Margin="381,-131,3,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="notes_edit" HorizontalAlignment="Center" HorizontalContentAlignment="Stretch" Width="357" Margin="594,-152,0,0" Height="126" Background="#FFE9E7E7" />
+            <Button Content="Изменить" Background="#FF1829D1" Width="118" Height="23" Visibility="Visible" Foreground="White" Click="Button_Click_1"/>
+
+        </StackPanel>
+        <StackPanel x:Name="db_resident_edit" Visibility="Hidden">
+            <TextBlock Text="Название" FontSize="18" HorizontalAlignment="Center" Margin="-98,27,0,0"/>
+            <TextBox x:Name="title_res_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+
+            <TextBlock Text="Вид деятельности" FontSize="18" HorizontalAlignment="Center" Margin="-151,27,0,0"/>
+            <TextBox x:Name="type_activity_res_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+
+            <TextBlock Text="Руководитель" FontSize="18" HorizontalAlignment="Center" Margin="-125,27,0,0"/>
+            <TextBox x:Name="teamlead_res_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+            <Button Height="34" Width="117" Content="Изменить" Background="#FF253EBA" Foreground="White" FontSize="18" Margin="166,25,0,0" Click="Button_Click_2"/>
+        </StackPanel>
+        <StackPanel x:Name="db_events_edit" Visibility="Hidden">
+            <TextBlock Text="Название события" FontSize="18" HorizontalAlignment="Center" Margin="-161,27,0,0"/>
+            <TextBox x:Name="title_event_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+            <TextBlock Text="Начало события" FontSize="18" HorizontalAlignment="Center" Margin="-151,27,0,0"/>
+            <DatePicker x:Name="date_begin_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+            <TextBlock Text="Организатор" FontSize="18" HorizontalAlignment="Center" Margin="-151,27,0,0"/>
+            <TextBox x:Name="organizer_edit" HorizontalAlignment="Center" Margin="164.3,-19,2,0" Background="#FFEBE8E8" Width="152" />
+            <Button Height="32" Content="Изменить" VerticalContentAlignment="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" Background="#FF2334D4" Foreground="White" Margin="139,17,0,0" Click="Button_Click_3"/>
         </StackPanel>
     </Grid>
 </Window>
