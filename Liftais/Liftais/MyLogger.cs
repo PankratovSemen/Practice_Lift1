@@ -11,7 +11,7 @@ namespace Liftais
     internal class MyLogger
     {
         public static string username;
-        MySqlConnection conn = new MySqlConnection("server = 127.0.0.1; port = 3306; username = root; database = lift");
+        MySqlConnection conn = new MySqlConnection("server = db4free.net; port = 3306; username = semen_pankratov_; password = 3627spnM_; database = lift_angarsk");
         public void Error(string message)
         {
 
