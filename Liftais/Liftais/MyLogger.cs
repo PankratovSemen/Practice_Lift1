@@ -28,8 +28,18 @@ namespace Liftais
                 DateTime dateTime = DateTime.Now;
                 string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() + "-" + dateTime.Year.ToString();
                 string path = $"logs\\{dat}.txt";
-                FileInfo fileInfo = new FileInfo(path);
-                File.AppendAllText(path, message);
+
+                if (!Directory.Exists("logs"))
+                {
+                    Directory.CreateDirectory("logs");
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
+                else
+                {
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
             }
             catch
             {
@@ -37,8 +47,17 @@ namespace Liftais
                 DateTime dateTime = DateTime.Now;
                 string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() + "-" + dateTime.Year.ToString();
                 string path = $"logs\\{dat}.txt";
-                FileInfo fileInfo = new FileInfo(path);
-                File.AppendAllText(path, message);
+                if (!Directory.Exists("logs"))
+                {
+                    Directory.CreateDirectory("logs");
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
+                else
+                {
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
             }
         }
         public void Info(string message)
@@ -58,8 +77,17 @@ namespace Liftais
                 DateTime dateTime = DateTime.Now;
                 string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() + "-" + dateTime.Year.ToString();
                 string path = $"logs\\{dat}.txt";
-                FileInfo fileInfo = new FileInfo(path);
-                File.AppendAllText(path, message);
+                if (!Directory.Exists("logs"))
+                {
+                    Directory.CreateDirectory("logs");
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
+                else
+                {
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
             }
             catch
             {
@@ -67,8 +95,17 @@ namespace Liftais
                 DateTime dateTime = DateTime.Now;
                 string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() + "-" + dateTime.Year.ToString();
                 string path = $"logs\\{dat}.txt";
-                FileInfo fileInfo = new FileInfo(path);
-                File.AppendAllText(path, message);
+                if (!Directory.Exists("logs"))
+                {
+                    Directory.CreateDirectory("logs");
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
+                else
+                {
+                    FileInfo fileInfo = new FileInfo(path);
+                    File.AppendAllText(path, message);
+                }
             }
         }
         public void ErrorFile(string message)
@@ -78,8 +115,17 @@ namespace Liftais
             string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() +"-" + dateTime.Year.ToString();
             message = "\n " + DateTime.Now + " ERROR"+ " " +  message + "\n" ;
             string path = $"logs\\{dat}.txt";
-            FileInfo fileInfo = new FileInfo(path);
-            File.AppendAllText(path, message);
+            if (!Directory.Exists("logs"))
+            {
+                Directory.CreateDirectory("logs");
+                FileInfo fileInfo = new FileInfo(path);
+                File.AppendAllText(path, message);
+            }
+            else
+            {
+                FileInfo fileInfo = new FileInfo(path);
+                File.AppendAllText(path, message);
+            }
         }
 
         public void InfoFile(string message)
@@ -89,8 +135,17 @@ namespace Liftais
             string dat = dateTime.Day.ToString() + "-" + dateTime.Month.ToString() + "-" + dateTime.Year.ToString();
             message = "\n " + DateTime.Now + " INFO" + " " + message + "\n";
             string path = $"logs\\{dat}.txt";
-            FileInfo fileInfo = new FileInfo(path);
-            File.AppendAllText(path, message);
+            if (!Directory.Exists("logs"))
+            {
+                Directory.CreateDirectory("logs");
+                FileInfo fileInfo = new FileInfo(path);
+                File.AppendAllText(path, message);
+            }
+            else
+            {
+                FileInfo fileInfo = new FileInfo(path);
+                File.AppendAllText(path, message);
+            }
         }
     }
 }

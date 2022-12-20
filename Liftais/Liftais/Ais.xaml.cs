@@ -693,6 +693,7 @@ namespace Liftais
                 dbj1.ItemsSource = dt.DefaultView;//Заполнение dataGrid базой данных
 
                 db.closedconn();
+                edit_btn.Visibility = Visibility.Visible;
             }
             catch(Exception ex)
             {
@@ -910,8 +911,8 @@ namespace Liftais
                             command.Parameters.Add("@del", MySqlDbType.Int32).Value = user_id_selection[i].ToString();
                             command.ExecuteNonQuery();
 
-                            l--;
-                            counts.Content = "Элементов: " + l;
+                            a--;
+                            counts.Content = "Элементов: " + a;
                         }
 
                         for (int i = 0; i < event_id.Count; i++)
@@ -978,6 +979,7 @@ namespace Liftais
                 Search_users.Visibility = Visibility.Hidden;
                 select_users.Visibility = Visibility.Hidden;
                 ExpP.Visibility = Visibility.Visible;
+                edit_btn.Visibility = Visibility.Visible;
                 us = 0;
                 DB db = new DB();
                 db.openconn();
@@ -1035,6 +1037,7 @@ namespace Liftais
                 select_users.Visibility = Visibility.Hidden;
                 ExpP.Visibility = Visibility.Visible;
                 us = 0;
+                edit_btn.Visibility = Visibility.Visible;
 
 
                 DB db = new DB();
@@ -1134,6 +1137,7 @@ namespace Liftais
                 db_visiters.ItemsSource = dt.DefaultView;//Заполнение dataGrid базой данных
 
                 db.closedconn();
+                edit_btn.Visibility = Visibility.Visible;
             }
             catch(Exception ex)
             {
@@ -1407,6 +1411,7 @@ namespace Liftais
                 Search_users.Visibility = Visibility.Hidden;
                 select_users.Visibility = Visibility.Hidden;
                 us = 0;
+                edit_btn.Visibility = Visibility.Visible;
 
                 //Открытие таблицы БД
 
@@ -1625,6 +1630,7 @@ namespace Liftais
                 sep.Visibility = Visibility.Visible;
                 db_resident.Visibility = Visibility.Visible;
                 cr_notes_residents_menu.Visibility = Visibility.Hidden;
+                edit_btn.Visibility = Visibility.Visible;
             }
 
             catch(Exception ex)
@@ -1748,6 +1754,7 @@ namespace Liftais
                 Search_users.Visibility = Visibility.Hidden;
                 select_users.Visibility = Visibility.Hidden;
                 us = 1;
+                edit_btn.Visibility = Visibility.Visible;
                 DB db = new DB();
                 db.openconn();
                 string cmd = "SELECT * FROM events";
@@ -1770,10 +1777,24 @@ namespace Liftais
 
         private void events_View_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            DB db = new DB();
             sep.Visibility = Visibility.Visible;
             ExpP.Visibility = Visibility.Visible;
             db_events.Visibility = Visibility.Visible;
             cr_notes_events_menu.Visibility = Visibility.Hidden;
+
+            db.openconn();
+            string cmd = "SELECT * FROM events";
+            MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+
+            command.ExecuteNonQuery();
+            MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+            DataTable dt = new DataTable("events");
+            dataAdp.Fill(dt);
+            db_events.ItemsSource = dt.DefaultView;
+
+            db.closedconn();
+            edit_btn.Visibility = Visibility.Visible;
         }
 
         private void create_events_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -2072,6 +2093,7 @@ namespace Liftais
                 db_users.ItemsSource = dt.DefaultView;//Заполнение dataGrid базой данных
 
                 db.closedconn();
+                edit_btn.Visibility = Visibility.Hidden;
             }
             catch(Exception ex) 
             {
@@ -2248,6 +2270,7 @@ namespace Liftais
 
         private void edit_btn_Click(object sender, RoutedEventArgs e)
         {
+            DB db = new DB();
             Editer ed = new Editer();
             if (dbj1.Visibility == Visibility.Visible)
             {
@@ -2261,6 +2284,19 @@ namespace Liftais
                 Editer.state = "dbj1";
                 
                 ed.ShowDialog();
+
+                
+                db.openconn();
+                string cmd = "SELECT * FROM magazine";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+                
+                command.ExecuteNonQuery();
+                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable("magazine");
+                dataAdp.Fill(dt);
+                dbj1.ItemsSource = dt.DefaultView;
+
+                db.closedconn();
 
             }
             else if(db_visiters.Visibility == Visibility.Visible)
@@ -2280,6 +2316,20 @@ namespace Liftais
                 Editer.dj_ = row["date_join"].ToString();
                 Editer.note_ = row["for_notes"].ToString();
                 ed.ShowDialog();
+
+                db.openconn();
+                string cmd = "SELECT * FROM visiter";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+
+                command.ExecuteNonQuery();
+                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable("visiter");
+                dataAdp.Fill(dt);
+                db_visiters.ItemsSource = dt.DefaultView;
+
+                db.closedconn();
+
+
             }
             else if(db_resident.Visibility == Visibility.Visible)
             {
@@ -2290,6 +2340,19 @@ namespace Liftais
                 Editer.teaml_ = row["teamlead"].ToString();
                 Editer.state = "db_resident";
                 ed.ShowDialog();
+
+
+                db.openconn();
+                string cmd = "SELECT * FROM residents";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+
+                command.ExecuteNonQuery();
+                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable("residents");
+                dataAdp.Fill(dt);
+                db_resident.ItemsSource = dt.DefaultView;
+
+                db.closedconn();
             }
             else if (db_events.Visibility == Visibility.Visible)
             {
@@ -2300,6 +2363,18 @@ namespace Liftais
                 Editer.organizer_ = row["organizer"].ToString();
                 Editer.state = "db_events";
                 ed.ShowDialog();
+
+                db.openconn();
+                string cmd = "SELECT * FROM events";
+                MySqlCommand command = new MySqlCommand(cmd, db.getconn());
+
+                command.ExecuteNonQuery();
+                MySqlDataAdapter dataAdp = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable("events");
+                dataAdp.Fill(dt);
+                db_events.ItemsSource = dt.DefaultView;
+
+                db.closedconn();
             }
         }
     }

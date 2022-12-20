@@ -120,21 +120,21 @@
             <TextBlock TextWrapping="Wrap" Text="Открытие записи" FontSize="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
             <TextBlock TextWrapping="Wrap" Text="Закрытие записи" FontSize="60" HorizontalAlignment="Right" Margin="0,-78,437,0" Height="83"/>
-            <StackPanel Height="513" Background="#FFD9D9D9" Width="920" MaxWidth="931" MinWidth="921" Margin="0,0,941,0">
+            <StackPanel Height="446" Background="#FFD9D9D9" Width="920" MaxWidth="1000" MinWidth="921" Margin="0,0,941,0">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Width="194" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="5,47,0,0"/>
 
-                <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0"/>
+                <TextBox x:Name="id_vis_tb" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="218,-28,-9,0" MaxLength="10"/>
                 <TextBlock TextWrapping="Wrap" Text="Название мероприятия" FontSize="20" FontWeight="Bold" Width="153" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="4,20,1,-4"/>
-                <ComboBox x:Name="event_combo" Width="185" HorizontalAlignment="Center" Margin="-331,-51,0,0" Height="29" ItemsSource="{Binding}"/>
+                <ComboBox x:Name="event_combo" Width="185" HorizontalAlignment="Center" Margin="-331,-51,0,0" Height="29" ItemsSource="{Binding}" />
                 <TextBlock TextWrapping="Wrap" Text="Номер резидента" FontSize="20" FontWeight="Bold" Width="222" Padding="0,1,0,1" HorizontalAlignment="Left" Margin="0,22,0,0"/>
                 <Button x:Name="create_note" Content="Записать" HorizontalAlignment="Center" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" Margin="-326,35,9,0" Click="create_note_Click"/>
                 <StackPanel Height="100"/>
                 <ComboBox x:Name="resident_combo" Width="180" HorizontalAlignment="Center" Margin="-333,-411,0,0" Height="29"/>
 
             </StackPanel>
-            <StackPanel Height="514" Background="#FFD9D9D9" Margin="922,-514,-48,0" Width="996" MaxWidth="995" MinWidth="995">
+            <StackPanel Height="442" Background="#FFD9D9D9" Margin="922,-454,-48,0" Width="996" MaxWidth="1000">
                 <TextBlock TextWrapping="Wrap" Text="Номер посетителя" FontSize="20" FontWeight="Bold" Padding="3,0,5,2" Margin="61,51,0,3" Width="206" HorizontalAlignment="Left"/>
-                <TextBox x:Name="id_vis_tb_close" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" BorderThickness="0,1,1,1" Margin="265,-40,0,0"/>
+                <TextBox x:Name="id_vis_tb_close" TextWrapping="Wrap" Width="188" FontSize="16" Height="30" HorizontalAlignment="Left" BorderThickness="0,1,1,1" Margin="265,-40,0,0" MaxLength="10"/>
                 <Button x:Name="create_date" Content="Записать" Background="#FF1E20A7" FontSize="20" Foreground="White" Height="62" Width="163" BorderThickness="1,1,1,1" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-236,42,0,7" Click="create_date_Click"/>
             </StackPanel>
             <StackPanel Height="100"/>
@@ -164,17 +164,17 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Height="599" HorizontalAlignment="Left" Margin="0,-523,0,0" Width="1898" Background="#FFD1D0D0" x:Name="cr_notes_visiter_visiters" Visibility="Hidden">
-                <TextBox x:Name="id_visiter_visiters" Width="238" HorizontalAlignment="Left" Margin="156,73,1,0" FontSize="20" AcceptsReturn="True"/>
-                <TextBox x:Name="surname_visiters" Width="236" HorizontalAlignment="Left" FontSize="20" Margin="160,31,-7,0"/>
-                <TextBox x:Name="name_visiters" Width="238" HorizontalAlignment="Left" FontSize="20" Margin="158,48,0,0"/>
-                <TextBox x:Name="middle_name_visiters" Width="239" HorizontalAlignment="Left" FontSize="20" Margin="159,49,-2,0"/>
+                <TextBox x:Name="id_visiter_visiters" Width="238" HorizontalAlignment="Left" Margin="156,73,1,0" FontSize="20" AcceptsReturn="True" MaxLength="10"/>
+                <TextBox x:Name="surname_visiters" Width="236" HorizontalAlignment="Left" FontSize="20" Margin="160,31,-7,0" MaxLength="30"/>
+                <TextBox x:Name="name_visiters" Width="238" HorizontalAlignment="Left" FontSize="20" Margin="158,48,0,0" MaxLength="30"/>
+                <TextBox x:Name="middle_name_visiters" Width="239" HorizontalAlignment="Left" FontSize="20" Margin="159,49,-2,0" MaxLength="30"/>
                 <DatePicker x:Name="birthday_visiters" HorizontalAlignment="Left" Margin="157,25,1,0"  Width="137" />
 
-                <TextBox x:Name="phone_visiters" Width="235" HorizontalAlignment="Left" Margin="158,42,0,0" FontSize="20"/>
-                <TextBox x:Name="email_visiters" Width="235" HorizontalAlignment="Left" FontSize="20" Margin="157,28,0,0"/>
-                <TextBox x:Name="place_visiters" Width="277" HorizontalAlignment="Left" Margin="641,-422,0,0" FontSize="20" VerticalAlignment="Top"/>
-                <TextBox x:Name="social_net_visiters" Width="274" HorizontalAlignment="Left" Margin="641,-362,0,0" FontSize="20" VerticalAlignment="Top"/>
-                <TextBox x:Name="find_us_visiters" Width="277" HorizontalAlignment="Left" FontSize="20" Margin="641,-279,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="phone_visiters" Width="235" HorizontalAlignment="Left" Margin="158,42,0,0" FontSize="20" MaxLength="13"/>
+                <TextBox x:Name="email_visiters" Width="235" HorizontalAlignment="Left" FontSize="20" Margin="157,28,0,0" MaxLength="100"/>
+                <TextBox x:Name="place_visiters" Width="277" HorizontalAlignment="Left" Margin="641,-422,0,0" FontSize="20" VerticalAlignment="Top" MaxLength="70"/>
+                <TextBox x:Name="social_net_visiters" Width="274" HorizontalAlignment="Left" Margin="641,-362,0,0" FontSize="20" VerticalAlignment="Top" MaxLength="20"/>
+                <TextBox x:Name="find_us_visiters" Width="277" HorizontalAlignment="Left" FontSize="20" Margin="641,-279,0,0" VerticalAlignment="Top" MaxLength="20"/>
                 <TextBlock TextWrapping="Wrap" Text="Номер" HorizontalAlignment="Left" Margin="93,-419,0,0" VerticalAlignment="Top" FontSize="16"/>
                 <TextBlock TextWrapping="Wrap" Text="Фамилия" HorizontalAlignment="Left" Margin="84,-356,0,0" VerticalAlignment="Top" FontSize="16"/>
                 <TextBlock TextWrapping="Wrap" Text="Имя" HorizontalAlignment="Left" FontSize="16" Margin="118,-282,3,0" VerticalAlignment="Top"/>
@@ -190,9 +190,9 @@
                 <Button x:Name="cr_note_visiter_btn" Content="Создать" HorizontalAlignment="Left" BorderBrush="White" Background="#FF2A17AF" FontSize="21" Foreground="#FFFFFBFB" FontFamily="Arial" Margin="266,38,0,0" Click="cr_note_visiter_btn_Click" Height="47" Width="102"/>
             </StackPanel>
             <StackPanel x:Name="cr_notes_residents_menu" Height="597" Margin="0,-600,0,0" HorizontalAlignment="Right" Width="1896" Background="#FFCFCFCF" AutomationProperties.IsOffscreenBehavior="Onscreen" InputScope="Default" Visibility="Visible">
-                <TextBox x:Name="title_residents_menu" Width="120" HorizontalAlignment="Center" Margin="215,108,0,0" Height="23"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="type_activity_resident" Width="120" HorizontalAlignment="Center" BorderThickness="1,1,1,1" Margin="214,24,0,0" Height="23" FontSize="14" VerticalAlignment="Center"  />
-                <TextBox x:Name="teamlead_resident_menu" TextWrapping="NoWrap" Text="" Width="120" HorizontalAlignment="Center" Height="20" Margin="213,38,0,0"/>
+                <TextBox x:Name="title_residents_menu" Width="120" HorizontalAlignment="Center" Margin="215,108,0,0" Height="23"  VerticalAlignment="Center" VerticalContentAlignment="Center" MaxLength="90"/>
+                <TextBox x:Name="type_activity_resident" Width="120" HorizontalAlignment="Center" BorderThickness="1,1,1,1" Margin="214,24,0,0" Height="23" FontSize="14" VerticalAlignment="Center" MaxLength="90" />
+                <TextBox x:Name="teamlead_resident_menu" TextWrapping="NoWrap" Text="" Width="120" HorizontalAlignment="Center" Height="20" Margin="213,38,0,0" MaxLength="50"/>
                 <TextBlock TextWrapping="Wrap" Text="Создание резидентов" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="196.6,-225,0,0" FontSize="30"/>
                 <TextBlock TextWrapping="Wrap" Text="Название клуба" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-23,-126,0,0" FontSize="14"/>
                 <TextBlock TextWrapping="Wrap" Text="Вид деятельности" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-32,-82,0,0" FontSize="14"/>
@@ -243,26 +243,26 @@
 
         </DataGrid>
         <StackPanel x:Name="cr_notes_events_menu" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFC5C3C3" Height="614" Width="1921" Margin="0,94,0,0" Visibility="Hidden">
-            <TextBox x:Name="Title_event_events" TextWrapping="Wrap" Width="142" Margin="0,122,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" FontSize="14"/>
+            <TextBox x:Name="Title_event_events" TextWrapping="Wrap" Width="142" Margin="0,122,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" FontSize="14" MaxLength="30"/>
             <TextBlock TextWrapping="Wrap" Text="Создание событий" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-147,0,0" FontSize="40"/>
-            <TextBox x:Name="organaizer_events" TextWrapping="Wrap" Width="142" Height="29" Margin="0,76,0,0" FontSize="14"/>
+            <TextBox x:Name="organaizer_events" TextWrapping="Wrap" Width="142" Height="29" Margin="0,76,0,0" FontSize="14" MaxLength="40"/>
             <DatePicker x:Name="date_begin_events" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,-150,0,0" Width="138" FontSize="15" VerticalAlignment="Center" SelectedDateFormat="Long" Loaded="date_begin_events_Loaded"  />
             <TextBlock TextWrapping="Wrap" Text="Название события" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Margin="-305,-134,0,0"/>
             <TextBlock x:Name="Дата_проведения_события" TextWrapping="Wrap" Text="Дата проведения события" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" Margin="-351,-87,0,0"/>
             <TextBlock TextWrapping="Wrap" Text="Организатор" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-248,-24,0,0"/>
             <Button Content="Создать" BorderBrush="#FF1815A4" Background="#FF1637E5" Foreground="White" HorizontalAlignment="Center" Height="44" Width="89" FontSize="14" Margin="0,29,0,0" Click="Button_Click_2"/>
         </StackPanel>
-        <StackPanel x:Name="users_panel" Visibility="Hidden">
+        <StackPanel x:Name="users_panel" Visibility="Visible">
 
-            <StackPanel x:Name="users_Viewer" HorizontalAlignment="Center" Width="1920" Visibility="Visible"  Margin="0,121,0,85" Height="489">
+            <StackPanel x:Name="users_Viewer" HorizontalAlignment="Center" Width="1920" Visibility="Hidden"  Margin="0,121,0,85" Height="489">
                 <TextBlock TextWrapping="Wrap" Text="Создание пользователей" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                <TextBox x:Name="login_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Width="200" Margin="0,36,0,0" Background="#FFE8E7E7" />
-                <TextBox x:Name="password_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,28,0,0" Background="#FFF3F3F3" />
-                <TextBox x:Name="surname_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
-                <TextBox x:Name="name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
-                <TextBox x:Name="middle_name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
-                <TextBox x:Name="phone_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
-                <TextBox x:Name="email_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" />
+                <TextBox x:Name="login_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Width="200" Margin="0,36,0,0" Background="#FFE8E7E7" MaxLength="100"/>
+                <TextBox x:Name="password_box_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,28,0,0" Background="#FFF3F3F3" MaxLength="32"/>
+                <TextBox x:Name="surname_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" MaxLength="20"/>
+                <TextBox x:Name="name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" MaxLength="20"/>
+                <TextBox x:Name="middle_name_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" MaxLength="20"/>
+                <TextBox x:Name="phone_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" MaxLength="13"/>
+                <TextBox x:Name="email_users_create" FontSize="20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="27" Grid.IsSharedSizeScope="True" Width="200" Margin="0,17,0,0" Background="#FFF3F3F3" MaxLength="100"/>
                 <TextBlock Text="Логин" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-300,303,0"/>
                 <TextBlock Text="Пароль" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-250,303,0"/>
                 <TextBlock Text="Фамилия" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-208,303,0"/>
@@ -281,9 +281,9 @@
             </StackPanel>
             <StackPanel Visibility="Hidden" HorizontalAlignment="Center" Height="607" Width="1924" Margin="0,-601,0,0" VerticalAlignment="Top" x:Name="res_pass">
                 <TextBlock Text="Восстановление пароля" HorizontalAlignment="Center" FontSize="29"/>
-                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="log_reset"/>
-                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_res"/>
-                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_repeat"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="log_reset" MaxLength="100"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_res" MaxLength="32"/>
+                <TextBox FontSize="20" Focusable="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="280" Height="36" Background="#FFE8E4E4" Margin="0,30.8,0,0" x:Name="pass_repeat" MaxLength="32"/>
 
                 <TextBlock Text="Логин" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-307,343,0" FontSize="18"/>
                 <TextBlock Text="Пароль" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-176,358,0" FontSize="18"/>
@@ -291,7 +291,7 @@
                 <Button Content="Сменить" Width="106" Height="33" FontSize="18" Background="#FF391AE2" Foreground="White" Margin="0,13,0,0" Click="Button_Click_4"/>
 
             </StackPanel>
-            <StackPanel Visibility="Hidden" HorizontalAlignment="Right" Height="466" Margin="0,-236,0,0" x:Name="users_Viewers_panel">
+            <StackPanel Visibility="Hidden" HorizontalAlignment="Right" Height="466" Margin="0,-688,0,0" x:Name="users_Viewers_panel">
                 <TextBlock Text ="Просмотр пользователей" FontSize="30" HorizontalAlignment="Left"/>
                 <DataGrid x:Name="db_users" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Test2}" HorizontalContentAlignment="Center" Margin="0,29,0,90" SelectionMode="Single" CanUserAddRows="False" Visibility="Visible" AutoGenerateColumns="False" Height="450" >
                     <DataGrid.Columns>

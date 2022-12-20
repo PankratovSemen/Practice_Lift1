@@ -132,6 +132,10 @@ namespace Liftais
                 type_activity_res_edit.Text = tya_;
                 teamlead_res_edit.Text = teaml_;
                 Title = "Измененить: Резидент";
+
+                title_res_edit.MaxLength = 90;
+                type_activity_res_edit.MaxLength = 90;
+                teamlead_res_edit.MaxLength = 50;
             }
             else if (state == "db_events")
             {
@@ -143,6 +147,8 @@ namespace Liftais
                 title_event_edit.Text = Te_;
                 date_begin_edit.Text = date_begin_;
                 organizer_edit.Text = organizer_;
+                title_event_edit.MaxLength = 30;
+                organizer_edit.MaxLength = 40;
             }
 
         }
@@ -203,6 +209,7 @@ namespace Liftais
         {
             try
             {
+                
                 string date_begin_convert = Convert.ToDateTime(date_begin_edit.Text).ToString("yyyy-MM-dd");
                 db.openconn();
                 string cmd = "UPDATE `events` SET `Title_event` = @te,`date_begin`= @db,`organizer` = @org WHERE `events`. `id_event` = @id";
